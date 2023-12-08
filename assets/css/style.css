@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Alkatra&family=Poppins&family=Roboto:wght@700&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* navbar */
+a.nav-item.nav-link.active {
+  color: #4b5563;
+}
+
+/* home */
+p.text-me {
+  text-align: justify;
+}
+
+a.navbar-brand {
+  color: #111827;
+  font-weight: 700;
+  line-height: 36px;
+  word-wrap: break-word;
+}
+
+.outer-container {
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  display: inline-flex;
+}
+
+.inner-container {
+  width: 320px;
+  height: 360px;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.9s ease;
+}
+
+.inner-container:hover {
+  transform: scale(0.8);
+  filter: saturate(150%);
+}
+
+.background-box {
+  width: 280px;
+  height: 320px;
+  left: 40px;
+  top: 40px;
+  position: absolute;
+  background: #e5e7eb;
+  border: 8px #ffffff solid;
+}
+
+.image-box {
+  width: 280px;
+  height: 320px;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  border: 8px #ffffff solid;
+  object-fit: cover;
+}
+
+/* about */
+h2.home,
+h2.about,
+h2.skill,
+h2.experience {
+  position: relative;
+  display: inline-block;
+  color: #333;
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+}
+
+h2.about:before,
+h2.skill:before,
+h2.experience:before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  height: 5px;
+  text-align: center;
+  width: 0;
+  transition: width 0.5s ease;
+  border-radius: 70px;
+  transform: translateX(-50%);
+  background: #808588;
+}
+
+h2.about:hover::before {
+  width: 10%;
+}
+
+/* skill */
+p.skill {
+  color: #4b5563;
+}
+
+h2.skill:hover::before {
+  width: 100%;
+}
+
+@keyframes anim {
+  0% {
+    transform: rotateY(0);
+  }
+  100% {
+    transform: rotateY(-180deg);
+  }
+}
+
+.anim:hover {
+  animation: 1.5s infinite anim;
+  cursor: pointer;
+}
+
+/* experience */
+h2.experience:hover::before {
+  width: 100%;
+}
+
+span.date {
+  color: #10b981;
+  font-family: "Alkatra", sans-serif;
+}
+
+.job-des {
+  text-align: justify;
+}
+
+.expertise {
+  font-style: italic;
+}
+
+img.size {
+  width: 10%;
+  height: 10%;
+}
