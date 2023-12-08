@@ -3,11 +3,16 @@
 * {
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
+  box-sizing: border-box;
 }
 
 /* navbar */
 a.nav-item.nav-link.active {
   color: #4b5563;
+}
+
+a.download:hover {
+  background-color: #374151;
 }
 
 /* home */
@@ -138,6 +143,21 @@ span.date {
 }
 
 img.size {
-  width: 10%;
-  height: 10%;
+  width: 20%;
+  height: 20%;
 }
+
+img.size,
+img.mob,
+img.hack {
+  cursor: pointer;
+}
+
+img.size:hover,
+img.mob:hover,
+img.hack:hover {
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+/* projects  */
