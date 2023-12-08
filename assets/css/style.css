@@ -73,7 +73,8 @@ a.navbar-brand {
 h2.home,
 h2.about,
 h2.skill,
-h2.experience {
+h2.experience,
+h2.project {
   position: relative;
   display: inline-block;
   color: #333;
@@ -83,13 +84,14 @@ h2.experience {
 
 h2.about:before,
 h2.skill:before,
-h2.experience:before {
+h2.experience:before,
+h2.project:before {
+  text-align: center;
   content: "";
   position: absolute;
   bottom: -5px;
   left: 50%;
   height: 5px;
-  text-align: center;
   width: 0;
   transition: width 0.5s ease;
   border-radius: 70px;
@@ -160,4 +162,33 @@ img.hack:hover {
   transition: opacity 0.3s ease;
 }
 
-/* projects  */
+/* project  */
+h2.project:hover::before {
+  width: 30%;
+}
+
+.project {
+  text-align: center;
+}
+
+.date-project {
+  color: #10b981;
+  font-family: "Alkatra", sans-serif;
+}
+
+span.figma,
+span.corel,
+span.mobbin,
+span.dribble,
+span.chamjo {
+  cursor: pointer;
+  background-color: #6b7280;
+}
+
+span.figma:hover,
+span.corel:hover,
+span.mobbin:hover,
+span.dribble:hover,
+span.chamjo:hover {
+  background-color: #1f2937;
+}
