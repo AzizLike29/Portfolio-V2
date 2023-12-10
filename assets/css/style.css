@@ -74,7 +74,8 @@ h2.home,
 h2.about,
 h2.skill,
 h2.experience,
-h2.project {
+h2.project,
+h2.certificate {
   position: relative;
   display: inline-block;
   color: #333;
@@ -85,7 +86,8 @@ h2.project {
 h2.about:before,
 h2.skill:before,
 h2.experience:before,
-h2.project:before {
+h2.project:before,
+h2.certificate:before {
   text-align: center;
   content: "";
   position: absolute;
@@ -164,7 +166,7 @@ img.hack:hover {
 
 /* project  */
 h2.project:hover::before {
-  width: 30%;
+  width: 100%;
 }
 
 .project {
@@ -176,19 +178,37 @@ h2.project:hover::before {
   font-family: "Alkatra", sans-serif;
 }
 
-span.figma,
-span.corel,
-span.mobbin,
-span.dribble,
-span.chamjo {
+p.figma,
+p.corel,
+p.mobbin,
+p.dribble,
+p.chamjo {
   cursor: pointer;
   background-color: #6b7280;
 }
 
-span.figma:hover,
-span.corel:hover,
-span.mobbin:hover,
-span.dribble:hover,
-span.chamjo:hover {
+p.figma:hover,
+p.corel:hover,
+p.mobbin:hover,
+p.dribble:hover,
+p.chamjo:hover {
   background-color: #1f2937;
+}
+
+ul.description li {
+  text-align: justify;
+}
+
+/* certificate */
+h2.certificate:hover::before {
+  width: 100%;
+}
+
+.certificate {
+  text-align: center;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  filter: invert(100%);
 }
