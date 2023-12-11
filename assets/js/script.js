@@ -10,23 +10,26 @@
       return storedTheme;
     }
 
-    return window.matchMedia("(prefers-color-scheme: dark)").matches
-      ? "dark"
-      : "light";
+    const currentHour = new Date().getHours();
+    return currentHour >= 6 && currentHour < 18 ? "light" : "dark";
   };
 
   const setTheme = (theme) => {
-    if (
-      theme === "auto" &&
-      window.matchMedia("(prefers-color-scheme: dark)").matches
-    ) {
-      document.documentElement.setAttribute("data-bs-theme", "dark");
+    if (theme === "auto") {
+      const prefersDarkMode = window.matchMedia(
+        "(prefers-color-scheme: dark)"
+      ).matches;
+      const currentHour = new Date().getHours();
+      const isDaytime = currentHour >= 6 && currentHour < 18;
+      const autoTheme = isDaytime ? "light" : "dark";
+
+      document.documentElement.setAttribute("data-bs-theme", autoTheme);
+      // tema auto
+      setStoredTheme(autoTheme);
     } else {
       document.documentElement.setAttribute("data-bs-theme", theme);
     }
   };
-
-  setTheme(getPreferredTheme());
 
   const showActiveTheme = (theme, focus = false) => {
     const themeSwitcher = document.querySelector("#bd-theme");
@@ -61,18 +64,25 @@
     }
   };
 
+  // Set tema pada saat halaman dimuat
+  setTheme(getPreferredTheme());
+
+  // perubahan tema light dan dark
   window
     .matchMedia("(prefers-color-scheme: dark)")
     .addEventListener("change", () => {
       const storedTheme = getStoredTheme();
       if (storedTheme !== "light" && storedTheme !== "dark") {
         setTheme(getPreferredTheme());
+        showActiveTheme(getPreferredTheme());
       }
     });
 
+  // halaman tema aktif
   window.addEventListener("DOMContentLoaded", () => {
     showActiveTheme(getPreferredTheme());
 
+    // toogle tema
     document.querySelectorAll("[data-bs-theme-value]").forEach((toggle) => {
       toggle.addEventListener("click", () => {
         const theme = toggle.getAttribute("data-bs-theme-value");

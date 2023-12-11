@@ -20,6 +20,22 @@ p.text-me {
   text-align: justify;
 }
 
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.dot {
+  animation: pulse 1s infinite;
+}
+
 a.navbar-brand {
   color: #111827;
   font-weight: 700;
@@ -75,7 +91,8 @@ h2.about,
 h2.skill,
 h2.experience,
 h2.project,
-h2.certificate {
+h2.certificate,
+h2.contact {
   position: relative;
   display: inline-block;
   color: #333;
@@ -87,7 +104,8 @@ h2.about:before,
 h2.skill:before,
 h2.experience:before,
 h2.project:before,
-h2.certificate:before {
+h2.certificate:before,
+h2.contact:before {
   text-align: center;
   content: "";
   position: absolute;
@@ -103,6 +121,23 @@ h2.certificate:before {
 
 h2.about:hover::before {
   width: 10%;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.inner-container {
+  transform: translateX(0px);
+  animation: float 6s ease-out infinite;
 }
 
 /* skill */
@@ -211,4 +246,86 @@ h2.certificate:hover::before {
 .carousel-control-next-icon,
 .carousel-control-prev-icon {
   filter: invert(100%);
+}
+
+/* Contact and Form */
+h2.contact:hover::before {
+  width: 100%;
+}
+
+.contact {
+  background-color: #fff;
+  color: #999;
+  margin: 2;
+}
+
+span.txt {
+  color: #111827;
+  font-size: 1.875rem;
+  font-style: normal;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.content-txt {
+  color: #111827;
+  font-family: Basic;
+  font-size: 5.625rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 6.875rem;
+}
+
+.hear {
+  color: #10b981;
+  font-family: Basic;
+  font-size: 5.625rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 6.875rem;
+}
+
+.form-control {
+  border: none;
+  border: 1px solid #d9d9d9;
+  border-radius: 0;
+}
+
+.form-control:active,
+.form-control:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-color: #000;
+}
+
+.col-form-label {
+  color: #000;
+}
+
+.btn form,
+.form-control {
+  height: 55px;
+}
+
+.btn form:active,
+.btn form:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+#message {
+  resize: vertical;
+}
+
+.btn-contact {
+  background: linear-gradient(270deg, #111827 0%, #10b981 100%);
+  width: 100%;
+}
+
+.btn-contact:hover {
+  cursor: pointer;
+  transform: scale(0.9);
 }
