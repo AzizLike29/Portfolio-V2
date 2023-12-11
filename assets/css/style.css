@@ -329,13 +329,14 @@ span.txt {
 }
 
 .btn-contact {
-  background: linear-gradient(270deg, #111827 0%, #6b7280 100%);
+  background-image: linear-gradient(to right, #111827, #6b7280);
   width: 100%;
+  transition: background-position 0.3s ease;
+  cursor: pointer;
 }
 
 .btn-contact:hover {
-  cursor: pointer;
-  transform: scale(0.9);
+  background-position: left;
 }
 
 /* Footer */
@@ -360,4 +361,15 @@ a.fb:hover {
 
 .bi-c-circle ~ span {
   color: #10b981;
+}
+
+.gotopbtn {
+  position: fixed;
+  height: 50px;
+  bottom: 50px;
+  right: 50px;
+}
+
+.bi-copy {
+  cursor: pointer;
 }

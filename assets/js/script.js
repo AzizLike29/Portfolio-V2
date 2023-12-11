@@ -93,3 +93,71 @@
     });
   });
 })();
+
+// setting gotopbtn
+document.addEventListener("DOMContentLoaded", function () {
+  var goTopBtn = document.querySelector(".gotopbtn");
+
+  window.addEventListener("scroll", function () {
+    if (window.scrollY > 100) {
+      goTopBtn.style.opacity = "1";
+    } else {
+      goTopBtn.style.opacity = "0";
+    }
+  });
+  goTopBtn.addEventListener("click", function (event) {
+    event.preventDefault();
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  });
+});
+
+// Animated JS
+var textWrapper = document.querySelector(".home");
+textWrapper.innerHTML = textWrapper.textContent.replace(
+  /\S/g,
+  "<span class='letter'>$&</span>"
+);
+
+anime
+  .timeline({ loop: true })
+  .add({
+    targets: ".home .letter",
+    opacity: [0, 1],
+    easing: "easeInOutQuad",
+    duration: 2250,
+    delay: (el, i) => 150 * (i + 1),
+  })
+  .add({
+    targets: ".home",
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000,
+  });
+
+// setting copy phone and email
+function copyText(getId, copyType) {
+  try {
+    var textElement = document.getElementById(getId);
+    var textCopy = textElement.innerText;
+
+    navigator.clipboard
+      .writeText(textCopy)
+      .then(function () {
+        console.log("Success Copy " + copyType + ": " + textCopy);
+      })
+      .catch(function (err) {
+        console.error("Error Copy: ", err);
+      });
+  } catch (err) {
+    console.error("Error Copy Text: ", err);
+  }
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  copyText("emailAddress", "email");
+  copyText("phoneNumber", "telep");
+});

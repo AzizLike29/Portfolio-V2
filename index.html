@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Portfolio V2</title>
+    <title>Portfolio Aziz</title>
     <!-- Font Awesome -->
     <script
       src="https://kit.fontawesome.com/35dd348907.js"
@@ -135,7 +135,7 @@
             data-aos-offset="300"
             data-aos-easing="ease-in-sine"
           >
-            <h2 class="home">Hi, I'm Aziz 👋</h2>
+            <h2 class="home fw-semibold">Hi, I'm Aziz 👋</h2>
             <p class="text-me">
               I am a full-stack web developer and UI/UX designer with more than
               6 months of experience. My expertise includes programming
@@ -893,7 +893,7 @@
                   <input
                     type="submit"
                     value="Send a Message"
-                    class="btn form rounded-0 py-2 px-4 btn-contact text-white fw-bold"
+                    class="btn form rounded-1 py-2 px-4 btn-contact text-white fw-bold border-0"
                   />
                 </div>
               </div>
@@ -930,22 +930,18 @@
           <div class="d-flex align-items-center justify-content-center">
             <div>
               <i class="bi bi-envelope"></i>
-              <a
-                href="mailto:abdulfirdaus590@gmail.com"
-                class="email fw-medium text-black"
-                >abdulfirdaus590@gmail.com</a
+              <span class="email fw-medium text-black"
+                >abdulfirdaus590@gmail.com</span
               >
-              <i class="bi bi-copy"></i>
+              <i class="bi bi-copy" onclick="copyText('emailAddress')"></i>
             </div>
           </div>
           <div class="d-flex align-items-center justify-content-center pt-3">
-            <div>
-              <i class="bi bi-telephone"></i>
-              <a href="tel:+62895618748150" class="telep fw-medium text-black"
-                >+62 895 6187 48150</a
-              >
-              <i class="bi bi-copy"></i>
-            </div>
+            <i class="bi bi-telephone"></i>
+            <span class="telep fw-medium text-black mx-1"
+              >+62 895 6187 48150</span
+            >
+            <i class="bi bi-copy" onclick="copyText('phoneNumber')"></i>
           </div>
           <span class="pt-3">You may also find me on these platforms!</span>
           <div class="d-flex align-item justify-content-center gap-2">
@@ -983,6 +979,12 @@
     </footer>
     <!-- End Footer -->
 
+    <!-- Top Button -->
+    <a href="#" class="gotopbtn"
+      ><i class="bi bi-arrow-up-square-fill fs-2 text-dark"></i
+    ></a>
+    <!-- End Top Button -->
+
     <!-- Template AOS -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
@@ -991,6 +993,8 @@
         duration: 1500,
       });
     </script>
+    <!-- Template Moving Letters JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <!-- Template Bootstrap JS -->
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
