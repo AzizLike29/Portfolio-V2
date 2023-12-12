@@ -11,8 +11,13 @@ a.nav-item.nav-link.active {
   color: #4b5563;
 }
 
+a.download {
+  background-image: linear-gradient(to right, #111827, #6b7280);
+  transition: background-position 0.3s ease;
+}
+
 a.download:hover {
-  background-color: #374151;
+  background-position: left;
 }
 
 /* home */
