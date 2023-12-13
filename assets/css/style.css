@@ -13,11 +13,12 @@ a.nav-item.nav-link.active {
 
 a.download {
   background-image: linear-gradient(to right, #111827, #6b7280);
-  transition: background-position 0.3s ease;
+  font-weight: 500;
+  transition: background-position 0.3s ease, transform 0.3s ease;
 }
 
 a.download:hover {
-  background-position: left;
+  transform: scale(0.9);
 }
 
 /* home */
@@ -336,12 +337,12 @@ span.txt {
 .btn-contact {
   background-image: linear-gradient(to right, #111827, #6b7280);
   width: 100%;
-  transition: background-position 0.3s ease;
-  cursor: pointer;
+  transition: background-position 0.3s ease, transform 0.3s ease;
 }
 
 .btn-contact:hover {
   background-position: left;
+  transform: scale(0.9);
 }
 
 /* Footer */
@@ -372,9 +373,140 @@ a.fb:hover {
   position: fixed;
   height: 50px;
   bottom: 50px;
-  right: 50px;
+  right: 30px;
 }
 
 .bi-copy {
   cursor: pointer;
+}
+
+/* Mode Dark */
+[data-bs-theme="dark"] h2.home,
+[data-bs-theme="dark"] h2.about,
+[data-bs-theme="dark"] h2.skill,
+[data-bs-theme="dark"] h2.experience,
+[data-bs-theme="dark"] h2.project,
+[data-bs-theme="dark"] h2.certificate,
+[data-bs-theme="dark"] h2.footer,
+[data-bs-theme="dark"] h2.contact {
+  color: #ffffff;
+}
+
+[data-bs-theme="light"] h2.home,
+[data-bs-theme="light"] h2.about,
+[data-bs-theme="light"] h2.skill,
+[data-bs-theme="light"] h2.experience,
+[data-bs-theme="light"] h2.project,
+[data-bs-theme="light"] h2.certificate,
+[data-bs-theme="light"] h2.footer,
+[data-bs-theme="light"] h2.contact {
+  color: #333;
+}
+
+[data-bs-theme="dark"] p.experience,
+[data-bs-theme="dark"] p.skill,
+[data-bs-theme="dark"] p.project,
+[data-bs-theme="dark"] p.certificate,
+[data-bs-theme="dark"] p.contact,
+[data-bs-theme="dark"] p.footer {
+  color: #d1d5db;
+}
+
+[data-bs-theme="light"] p.experience,
+[data-bs-theme="light"] p.skill,
+[data-bs-theme="light"] p.project,
+[data-bs-theme="light"] p.certificate,
+[data-bs-theme="light"] p.contact,
+[data-bs-theme="light"] p.footer {
+  color: #4b5563;
+}
+
+[data-bs-theme="dark"] span.content-txt,
+[data-bs-theme="dark"] span.txt {
+  color: #ffffff;
+}
+
+[data-bs-theme="light"] span.content-txt,
+[data-bs-theme="light"] span.txt {
+  color: #111827;
+}
+
+[data-bs-theme="dark"] label.col-form-label {
+  color: #ffffff;
+}
+
+[data-bs-theme="light"] label.col-form-label {
+  color: #000000;
+}
+
+[data-bs-theme="dark"] #contact {
+  background-color: #212529;
+}
+
+[data-bs-theme="light"] #contact {
+  background-color: #ffffff;
+}
+
+h2.contact,
+p.contact {
+  background-color: inherit;
+}
+
+[data-bs-theme="dark"] a.download,
+[data-bs-theme="dark"] .btn-contact {
+  color: #1f2937;
+  background-image: linear-gradient(to right, #f9fafb, #10b981);
+}
+
+[data-bs-theme="light"] a.download {
+  color: #ffffff;
+}
+
+[data-bs-theme="light"] .btn-contact {
+  background-image: linear-gradient(to right, #111827, #6b7280);
+}
+
+[data-bs-theme="light"] input.btn.form {
+  color: #ffffff;
+}
+
+[data-bs-theme="dark"] input.btn.form {
+  color: #1f2937;
+}
+
+[data-bs-theme="dark"] span.hear {
+  color: #10b981;
+}
+
+[data-bs-theme="dark"] span.email,
+[data-bs-theme="dark"] span.telep {
+  color: #9ca3af;
+}
+
+[data-bs-theme="light"] span.email,
+[data-bs-theme="light"] span.telep {
+  color: #000000;
+}
+
+[data-bs-theme="light"] .gotopbtn i {
+  color: #000000;
+}
+
+[data-bs-theme="dark"] .gotopbtn i {
+  color: #ffffff;
+}
+
+/* Responsive Mobile */
+@media only screen and (max-width: 390px),
+  only screen and (max-width: 360px),
+  only screen and (max-width: 414px) {
+  html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+  p.chamjo {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 }
