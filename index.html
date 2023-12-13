@@ -904,9 +904,19 @@
             >
               <div class="row">
                 <div class="col-md-12 form-group">
-                  <label for="email" class="col-form-label"
-                    >Your Email Address</label
-                  >
+                  <label for="name" class="col-form-label">Your Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="text"
+                    id="name"
+                    placeholder="David Allen"
+                  />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12 form-group">
+                  <label for="email" class="col-form-label">Your Email</label>
                   <input
                     type="text"
                     class="form-control"
@@ -945,9 +955,8 @@
               <div class="row">
                 <div class="col-md-12 mt-5">
                   <input
-                    onclick="sendToWhatsapp()"
+                    onclick="sendMessage();"
                     type="submit"
-                    value="Send a Message"
                     class="btn form rounded-1 py-2 px-4 btn-contact fw-bold border-0"
                   />
                 </div>
@@ -1045,7 +1054,15 @@
       });
     </script>
 
-    <!-- Template Popper & Min JS -->
+    <!-- Template CDN -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <!-- Template Email js -->
+    <script src="assets/js/email.js"></script>
+    <!-- Template JS -->
+    <script src="assets/js/script.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
       integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
@@ -1058,9 +1075,5 @@
     ></script>
     <!-- Template Moving Letters JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-    <!-- Template Whatsapp js -->
-    <script src="whatsapp.js"></script>
-    <!-- Template JS -->
-    <script src="assets/js/script.js"></script>
   </body>
 </html>
