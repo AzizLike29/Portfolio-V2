@@ -1,3 +1,4 @@
+// Setting mode dark and light
 (() => {
   "use strict";
 

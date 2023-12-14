@@ -474,6 +474,12 @@ p.contact {
   color: #1f2937;
 }
 
+[data-bs-theme="dark"] img.icon {
+  content: url(../img/Icon-White.svg);
+  width: 30px;
+  height: 24px;
+}
+
 [data-bs-theme="dark"] span.hear {
   color: #10b981;
 }
@@ -493,6 +499,11 @@ p.contact {
 }
 
 [data-bs-theme="dark"] .gotopbtn i {
+  color: #ffffff;
+}
+
+[data-bs-theme="dark"] i.git:before,
+[data-bs-theme="dark"] i.fb:before {
   color: #ffffff;
 }
 
