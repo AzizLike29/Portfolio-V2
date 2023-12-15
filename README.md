@@ -1,4 +1,6 @@
-<h1 style="text-align: center;">Portfolio Aziz With Framework Bootstrap5</h1>
+<h2>Portfolio Aziz</h1>
+
+<span>With Framework Bootstrap5</span>
 
 <p>Mode Light</p>
 
