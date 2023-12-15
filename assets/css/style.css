@@ -11,6 +11,14 @@ a.nav-item.nav-link.active {
   color: #4b5563;
 }
 
+a.nav-item.nav-link.active:hover {
+  text-decoration: none;
+}
+
+a.nav-item.nav-link:hover {
+  text-decoration: underline #000000;
+}
+
 a.download {
   background-image: linear-gradient(to right, #111827, #6b7280);
   font-weight: 500;
@@ -213,6 +221,16 @@ img.hack:hover {
   transition: opacity 0.3s ease;
 }
 
+.link-project a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #333;
+}
+
+.link-project a:hover {
+  text-decoration: underline;
+}
+
 /* project  */
 h2.project:hover::before {
   width: 100%;
@@ -231,7 +249,18 @@ p.figma,
 p.corel,
 p.mobbin,
 p.dribble,
-p.chamjo {
+p.chamjo,
+p.lottie,
+p.android,
+p.java,
+p.firebase,
+p.php,
+p.mysql,
+p.ci4,
+p.bt5,
+p.vsc,
+p.nb,
+p.canva {
   cursor: pointer;
   background-color: #6b7280;
 }
@@ -240,8 +269,25 @@ p.figma:hover,
 p.corel:hover,
 p.mobbin:hover,
 p.dribble:hover,
-p.chamjo:hover {
+p.chamjo:hover,
+p.lottie:hover,
+p.android:hover,
+p.java:hover,
+p.firebase:hover,
+p.php:hover,
+p.mysql:hover,
+p.ci4:hover,
+p.bt5:hover,
+p.vsc:hover,
+p.nb:hover,
+p.canva:hover {
   background-color: #1f2937;
+}
+
+p.vsc {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 ul.description li {
@@ -507,6 +553,18 @@ p.contact {
   color: #ffffff;
 }
 
+[data-bs-theme="dark"] .link-project a {
+  color: #ffffff;
+}
+
+[data-bs-theme="dark"] a.nav-item.nav-link.active:hover {
+  text-decoration: none;
+}
+
+[data-bs-theme="dark"] a.nav-item.nav-link:hover {
+  text-decoration: underline #ffffff;
+}
+
 /* Responsive Mobile */
 @media only screen and (max-width: 390px),
   only screen and (max-width: 360px),
@@ -519,5 +577,20 @@ p.contact {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+  }
+  @keyframes float {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-12px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+  .inner-container {
+    transform: translateX(0px);
+    animation: float 6s ease-out infinite;
   }
 }
