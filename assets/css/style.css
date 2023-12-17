@@ -185,6 +185,18 @@ h2.organization:hover::before {
   width: 100%;
 }
 
+.card.himatif {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card.himatif p {
+  margin-bottom: 0;
+}
+
 /* skill */
 p.education,
 p.organization,
@@ -261,6 +273,11 @@ img.hima:hover {
   cursor: pointer;
   text-decoration: none;
   color: #333;
+  display: block;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
 }
 
 .link-project a:hover {
@@ -386,6 +403,22 @@ span.txt {
   border: none;
   border: 1px solid #d9d9d9;
   border-radius: 0;
+}
+
+.form-control.item.error {
+  border-color: #d93025;
+}
+
+.form-group .error-txt {
+  font-size: 14.5px;
+  color: #d93025;
+  text-align: left;
+  margin: 5px 0 10px;
+  display: none;
+}
+
+.form-group.error .error-txt {
+  display: block;
 }
 
 .form-control:active,
@@ -629,6 +662,26 @@ p.contact {
   color: #000 !important;
 }
 
+[data-bs-theme="dark"] a.btn-social {
+  border: 1px solid #ffffff;
+}
+
+[data-bs-theme="dark"] a.btn-social:hover {
+  background-color: #ffffff;
+}
+
+[data-bs-theme="dark"] a.btn-social:hover > i.fab {
+  color: #000;
+}
+
+[data-bs-theme="dark"] a > i.fab {
+  color: #ffffff;
+}
+
+[data-bs-theme="dark"] img.hug {
+  content: url(../img/Hug-White.svg);
+}
+
 /* Responsive Mobile */
 @media only screen and (max-width: 390px),
   only screen and (max-width: 360px),
@@ -656,5 +709,11 @@ p.contact {
   .inner-container {
     transform: translateX(0px);
     animation: float 6s ease-out infinite;
+  }
+  h2.organization:hover::before {
+    width: 60%;
+  }
+  .link-project a {
+    margin-bottom: 15px;
   }
 }

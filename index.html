@@ -142,7 +142,7 @@
             data-aos-offset="300"
             data-aos-easing="ease-in-sine"
           >
-            <h2 class="home fw-semibold">Hi, I'm Aziz 👋</h2>
+            <h2 class="home fw-semibold">Hi, I'm Aziz👋</h2>
             <p class="text-me">
               I am a full-stack web developer and UI/UX designer with more than
               6 months of experience. My expertise includes programming
@@ -284,14 +284,14 @@
         <div class="row row-cols-1 row-cols-md-2 g-4">
           <div class="col">
             <div
-              class="card shadow p-2"
+              class="card shadow p-2 w-100 h-100 pt-sm-0 pt-lg-5 pb-sm-0 pb-lg-0"
               data-aos="fade-right"
               data-aos-duration="1500"
               data-aos-delay="800"
             >
               <img
                 src="assets/img/Logo UPB.png"
-                class="card-img-top w-25 h-25 m-auto d-block upb"
+                class="card-img-top w-50 h-50 m-auto d-block object-fit-contain upb"
                 alt="Logo UPB"
               />
               <div class="card-body">
@@ -324,14 +324,14 @@
           </div>
           <div class="col">
             <div
-              class="card shadow p-2"
+              class="card shadow p-2 w-100 h-100 pt-sm-0 pt-lg-5 pb-sm-0 pb-lg-0"
               data-aos="fade-left"
               data-aos-duration="1500"
               data-aos-delay="800"
             >
               <img
                 src="assets/img/Logo SMK.png"
-                class="card-img-top w-25 h-25 m-auto d-block smk"
+                class="card-img-top w-50 h-50 m-auto d-block object-fit-contain smk"
                 alt="Logo SMK"
               />
               <div class="card-body">
@@ -384,14 +384,14 @@
         <div class="row">
           <div class="col">
             <div
-              class="card shadow p-2"
+              class="card shadow p-2 himatif"
               data-aos="fade-up"
               data-aos-anchor-placement="top-bottom"
               data-aos-delay="1000"
             >
               <img
                 src="assets/img/Logo HIMATIF.png"
-                class="card-img-top hima"
+                class="card-img-top hima w-50 h-50 m-auto d-block object-fit-contain"
                 alt="Logo HIMATIF"
               />
               <div class="card-body">
@@ -544,7 +544,7 @@
                     </ul>
                   </div>
                   <div
-                    class="link-project row row-cols-2 row-cols-lg-4 g-4 g-lg-5"
+                    class="link-project row row-cols-1 row-cols-sm-2 row-cols-md-4 g-lg-3 g-sm-0"
                   >
                     <div class="col project-one">
                       <a href="https://kelompok3-final-project1.netlify.app/">
@@ -749,7 +749,7 @@
                   >
                     <img
                       src="assets/img/Hug.svg"
-                      class="rounded float-start"
+                      class="rounded float-start hug"
                       alt="Icon Click"
                     />
                   </a>
@@ -831,7 +831,7 @@
                   >
                     <img
                       src="assets/img/Hug.svg"
-                      class="rounded float-start"
+                      class="rounded float-start hug"
                       alt="Icon Click"
                     />
                   </a>
@@ -909,7 +909,7 @@
                   >
                     <img
                       src="assets/img/Hug.svg"
-                      class="rounded float-start"
+                      class="rounded float-start hug"
                       alt="Icon Click"
                     />
                   </a>
@@ -990,7 +990,7 @@
                   >
                     <img
                       src="assets/img/Hug.svg"
-                      class="rounded float-start"
+                      class="rounded float-start hug"
                       alt="Icon Click"
                     />
                   </a>
@@ -1061,7 +1061,7 @@
                   >
                     <img
                       src="assets/img/Hug.svg"
-                      class="rounded float-start"
+                      class="rounded float-start hug"
                       alt="Icon Click"
                     />
                   </a>
@@ -1155,7 +1155,7 @@
                   >
                     <img
                       src="assets/img/Hug.svg"
-                      class="rounded float-start"
+                      class="rounded float-start hug"
                       alt="Icon Click"
                     />
                   </a>
@@ -1239,7 +1239,7 @@
                   >
                     <img
                       src="assets/img/Hug.svg"
-                      class="rounded float-start"
+                      class="rounded float-start hug"
                       alt="Icon Click"
                     />
                   </a>
@@ -1314,7 +1314,7 @@
                   >
                     <img
                       src="assets/img/Hug.svg"
-                      class="rounded float-start"
+                      class="rounded float-start hug"
                       alt="Icon Click"
                     />
                   </a>
@@ -1496,11 +1496,12 @@
                   <label for="name" class="col-form-label">Your Name</label>
                   <input
                     type="text"
-                    class="form-control"
+                    class="form-control item"
                     name="text"
                     id="name"
-                    placeholder="David Allen"
+                    placeholder="Please write your full name"
                   />
+                  <div class="error-txt">Name can't be blank</div>
                 </div>
               </div>
               <div class="row">
@@ -1508,11 +1509,12 @@
                   <label for="email" class="col-form-label">Your Email</label>
                   <input
                     type="text"
-                    class="form-control"
+                    class="form-control item"
                     name="email"
                     id="email"
                     placeholder="something@website.com"
                   />
+                  <div class="error-txt email">Email can't be blank</div>
                 </div>
               </div>
               <div class="row">
@@ -1520,11 +1522,12 @@
                   <label for="subject" class="col-form-label">Subject</label>
                   <input
                     type="text"
-                    class="form-control"
+                    class="form-control item"
                     name="subject"
                     id="subject"
                     placeholder="Question about your article"
                   />
+                  <div class="error-txt">Subject can't be blank</div>
                 </div>
               </div>
 
@@ -1532,21 +1535,22 @@
                 <div class="col-md-12 form-group">
                   <label for="message" class="col-form-label">Message</label>
                   <textarea
-                    class="form-control"
+                    class="form-control item"
                     name="message"
                     id="message"
                     cols="30"
                     rows="7"
                     placeholder="Your message starts with..."
                   ></textarea>
+                  <div class="error-txt">Message can't be blank</div>
                 </div>
               </div>
               <div class="row">
                 <div class="col-md-12 mt-5">
                   <input
-                    onclick="sendMessage();"
                     type="submit"
                     class="btn form rounded-1 py-2 px-4 btn-contact fw-bold border-0"
+                    id="submit"
                   />
                 </div>
               </div>
@@ -1649,6 +1653,10 @@
       });
     </script>
 
+    <!-- Template SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Template SMTP JS -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <!-- Template Moving Letters JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <!-- Template CDN -->
