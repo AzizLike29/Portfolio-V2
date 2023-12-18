@@ -775,4 +775,7 @@ p.contact {
   .link-project a {
     margin-bottom: 15px;
   }
+  h2.education:hover::before {
+    width: 60%;
+  }
 }
