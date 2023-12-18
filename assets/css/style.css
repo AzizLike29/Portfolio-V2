@@ -6,6 +6,11 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 /* navbar */
 a.nav-item.nav-link.active {
   color: #4b5563;
@@ -27,6 +32,11 @@ a.download {
 
 a.download:hover {
   transform: scale(0.9);
+}
+
+.setting {
+  display: flex;
+  align-items: center;
 }
 
 /* home */
@@ -686,7 +696,8 @@ p.contact {
 @media only screen and (max-width: 390px),
   only screen and (max-width: 360px),
   only screen and (max-width: 414px) {
-  html {
+  html,
+  body {
     overflow-x: hidden;
     scroll-behavior: smooth;
   }
@@ -715,5 +726,8 @@ p.contact {
   }
   .link-project a {
     margin-bottom: 15px;
+  }
+  .setting {
+    flex-direction: row-reverse;
   }
 }
