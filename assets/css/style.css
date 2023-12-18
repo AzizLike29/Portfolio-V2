@@ -63,6 +63,110 @@ a.navbar-brand {
   word-wrap: break-word;
 }
 
+/* whatsapp */
+a.whatsapp {
+  outline: 1px solid #27ae60;
+  position: relative;
+  display: inline-block;
+}
+
+a.whatsapp:hover,
+a.whatsapp:focus {
+  background-color: #27ae60;
+}
+
+a.whatsapp:active {
+  background-color: #ffffff;
+}
+
+i.fa-whatsapp {
+  color: #27ae60;
+}
+
+i.fa-whatsapp:hover {
+  color: #ffffff;
+}
+
+a.whatsapp:hover i.fa-whatsapp,
+a.whatsapp:focus i.fa-whatsapp {
+  color: #ffffff;
+}
+
+/* instagram */
+a.instagram {
+  outline: 1px solid #e1306c;
+  position: relative;
+  display: inline-block;
+}
+
+a.instagram:hover,
+a.instagram:focus {
+  background-color: #e1306c;
+}
+
+a.instagram:active {
+  background-color: #ffffff;
+}
+
+i.fa-instagram {
+  color: #e1306c;
+}
+
+a.instagram:hover i.fa-instagram,
+a.instagram:focus i.fa-instagram {
+  color: #ffffff;
+}
+
+/* youtube */
+a.youtube {
+  outline: 1px solid #c0392b;
+  position: relative;
+  display: inline-block;
+}
+
+a.youtube:hover,
+a.youtube:focus {
+  background-color: #c0392b;
+}
+
+a.youtube:active {
+  background-color: #ffffff;
+}
+
+i.fa-youtube {
+  color: #c0392b;
+}
+
+a.youtube:hover i.fa-youtube,
+a.youtube:focus i.fa-youtube {
+  color: #ffffff;
+}
+
+/* linkedin */
+a.linkedin {
+  outline: 1px solid #3498db;
+  position: relative;
+  display: inline-block;
+}
+
+a.linkedin:hover,
+a.linkedin:focus {
+  background-color: #3498db;
+}
+
+a.linkedin:active {
+  background-color: #ffffff;
+}
+
+i.fa-linkedin-in {
+  color: #3498db;
+}
+
+a.linkedin:hover i.fa-linkedin-in,
+a.linkedin:focus i.fa-linkedin-in {
+  color: #ffffff;
+}
+
 .outer-container {
   width: 100%;
   height: 100%;
@@ -76,7 +180,6 @@ a.navbar-brand {
   width: 320px;
   height: 360px;
   position: relative;
-  cursor: pointer;
   transition: transform 0.9s ease;
 }
 
@@ -120,7 +223,6 @@ h2.footer {
   display: inline-block;
   color: #333;
   font-family: "Roboto", sans-serif;
-  cursor: pointer;
 }
 
 h2.about:before,
@@ -146,7 +248,7 @@ h2.footer:before {
 }
 
 h2.about:hover::before {
-  width: 10%;
+  width: 100%;
 }
 
 @keyframes float {
@@ -185,23 +287,6 @@ p.card-text > .date {
   font-family: "Alkatra", sans-serif;
 }
 
-/* organization */
-h2.organization:hover::before {
-  width: 100%;
-}
-
-.card.himatif {
-  max-width: 500px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.card.himatif p {
-  margin-bottom: 0;
-}
-
 /* skill */
 p.education,
 p.organization,
@@ -229,7 +314,6 @@ h2.skill:hover::before {
 
 .anim:hover {
   animation: 1.5s infinite anim;
-  cursor: pointer;
 }
 
 /* experience */
@@ -237,39 +321,18 @@ h2.experience:hover::before {
   width: 100%;
 }
 
-span.date {
+p.card-text > small.date {
   color: #10b981;
   font-family: "Alkatra", sans-serif;
 }
 
-.job-des {
-  text-align: justify;
-}
-
-.expertise {
-  font-style: italic;
-}
-
-img.size {
-  width: 20%;
-  height: 20%;
-}
-
-img.size,
-img.mob,
-img.hack,
-img.upb,
-img.smk,
-img.hima {
-  cursor: pointer;
-}
-
-img.size:hover,
+img.bmc:hover,
 img.mob:hover,
 img.hack:hover,
 img.upb:hover,
 img.smk:hover,
-img.hima:hover {
+img.hima:hover,
+img.kartar:hover {
   opacity: 0.7;
   transition: opacity 0.3s ease;
 }
@@ -457,11 +520,12 @@ span.txt {
 .btn-contact {
   background-image: linear-gradient(to right, #111827, #6b7280);
   width: 100%;
-  transition: background-position 0.3s ease, transform 0.3s ease;
+  transition: background-position 0.3s ease;
 }
 
 .btn-contact:hover {
   background-position: left;
+  transition: background-position 0.3s ease, transform 1s ease;
   transform: scale(0.9);
 }
 
@@ -498,6 +562,10 @@ a.fb:hover {
 
 .bi-copy {
   cursor: pointer;
+}
+
+footer {
+  margin-top: -20px;
 }
 
 /* Mode Dark */
@@ -665,22 +733,6 @@ p.contact {
 [data-bs-theme="dark"] p.canva:hover {
   background-color: #e5e7eb;
   color: #000 !important;
-}
-
-[data-bs-theme="dark"] a.btn-social {
-  border: 1px solid #ffffff;
-}
-
-[data-bs-theme="dark"] a.btn-social:hover {
-  background-color: #ffffff;
-}
-
-[data-bs-theme="dark"] a.btn-social:hover > i.fab {
-  color: #000;
-}
-
-[data-bs-theme="dark"] a > i.fab {
-  color: #ffffff;
 }
 
 [data-bs-theme="dark"] img.hug {
