@@ -5,6 +5,9 @@ const subject = document.getElementById("subject");
 const message = document.getElementById("message");
 
 function sendEmail() {
+  const loadingIndicator = document.getElementById("loadingIndicator");
+  loadingIndicator.classList.remove("d-none");
+
   const bodyMessage = `name: ${fullName.value}<br> email: ${email.value}<br> subject: ${subject.value}<br> message: ${message.value}`;
 
   Email.send({
@@ -16,11 +19,18 @@ function sendEmail() {
     Subject: subject.value,
     Body: bodyMessage,
   }).then((message) => {
+    loadingIndicator.classList.add("d-none");
     if (message == "OK") {
       Swal.fire({
         title: "Success!",
-        text: "The message has been successfully dispatched!",
+        text: "Congrats, Sent message succesfully!",
         icon: "success",
+      });
+    } else {
+      Swal.fire({
+        title: "Error!",
+        text: "Failed to send the email. Please try again later.",
+        icon: "error",
       });
     }
   });

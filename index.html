@@ -33,7 +33,7 @@
   </head>
   <body>
     <!-- Start Navbar -->
-    <nav class="navbar bg-body shadow-sm">
+    <nav class="navbar bg-body fixed-top shadow-sm">
       <div class="container">
         <button
           class="navbar-toggler"
@@ -134,7 +134,8 @@
               <a href="#contact" class="nav-item nav-link">Contact</a>
               <a
                 href="https://drive.google.com/file/d/1wg9evtl3rTnv1-FPRQo3JGfGhRctnLBw/view?usp=sharing"
-                class="btn download border-0 w-100 h-100 mw-100"
+                class="btn download border-0 w-100 h-100 mw-100 mt-3"
+                target="_blank"
                 role="button"
               >
                 <i class="fa-solid fa-download"></i>
@@ -148,7 +149,7 @@
     <!-- End Navbar -->
 
     <!-- Section Home -->
-    <section id="home">
+    <section id="home" class="pt-5 mt-2">
       <div class="container p-3">
         <div class="row mx-auto justify-content-between align-items-center">
           <div
@@ -202,9 +203,9 @@
             </div>
           </div>
           <div
-            class="col-md-5 mt-3 mb-0"
+            class="col-md-5 mt-4 mb-0"
             data-aos="flip-right"
-            data-aos-delay="300"
+            data-aos-delay="500"
             data-aos-offset="0"
           >
             <div class="outer-container">
@@ -225,23 +226,25 @@
 
     <!-- Section About -->
     <section id="about">
-      <div class="container p-3">
+      <div class="container">
         <div class="text-center">
           <h2
             class="about text-uppercase"
             data-aos="fade-zoom-in"
             data-aos-easing="ease-in-back"
-            data-aos-delay="500"
+            data-aos-delay="300"
             data-aos-offset="0"
           >
             About
           </h2>
         </div>
-        <div class="row mx-auto justify-content-between align-items-center">
+        <div
+          class="row mx-auto justify-content-between align-items-center about"
+        >
           <div
-            class="col-md-5 mt-3 mb-0 pt-2"
+            class="col-md-5 mt-3 pt-2"
             data-aos="flip-left"
-            data-aos-delay="300"
+            data-aos-delay="500"
             data-aos-offset="0"
           >
             <div class="outer-container">
@@ -287,7 +290,7 @@
           class="text-center"
           data-aos="fade-zoom-in"
           data-aos-easing="ease-in-back"
-          data-aos-delay="500"
+          data-aos-delay="300"
           data-aos-offset="0"
         >
           <h2 class="education text-uppercase">Education and Organization</h2>
@@ -305,7 +308,7 @@
             >
               <img
                 src="assets/img/Logo UPB.png"
-                class="card-img-top w-50 h-50 m-auto d-block object-fit-contain upb"
+                class="card-img-top w-25 h-25 m-auto d-block object-fit-contain upb"
                 alt="Logo UPB"
               />
               <div class="card-body">
@@ -341,11 +344,11 @@
               class="card shadow p-2 w-100 h-100"
               data-aos="fade-up"
               data-aos-anchor-placement="top-bottom"
-              data-aos-delay="500"
+              data-aos-delay="300"
             >
               <img
                 src="assets/img/Logo SMK.png"
-                class="card-img-top w-50 h-50 m-auto d-block object-fit-contain smk"
+                class="card-img-top w-25 h-25 m-auto d-block object-fit-contain smk"
                 alt="Logo SMK"
               />
               <div class="card-body">
@@ -381,11 +384,11 @@
               class="card shadow p-2 himatif w-100 h-100"
               data-aos="fade-up"
               data-aos-anchor-placement="top-bottom"
-              data-aos-delay="500"
+              data-aos-delay="300"
             >
               <img
                 src="assets/img/Logo HIMATIF.png"
-                class="card-img-top hima w-50 h-50 m-auto d-block object-fit-contain"
+                class="card-img-top hima w-25 h-25 m-auto d-block object-fit-contain"
                 alt="Logo HIMATIF"
               />
               <div class="card-body">
@@ -415,11 +418,11 @@
               class="card shadow p-2 kartar w-100 h-100"
               data-aos="fade-up"
               data-aos-anchor-placement="top-bottom"
-              data-aos-delay="500"
+              data-aos-delay="300"
             >
               <img
                 src="assets/img/Logo-Karang_Taruna.png"
-                class="card-img-top kartar w-50 h-50 m-auto d-block object-fit-contain"
+                class="card-img-top kartar w-25 h-25 m-auto d-block object-fit-contain"
                 alt="Logo Karang Taruna"
               />
               <div class="card-body">
@@ -458,7 +461,7 @@
           class="text-center"
           data-aos="fade-zoom-in"
           data-aos-easing="ease-in-back"
-          data-aos-delay="500"
+          data-aos-delay="300"
         >
           <h2 class="skill text-uppercase">Skill</h2>
           <p class="skill">
@@ -468,7 +471,7 @@
         <div
           class="row row-cols-3 row-cols-sm-2 row-cols-lg-3 d-flex justify-content-center pt-2 text-center"
           data-aos="fade-zoom-out"
-          data-aos-delay="500"
+          data-aos-delay="300"
         >
           <div class="col anim">
             <img src="assets/img/icon-javscript.svg" alt="Icon Javascript" />
@@ -521,7 +524,7 @@
           class="text-center"
           data-aos="fade-zoom-in"
           data-aos-easing="ease-in-back"
-          data-aos-delay="500"
+          data-aos-delay="300"
           data-aos-offset="0"
         >
           <h2 class="experience text-uppercase">Experience</h2>
@@ -534,11 +537,11 @@
             class="card mb-4 w-100 h-100"
             data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
-            data-aos-delay="500"
+            data-aos-delay="300"
           >
             <img
               src="assets/img/Company-Hacktiv8.png"
-              class="card-img-top w-50 h-50 m-auto d-block object-fit-contain mt-2 mb-0 hack"
+              class="card-img-top w-25 h-25 m-auto d-block object-fit-contain mt-2 mb-0 hack"
               alt="Hacktiv8"
             />
             <div class="card-body">
@@ -569,26 +572,34 @@
                 </li>
               </ul>
               <div
-                class="link-project row row-cols-1 row-cols-sm-2 row-cols-md-4 g-lg-3 g-sm-0"
+                class="link-project row row-cols-1 row-cols-sm-2 row-cols-md-4"
               >
                 <div class="col project-one">
                   <a href="https://kelompok3-final-project1.netlify.app/">
-                    <i class="bi bi-link fs-6 link">Link Project 1</i>
+                    <i class="bi bi-link btn btn-outline-secondary"
+                      >Link Project 1</i
+                    >
                   </a>
                 </div>
                 <div class="col project-two">
                   <a href="https://kelompok3-final-project-2.netlify.app/">
-                    <i class="bi bi-link fs-6 link">Link Project 2</i>
+                    <i class="bi bi-link btn btn-outline-secondary"
+                      >Link Project 2</i
+                    >
                   </a>
                 </div>
                 <div class="col project-three">
                   <a href="https://kelompok3-final-project-3.netlify.app/">
-                    <i class="bi bi-link fs-6 link">Link Project 3</i>
+                    <i class="bi bi-link btn btn-outline-secondary"
+                      >Link Project 3</i
+                    >
                   </a>
                 </div>
                 <div class="col project-four">
                   <a href="https://kelompok-3-final-project-4.netlify.app/">
-                    <i class="bi bi-link fs-6 link">Link Project 4</i>
+                    <i class="bi bi-link btn btn-outline-secondary"
+                      >Link Project 4</i
+                    >
                   </a>
                 </div>
               </div>
@@ -601,11 +612,11 @@
             class="card mb-4 w-100 h-100"
             data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
-            data-aos-delay="500"
+            data-aos-delay="300"
           >
             <img
               src="assets/img/Courses-Digital.png"
-              class="card-img-top w-50 h-50 m-auto d-block object-fit-contain mt-2 mb-0 mob"
+              class="card-img-top w-25 h-25 m-auto d-block object-fit-contain mt-2 mb-0 mob"
               alt="Digital Talent Scholarship"
             />
             <div class="card-body">
@@ -632,11 +643,11 @@
             class="card mb-4 w-100 h-100"
             data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
-            data-aos-delay="500"
+            data-aos-delay="300"
           >
             <img
               src="assets/img/PT.BMC.png"
-              class="card-img-top w-50 h-50 m-auto d-block object-fit-contain mt-2 mb-0 bmc"
+              class="card-img-top w-25 h-25 m-auto d-block object-fit-contain mt-2 mb-0 bmc"
               alt="PT.Braja Mukti Cakra"
             />
             <div class="card-body">
@@ -669,7 +680,7 @@
           class="text-center"
           data-aos="fade-zoom-in"
           data-aos-easing="ease-in-back"
-          data-aos-delay="500"
+          data-aos-delay="300"
           data-aos-offset="0"
         >
           <h2 class="project text-uppercase">Experience Project</h2>
@@ -680,7 +691,7 @@
           class="row g-4 pt-2"
           data-aos="fade-up"
           data-aos-anchor-placement="top-bottom"
-          data-aos-delay="500"
+          data-aos-delay="300"
         >
           <div class="col-md-8">
             <div class="card shadow bg-body h-100">
@@ -719,41 +730,34 @@
               <div class="container text-center">
                 <div class="row row-cols-2 mt-3">
                   <div class="col">
-                    <p class="figma text-nowrap rounded p-2 text-light">
-                      Figma
-                    </p>
+                    <p class="figma text-nowrap rounded p-2">Figma</p>
                   </div>
                   <div class="col">
-                    <p class="corel text-nowrap rounded p-2 text-light">
-                      Corel Draw
-                    </p>
+                    <p class="corel text-nowrap rounded p-2">Corel Draw</p>
                   </div>
                   <div class="col">
-                    <p class="mobbin text-nowrap rounded p-2 text-light">
-                      Mobbin.com
-                    </p>
+                    <p class="mobbin text-nowrap rounded p-2">Mobbin.com</p>
                   </div>
                   <div class="col">
-                    <p class="dribble text-nowrap rounded p-2 text-light">
-                      Dribble.com
-                    </p>
+                    <p class="dribble text-nowrap rounded p-2">Dribble.com</p>
                   </div>
                   <div class="col">
-                    <p class="chamjo text-nowrap rounded p-2 text-light">
-                      Chamjo Design
-                    </p>
+                    <p class="chamjo text-nowrap rounded p-2">Chamjo Design</p>
                   </div>
                 </div>
-                <div class="mt-3">
+                <div
+                  class="btn btn-secondary d-flex justify-content-center align-items-center mt-3 mb-0"
+                >
                   <a
                     href="https://www.figma.com/file/1tPInyvflh8FQMZTo4NsCR/SD-Karang-Asih-01?type=design&node-id=0%3A1&mode=design&t=HpmYzw21vdm7iJCG-1"
-                    class="text-decoration-none"
+                    class="text-decoration-none d-flex align-items-center text-white"
                   >
                     <img
-                      src="assets/img/Hug.svg"
-                      class="rounded float-start hug"
+                      src="assets/img/Hug-White.svg"
+                      class="rounded float-start hug mx-1"
                       alt="Icon Click"
                     />
+                    Click Here!
                   </a>
                 </div>
               </div>
@@ -767,7 +771,7 @@
           class="row g-4 pt-2"
           data-aos="fade-up"
           data-aos-anchor-placement="top-bottom"
-          data-aos-delay="500"
+          data-aos-delay="300"
         >
           <div class="col-md-8">
             <div class="card shadow bg-body h-100">
@@ -801,41 +805,36 @@
               <div class="container text-center">
                 <div class="row row-cols-2 mt-3">
                   <div class="col">
-                    <p class="figma text-nowrap rounded p-2 text-light">
-                      Figma
-                    </p>
+                    <p class="figma text-nowrap rounded p-2">Figma</p>
                   </div>
                   <div class="col">
-                    <p class="mobbin text-nowrap rounded p-2 text-light">
-                      Mobbin.com
-                    </p>
+                    <p class="mobbin text-nowrap rounded p-2">Mobbin.com</p>
                   </div>
                   <div class="col">
-                    <p class="dribble text-nowrap rounded p-2 text-light">
-                      Dribble.com
-                    </p>
+                    <p class="dribble text-nowrap rounded p-2">Dribble.com</p>
                   </div>
                   <div class="col text-center">
-                    <p class="chamjo text-nowrap rounded p-2 text-light">
-                      Chamjo Design
-                    </p>
+                    <p class="chamjo text-nowrap rounded p-2">Chamjo Design</p>
                   </div>
                   <div class="col text-center">
-                    <p class="lottie text-nowrap rounded p-2 text-light">
+                    <p class="lottie text-nowrap rounded p-2">
                       LottieFiles.com
                     </p>
                   </div>
                 </div>
-                <div class="mt-3">
+                <div
+                  class="btn btn-secondary d-flex justify-content-center align-items-center mt-3 mb-0"
+                >
                   <a
                     href="https://www.figma.com/file/M4CMBHlxrjwBeCaxW4SO2w/Richeese-Factory?type=design&node-id=0%3A1&mode=design&t=dON52yvrl5N3zsH1-1"
-                    class="text-decoration-none"
+                    class="text-decoration-none d-flex align-items-center text-white"
                   >
                     <img
-                      src="assets/img/Hug.svg"
-                      class="rounded float-start hug"
+                      src="assets/img/Hug-White.svg"
+                      class="rounded float-start hug mx-1"
                       alt="Icon Click"
                     />
+                    Click Here!
                   </a>
                 </div>
               </div>
@@ -849,7 +848,7 @@
           class="row g-4 pt-2"
           data-aos="fade-up"
           data-aos-anchor-placement="top-bottom"
-          data-aos-delay="500"
+          data-aos-delay="300"
         >
           <div class="col-md-8">
             <div class="card shadow bg-body h-100">
@@ -884,36 +883,31 @@
               <div class="container text-center">
                 <div class="row row-cols-2 mt-3">
                   <div class="col">
-                    <p class="figma text-nowrap rounded p-2 text-light">
-                      Figma
-                    </p>
+                    <p class="figma text-nowrap rounded p-2">Figma</p>
                   </div>
                   <div class="col">
-                    <p class="mobbin text-nowrap rounded p-2 text-light">
-                      Mobbin.com
-                    </p>
+                    <p class="mobbin text-nowrap rounded p-2">Mobbin.com</p>
                   </div>
                   <div class="col">
-                    <p class="dribble text-nowrap rounded p-2 text-light">
-                      Dribble.com
-                    </p>
+                    <p class="dribble text-nowrap rounded p-2">Dribble.com</p>
                   </div>
                   <div class="col text-center">
-                    <p class="chamjo text-nowrap rounded p-2 text-light">
-                      Chamjo Design
-                    </p>
+                    <p class="chamjo text-nowrap rounded p-2">Chamjo Design</p>
                   </div>
                 </div>
-                <div class="mt-3">
+                <div
+                  class="btn btn-secondary d-flex justify-content-center align-items-center mt-3 mb-0"
+                >
                   <a
                     href="https://www.figma.com/file/2Ki7MucFO2YPsf7hTuj6bO/Sneakers?type=design&node-id=0%3A1&mode=design&t=nxkhNKcLmlzNcHwa-1"
-                    class="text-decoration-none"
+                    class="text-decoration-none d-flex align-items-center text-white"
                   >
                     <img
-                      src="assets/img/Hug.svg"
-                      class="rounded float-start hug"
+                      src="assets/img/Hug-White.svg"
+                      class="rounded float-start hug mx-1"
                       alt="Icon Click"
                     />
+                    Click Here!
                   </a>
                 </div>
               </div>
@@ -927,7 +921,7 @@
           class="row g-4 pt-2"
           data-aos="fade-up"
           data-aos-anchor-placement="top-bottom"
-          data-aos-delay="500"
+          data-aos-delay="300"
         >
           <div class="col-md-8">
             <div class="card shadow bg-body h-100">
@@ -965,36 +959,31 @@
               <div class="container text-center">
                 <div class="row row-cols-2 mt-3">
                   <div class="col">
-                    <p class="figma text-nowrap rounded p-2 text-light">
-                      Figma
-                    </p>
+                    <p class="figma text-nowrap rounded p-2">Figma</p>
                   </div>
                   <div class="col">
-                    <p class="mobbin text-nowrap rounded p-2 text-light">
-                      Mobbin.com
-                    </p>
+                    <p class="mobbin text-nowrap rounded p-2">Mobbin.com</p>
                   </div>
                   <div class="col">
-                    <p class="dribble text-nowrap rounded p-2 text-light">
-                      Dribble.com
-                    </p>
+                    <p class="dribble text-nowrap rounded p-2">Dribble.com</p>
                   </div>
                   <div class="col text-center">
-                    <p class="chamjo text-nowrap rounded p-2 text-light">
-                      Chamjo Design
-                    </p>
+                    <p class="chamjo text-nowrap rounded p-2">Chamjo Design</p>
                   </div>
                 </div>
-                <div class="mt-3">
+                <div
+                  class="btn btn-secondary d-flex justify-content-center align-items-center mt-3 mb-0"
+                >
                   <a
                     href="https://www.figma.com/file/1NOqYK9TxOl2gH53hcTKaL/Website-Bimbel?type=design&node-id=0%3A1&mode=design&t=Tr9piVoy2dBHysil-1"
-                    class="text-decoration-none"
+                    class="text-decoration-none d-flex align-items-center text-white"
                   >
                     <img
-                      src="assets/img/Hug.svg"
-                      class="rounded float-start hug"
+                      src="assets/img/Hug-White.svg"
+                      class="rounded float-start hug mx-1"
                       alt="Icon Click"
                     />
+                    Click Here!
                   </a>
                 </div>
               </div>
@@ -1008,7 +997,7 @@
           class="row g-4 pt-2"
           data-aos="fade-up"
           data-aos-anchor-placement="top-bottom"
-          data-aos-delay="500"
+          data-aos-delay="300"
         >
           <div class="col-md-8">
             <div class="card shadow bg-body h-100">
@@ -1043,29 +1032,30 @@
               <div class="container text-center">
                 <div class="row row-cols-2 mt-3">
                   <div class="col">
-                    <p class="android text-nowrap rounded p-2 text-light">
+                    <p class="android text-nowrap rounded p-2">
                       Android Studio
                     </p>
                   </div>
                   <div class="col">
-                    <p class="java text-nowrap rounded p-2 text-light">Java</p>
+                    <p class="java text-nowrap rounded p-2">Java</p>
                   </div>
                   <div class="col">
-                    <p class="firebase text-nowrap rounded p-2 text-light">
-                      Firebase
-                    </p>
+                    <p class="firebase text-nowrap rounded p-2">Firebase</p>
                   </div>
                 </div>
-                <div class="mt-3">
+                <div
+                  class="btn btn-secondary d-flex justify-content-center align-items-center mt-3 mb-0"
+                >
                   <a
                     href="https://drive.google.com/file/d/1kJOPbDmDFge1Q4Km_DYlN7APPn91bb-T/view?usp=drive_link"
-                    class="text-decoration-none"
+                    class="text-decoration-none d-flex align-items-center text-white"
                   >
                     <img
-                      src="assets/img/Hug.svg"
-                      class="rounded float-start hug"
+                      src="assets/img/Hug-White.svg"
+                      class="rounded float-start hug mx-1"
                       alt="Icon Click"
                     />
+                    Click Here!
                   </a>
                 </div>
               </div>
@@ -1079,7 +1069,7 @@
           class="row g-4 pt-2"
           data-aos="fade-up"
           data-aos-anchor-placement="top-bottom"
-          data-aos-delay="500"
+          data-aos-delay="300"
         >
           <div class="col-md-8">
             <div class="card shadow bg-body h-100">
@@ -1122,44 +1112,39 @@
               <div class="container text-center">
                 <div class="row row-cols-2 mt-3">
                   <div class="col">
-                    <p class="php text-nowrap rounded p-2 text-light">Php</p>
+                    <p class="php text-nowrap rounded p-2">Php</p>
                   </div>
                   <div class="col">
-                    <p class="mysql text-nowrap rounded p-2 text-light">
-                      MySql
-                    </p>
+                    <p class="mysql text-nowrap rounded p-2">MySql</p>
                   </div>
                   <div class="col">
-                    <p class="ci4 text-nowrap rounded p-2 text-light">
-                      Codeigniter 4
-                    </p>
+                    <p class="ci4 text-nowrap rounded p-2">Codeigniter 4</p>
                   </div>
                   <div class="col">
-                    <p class="bt5 text-nowrap rounded p-2 text-light">
-                      Bootstrap 5
-                    </p>
+                    <p class="bt5 text-nowrap rounded p-2">Bootstrap 5</p>
                   </div>
                   <div class="col">
-                    <p class="figma text-nowrap rounded p-2 text-light">
-                      Figma
-                    </p>
+                    <p class="figma text-nowrap rounded p-2">Figma</p>
                   </div>
                   <div class="col">
-                    <p class="vsc text-nowrap rounded p-2 text-light">
+                    <p class="vsc text-nowrap rounded p-2">
                       Visual Studio Code
                     </p>
                   </div>
                 </div>
-                <div class="mt-3">
+                <div
+                  class="btn btn-secondary d-flex justify-content-center align-items-center mt-3 mb-0"
+                >
                   <a
                     href="https://github.com/AzizLike29/Pengelolaan_Kas_RT"
-                    class="text-decoration-none"
+                    class="text-decoration-none d-flex align-items-center text-white"
                   >
                     <img
-                      src="assets/img/Hug.svg"
-                      class="rounded float-start hug"
+                      src="assets/img/Hug-White.svg"
+                      class="rounded float-start hug mx-1"
                       alt="Icon Click"
                     />
+                    Click Here!
                   </a>
                 </div>
               </div>
@@ -1173,7 +1158,7 @@
           class="row g-4 pt-2"
           data-aos="fade-up"
           data-aos-anchor-placement="top-bottom"
-          data-aos-delay="500"
+          data-aos-delay="300"
         >
           <div class="col-md-8">
             <div class="card shadow bg-body h-100">
@@ -1216,34 +1201,31 @@
               <div class="container text-center">
                 <div class="row row-cols-2 mt-3">
                   <div class="col">
-                    <p class="java text-nowrap rounded p-2 text-light">Java</p>
+                    <p class="java text-nowrap rounded p-2">Java</p>
                   </div>
                   <div class="col">
-                    <p class="mysql text-nowrap rounded p-2 text-light">
-                      MySql
-                    </p>
+                    <p class="mysql text-nowrap rounded p-2">MySql</p>
                   </div>
                   <div class="col">
-                    <p class="nb text-nowrap rounded p-2 text-light">
-                      Neatbens IDE
-                    </p>
+                    <p class="nb text-nowrap rounded p-2">Neatbens IDE</p>
                   </div>
                   <div class="col">
-                    <p class="canva text-nowrap rounded p-2 text-light">
-                      Canva
-                    </p>
+                    <p class="canva text-nowrap rounded p-2">Canva</p>
                   </div>
                 </div>
-                <div class="mt-3">
+                <div
+                  class="btn btn-secondary d-flex justify-content-center align-items-center mt-3 mb-0"
+                >
                   <a
                     href="https://github.com/roxyzc/Projek_dataMahasiswa"
-                    class="text-decoration-none"
+                    class="text-decoration-none d-flex align-items-center text-white"
                   >
                     <img
-                      src="assets/img/Hug.svg"
-                      class="rounded float-start hug"
+                      src="assets/img/Hug-White.svg"
+                      class="rounded float-start hug mx-1"
                       alt="Icon Click"
                     />
+                    Click Here!
                   </a>
                 </div>
               </div>
@@ -1257,7 +1239,7 @@
           class="row g-4 pt-2"
           data-aos="fade-up"
           data-aos-anchor-placement="top-bottom"
-          data-aos-delay="500"
+          data-aos-delay="300"
         >
           <div class="col-md-8">
             <div class="card shadow bg-body h-100">
@@ -1296,29 +1278,28 @@
               <div class="container text-center">
                 <div class="row row-cols-2 mt-3">
                   <div class="col">
-                    <p class="java text-nowrap rounded p-2 text-light">Java</p>
+                    <p class="java text-nowrap rounded p-2">Java</p>
                   </div>
                   <div class="col">
-                    <p class="mysql text-nowrap rounded p-2 text-light">
-                      MySql
-                    </p>
+                    <p class="mysql text-nowrap rounded p-2">MySql</p>
                   </div>
                   <div class="col">
-                    <p class="nb text-nowrap rounded p-2 text-light">
-                      Neatbens IDE
-                    </p>
+                    <p class="nb text-nowrap rounded p-2">Neatbens IDE</p>
                   </div>
                 </div>
-                <div class="mt-3">
+                <div
+                  class="btn btn-secondary d-flex justify-content-center align-items-center mt-3 mb-0"
+                >
                   <a
                     href="https://github.com/AzizLike29/Simple-Multi-Project"
-                    class="text-decoration-none"
+                    class="text-decoration-none d-flex align-items-center text-white"
                   >
                     <img
-                      src="assets/img/Hug.svg"
-                      class="rounded float-start hug"
+                      src="assets/img/Hug-White.svg"
+                      class="rounded float-start hug mx-1"
                       alt="Icon Click"
                     />
+                    Click Here!
                   </a>
                 </div>
               </div>
@@ -1337,7 +1318,7 @@
           class="certificate"
           data-aos="fade-zoom-in"
           data-aos-easing="ease-in-back"
-          data-aos-delay="500"
+          data-aos-delay="300"
           data-aos-offset="0"
         >
           <h2 class="certificate text-uppercase">Activity Certificate</h2>
@@ -1349,15 +1330,79 @@
           class="row"
           data-aos="fade-up"
           data-aos-anchor-placement="center-bottom"
-          data-aos-delay="500"
+          data-aos-delay="300"
         >
           <div
             id="carouselExampleInterval"
-            class="carousel slide"
+            class="carousel slide carousel-dark"
             data-bs-ride="carousel"
           >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleInterval"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleInterval"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleInterval"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleInterval"
+                data-bs-slide-to="3"
+                aria-label="Slide 4"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleInterval"
+                data-bs-slide-to="4"
+                aria-label="Slide 5"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleInterval"
+                data-bs-slide-to="5"
+                aria-label="Slide 6"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleInterval"
+                data-bs-slide-to="6"
+                aria-label="Slide 7"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleInterval"
+                data-bs-slide-to="7"
+                aria-label="Slide 8"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleInterval"
+                data-bs-slide-to="8"
+                aria-label="Slide 9"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleInterval"
+                data-bs-slide-to="9"
+                aria-label="Slide 10"
+              ></button>
+            </div>
             <div class="carousel-inner">
-              <div class="carousel-item active" data-bs-interval="10000">
+              <div class="carousel-item active" data-bs-interval="500">
                 <img
                   src="assets/img/Certificate/Sertifikat Juara 3 Desain Poster.jpg"
                   class="d-block w-100"
@@ -1465,7 +1510,7 @@
           class="content text-center"
           data-aos="fade-zoom-in"
           data-aos-easing="ease-in-back"
-          data-aos-delay="500"
+          data-aos-delay="300"
           data-aos-offset="0"
         >
           <h2 class="contact text-uppercase">Contact Form</h2>
@@ -1477,7 +1522,7 @@
         <div
           class="row pt-2 d-flex justify-content-center"
           data-aos="zoom-out-up"
-          data-aos-delay="500"
+          data-aos-delay="300"
         >
           <div class="col-md-5 mr-auto mb-5">
             <span class="txt">Questions, Comments, Concerns?</span>
@@ -1514,6 +1559,7 @@
                     type="text"
                     class="form-control item"
                     name="email"
+                    aria-describedby="email"
                     id="email"
                     placeholder="something@website.com"
                   />
@@ -1533,7 +1579,6 @@
                   <div class="error-txt">Subject can't be blank</div>
                 </div>
               </div>
-
               <div class="row">
                 <div class="col-md-12 form-group">
                   <label for="message" class="col-form-label">Message</label>
@@ -1548,8 +1593,15 @@
                   <div class="error-txt">Message can't be blank</div>
                 </div>
               </div>
+              <div
+                class="d-flex align-items-center mt-3 d-none"
+                id="loadingIndicator"
+              >
+                <strong role="status">Loading...</strong>
+                <div class="spinner-border ms-auto" aria-hidden="true"></div>
+              </div>
               <div class="row">
-                <div class="col-md-12 mt-5">
+                <div class="col-md-12 mt-3">
                   <input
                     type="submit"
                     class="btn form rounded-1 py-2 px-4 btn-contact fw-bold border-0"
@@ -1570,7 +1622,7 @@
         class="container text-center"
         data-aos="fade-zoom-in"
         data-aos-easing="ease-in-back"
-        data-aos-delay="500"
+        data-aos-delay="300"
         data-aos-offset="0"
       >
         <div class="text-foter">
@@ -1628,7 +1680,7 @@
         class="mt-3"
         data-aos="fade-zoom-out"
         data-aos-easing="ease-in-back"
-        data-aos-delay="500"
+        data-aos-delay="300"
         data-aos-offset="0"
       >
         <div
@@ -1655,7 +1707,7 @@
     <script>
       AOS.init({
         once: true,
-        duration: 1500,
+        duration: 800,
       });
     </script>
 
@@ -1672,6 +1724,10 @@
     ></script>
     <!-- Template Email js -->
     <script src="assets/js/email.js"></script>
+    <!-- Template copy and paste js -->
+    <script src="assets/js/copyPaste.js"></script>
+    <!-- Template animated -->
+    <script src="assets/js/animated.js"></script>
     <!-- Template JS -->
     <script src="assets/js/script.js"></script>
     <script

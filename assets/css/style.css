@@ -192,8 +192,8 @@ a.linkedin:focus i.fa-linkedin-in {
 .background-box {
   width: 280px;
   height: 320px;
-  left: 40px;
-  top: 40px;
+  left: 20px;
+  top: 20px;
   position: absolute;
   background: #e5e7eb;
   border: 8px #ffffff solid;
@@ -339,18 +339,10 @@ img.kartar:hover {
 }
 
 .link-project a {
-  cursor: pointer;
-  text-decoration: none;
-  color: #333;
   display: block;
   text-align: center;
   padding: 10px;
-  border: 1px solid #ccc;
   margin-bottom: 10px;
-}
-
-.link-project a:hover {
-  text-decoration: underline;
 }
 
 /* project  */
@@ -383,8 +375,7 @@ p.bt5,
 p.vsc,
 p.nb,
 p.canva {
-  cursor: pointer;
-  background-color: #6b7280;
+  outline: 1px solid #4b5563;
 }
 
 p.figma:hover,
@@ -404,6 +395,7 @@ p.vsc:hover,
 p.nb:hover,
 p.canva:hover {
   background-color: #1f2937;
+  color: #ffffff;
 }
 
 p.vsc {
@@ -518,16 +510,20 @@ span.txt {
   resize: vertical;
 }
 
-.btn-contact {
+input.btn-contact {
   background-image: linear-gradient(to right, #111827, #6b7280);
   width: 100%;
-  transition: background-position 0.3s ease;
+  transition: all 0.3s ease;
 }
 
-.btn-contact:hover {
-  background-position: left;
-  transition: background-position 0.3s ease, transform 1s ease;
-  transform: scale(0.9);
+input.btn-contact:hover {
+  transform: scale(0.98);
+  transition-delay: 0.1s;
+}
+
+input.btn-contact:not(:hover) {
+  transform: scale(1);
+  transition-delay: 0.1s;
 }
 
 /* Footer */
@@ -671,12 +667,6 @@ p.contact {
   color: #1f2937;
 }
 
-[data-bs-theme="dark"] img.icon {
-  content: url(../img/Icon-White.svg);
-  width: 30px;
-  height: 24px;
-}
-
 [data-bs-theme="dark"] span.hear {
   color: #10b981;
 }
@@ -736,10 +726,6 @@ p.contact {
   color: #000 !important;
 }
 
-[data-bs-theme="dark"] img.hug {
-  content: url(../img/Hug-White.svg);
-}
-
 /* Responsive Mobile */
 @media only screen and (max-width: 390px),
   only screen and (max-width: 360px),
@@ -749,7 +735,9 @@ p.contact {
     overflow-x: hidden;
     scroll-behavior: smooth;
   }
-  p.chamjo {
+  p.chamjo,
+  p.lottie,
+  p.android {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -777,5 +765,13 @@ p.contact {
   }
   h2.education:hover::before {
     width: 60%;
+  }
+  section#about {
+    margin-top: -20px;
+    margin-bottom: 0;
+  }
+  .inner-container {
+    display: block;
+    margin: auto;
   }
 }
