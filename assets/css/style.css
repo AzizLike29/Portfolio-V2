@@ -374,8 +374,17 @@ p.ci4,
 p.bt5,
 p.vsc,
 p.nb,
-p.canva {
+p.canva,
+p.data,
+p.clustering,
+p.excel,
+p.regression {
   outline: 1px solid #4b5563;
+}
+
+p.clustering {
+  display: flex;
+  justify-content: center;
 }
 
 p.figma:hover,
@@ -393,7 +402,11 @@ p.ci4:hover,
 p.bt5:hover,
 p.vsc:hover,
 p.nb:hover,
-p.canva:hover {
+p.canva:hover,
+p.data:hover,
+p.clustering:hover,
+p.excel:hover,
+p.regression:hover {
   background-color: #1f2937;
   color: #ffffff;
 }
@@ -404,7 +417,8 @@ p.vsc {
   text-overflow: ellipsis;
 }
 
-ul.description li {
+ul.description li,
+span.description {
   text-align: justify;
 }
 
@@ -721,7 +735,11 @@ p.contact {
 [data-bs-theme="dark"] p.bt5:hover,
 [data-bs-theme="dark"] p.vsc:hover,
 [data-bs-theme="dark"] p.nb:hover,
-[data-bs-theme="dark"] p.canva:hover {
+[data-bs-theme="dark"] p.canva:hover,
+[data-bs-theme="dark"] p.data:hover,
+[data-bs-theme="dark"] p.clustering:hover,
+[data-bs-theme="dark"] p.regression:hover,
+[data-bs-theme="dark"] p.excel:hover {
   background-color: #e5e7eb;
   color: #000 !important;
 }
