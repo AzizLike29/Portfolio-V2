@@ -36,7 +36,8 @@ a.download:hover {
 }
 
 /* home */
-p.text-me {
+p.text-me,
+p.description {
   text-align: justify;
 }
 
@@ -355,7 +356,8 @@ h2.project:hover::before {
 }
 
 #Streamed-Spotify,
-#Mockup-SDN {
+#Mockup-SDN,
+#Population-Percentages {
   padding-top: 2rem;
 }
 
@@ -383,13 +385,11 @@ p.canva,
 p.data,
 p.clustering,
 p.excel,
-p.regression {
+p.regression,
+p.tech,
+p.framework,
+p.database {
   outline: 1px solid #4b5563;
-}
-
-p.clustering {
-  display: flex;
-  justify-content: center;
 }
 
 p.figma:hover,
@@ -411,7 +411,10 @@ p.canva:hover,
 p.data:hover,
 p.clustering:hover,
 p.excel:hover,
-p.regression:hover {
+p.regression:hover,
+p.tech:hover,
+p.framework:hover,
+p.database:hover {
   background-color: #1f2937;
   color: #ffffff;
 }
@@ -422,8 +425,7 @@ p.vsc {
   text-overflow: ellipsis;
 }
 
-ul.description li,
-span.description {
+ul.description li {
   text-align: justify;
 }
 
@@ -744,7 +746,10 @@ p.contact {
 [data-bs-theme="dark"] p.data:hover,
 [data-bs-theme="dark"] p.clustering:hover,
 [data-bs-theme="dark"] p.regression:hover,
-[data-bs-theme="dark"] p.excel:hover {
+[data-bs-theme="dark"] p.excel:hover,
+[data-bs-theme="dark"] p.tech:hover,
+[data-bs-theme="dark"] p.framework:hover,
+[data-bs-theme="dark"] p.database:hover {
   background-color: #e5e7eb;
   color: #000 !important;
 }
@@ -759,7 +764,13 @@ p.contact {
     scroll-behavior: smooth;
   }
   p.chamjo,
+  p.regression,
+  p.data,
+  p.database,
+  p.framework,
+  p.clustering,
   p.lottie,
+  p.excel,
   p.android {
     white-space: nowrap;
     overflow: hidden;
