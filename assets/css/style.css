@@ -419,7 +419,9 @@ p.database:hover {
   color: #ffffff;
 }
 
-p.vsc {
+p.vsc,
+p.database,
+p.clustering {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
