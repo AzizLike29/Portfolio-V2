@@ -422,7 +422,9 @@ p.database:hover {
 
 p.vsc,
 p.database,
-p.clustering {
+p.clustering,
+p.data,
+p.regression {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
