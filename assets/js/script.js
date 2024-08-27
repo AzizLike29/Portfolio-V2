@@ -10,44 +10,62 @@
       return storedTheme;
     }
 
-    return window.matchMedia("(prefers-color-scheme: dark)").matches
-      ? "dark"
-      : "light";
+    const currentHour = new Date().getHours();
+    return currentHour >= 6 && currentHour < 18 ? "light" : "dark";
   };
 
   const setTheme = (theme) => {
-    if (
-      theme === "auto" &&
-      window.matchMedia("(prefers-color-scheme: dark)").matches
-    ) {
-      document.documentElement.setAttribute("data-bs-theme", "dark");
+    if (theme === "auto") {
+      const currentHour = new Date().getHours();
+      const isDaytime = currentHour >= 6 && currentHour < 18;
+      const autoTheme = isDaytime ? "light" : "dark";
+
+      document.documentElement.setAttribute("data-bs-theme", autoTheme);
+      showActiveTheme("auto");
     } else {
       document.documentElement.setAttribute("data-bs-theme", theme);
+      showActiveTheme(theme);
     }
+    setStoredTheme(theme);
   };
 
   const showActiveTheme = (theme) => {
-    const activeThemeIcon = document.querySelector(".theme-icon-active");
-    const btnToActive = document.querySelector(
-      `[data-bs-theme-value="${theme}"]`
+    const themeIcon = document.querySelector(".theme-icon-active");
+    if (!themeIcon) return;
+
+    themeIcon.classList.remove(
+      "bi-sun-fill",
+      "bi-moon-stars-fill",
+      "bi-circle-half"
     );
-    const iconClass = btnToActive
-      .querySelector("i")
-      .getAttribute("data-theme-icon");
+
+    let iconClass;
+    if (theme === "light") {
+      iconClass = "bi-sun-fill";
+    } else if (theme === "dark") {
+      iconClass = "bi-moon-stars-fill";
+    } else {
+      const currentHour = new Date().getHours();
+      iconClass =
+        currentHour >= 6 && currentHour < 18
+          ? "bi-sun-fill"
+          : "bi-moon-stars-fill";
+    }
+
+    themeIcon.classList.add(iconClass);
 
     document.querySelectorAll("[data-bs-theme-value]").forEach((element) => {
-      element.classList.remove("active");
+      element.classList.toggle(
+        "active",
+        element.getAttribute("data-bs-theme-value") === theme
+      );
     });
-
-    btnToActive.classList.add("active");
-
-    if (activeThemeIcon) {
-      activeThemeIcon.className = `bi ${iconClass} theme-icon-active`;
-    }
   };
 
+  // Set tema pada saat halaman dimuat
   setTheme(getPreferredTheme());
 
+  // Perubahan tema light dan dark
   window
     .matchMedia("(prefers-color-scheme: dark)")
     .addEventListener("change", () => {
@@ -57,17 +75,22 @@
       }
     });
 
+  // Halaman tema aktif
   window.addEventListener("DOMContentLoaded", () => {
-    showActiveTheme(getPreferredTheme());
-
+    // Toggle tema
     document.querySelectorAll("[data-bs-theme-value]").forEach((toggle) => {
       toggle.addEventListener("click", () => {
         const theme = toggle.getAttribute("data-bs-theme-value");
-        setStoredTheme(theme);
         setTheme(theme);
-        showActiveTheme(theme);
       });
     });
+
+    // Update ikon setiap menit untuk tema "auto"
+    setInterval(() => {
+      if (getStoredTheme() === "auto") {
+        setTheme("auto");
+      }
+    }, 60000);
   });
 })();
 
