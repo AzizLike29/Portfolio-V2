@@ -386,6 +386,8 @@ p.canva,
 p.data,
 p.clustering,
 p.excel,
+p.python,
+p.anaconda,
 p.regression,
 p.tech,
 p.framework,
@@ -412,6 +414,8 @@ p.canva:hover,
 p.data:hover,
 p.clustering:hover,
 p.excel:hover,
+p.python:hover,
+p.anaconda:hover,
 p.regression:hover,
 p.tech:hover,
 p.framework:hover,
@@ -591,6 +595,11 @@ footer {
   margin-top: -20px;
 }
 
+#link-github,
+#link-fb {
+  color: #000000;
+}
+
 /* Mode Dark */
 [data-bs-theme="dark"] h2.home,
 [data-bs-theme="dark"] h2.about,
@@ -752,6 +761,8 @@ p.contact {
 [data-bs-theme="dark"] p.clustering:hover,
 [data-bs-theme="dark"] p.regression:hover,
 [data-bs-theme="dark"] p.excel:hover,
+[data-bs-theme="dark"] p.python:hover,
+[data-bs-theme="dark"] p.anaconda:hover,
 [data-bs-theme="dark"] p.tech:hover,
 [data-bs-theme="dark"] p.framework:hover,
 [data-bs-theme="dark"] p.database:hover {
