@@ -13,7 +13,7 @@ function sendEmail() {
   Email.send({
     Host: "smtp.elasticemail.com",
     Username: "abdulfirdaus590@gmail.com",
-    Password: "A22B870033D10BA179A67C16443F5FFC45A4",
+    Password: "27FF159C670ECB4712C04546EC82B3F50260",
     To: "abdulfirdaus590@gmail.com",
     From: "abdulfirdaus590@gmail.com",
     Subject: subject.value,
