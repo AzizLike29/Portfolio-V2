@@ -315,7 +315,7 @@ h2.skill:hover::before {
 }
 
 .anim:hover {
-  animation: 1.5s infinite anim;
+  animation: anim 1.5s forwards;
 }
 
 /* experience */
