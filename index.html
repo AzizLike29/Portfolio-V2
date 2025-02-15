@@ -30,6 +30,11 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
     />
+    <!-- Viewer Animate -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.10.2/viewer.min.css"
+    />
   </head>
   <body>
     <!-- Start Navbar -->
@@ -974,7 +979,7 @@
             <div class="card shadow bg-body h-100">
               <img
                 src="assets/img/Registration-Online-Monitoring.png"
-                class="rounded w-100 h-100"
+                class="rounded w-100 h-100 image"
                 alt="Registration Online Monitoring"
               />
             </div>
@@ -1068,7 +1073,7 @@
             <div class="card shadow bg-body h-100">
               <img
                 src="assets/img/Population-Percentage.png"
-                class="rounded w-100 h-100"
+                class="rounded w-100 h-100 image"
                 alt="Percentage of Population"
               />
             </div>
@@ -1172,7 +1177,7 @@
             <div class="card shadow bg-body h-100">
               <img
                 src="assets/img/Streamed-Spotify.png"
-                class="rounded w-100 h-100"
+                class="rounded w-100 h-100 image"
                 alt="Streamed Spotify"
               />
             </div>
@@ -1252,7 +1257,7 @@
             <div class="card shadow bg-body h-100">
               <img
                 src="assets/img/Mockup-SDN.png"
-                class="rounded w-100 h-100"
+                class="rounded w-100 h-100 image"
                 alt="UIX SDN Karang Asih 01"
               />
             </div>
@@ -1334,7 +1339,7 @@
             <div class="card shadow bg-body h-100">
               <img
                 src="assets/img/Mockup-UIX Richeese Factory.png"
-                class="rounded w-100 h-100"
+                class="rounded w-100 h-100 image"
                 alt="UIX Richeese Factory"
               />
             </div>
@@ -1413,7 +1418,7 @@
             <div class="card shadow bg-body h-100">
               <img
                 src="assets/img/Mockup-UIX Shoe Store.png"
-                class="rounded w-100 h-100"
+                class="rounded w-100 h-100 image"
                 alt="UIX Shoe Store App Design"
               />
             </div>
@@ -1488,7 +1493,7 @@
             <div class="card shadow bg-body h-100">
               <img
                 src="assets/img/Mockup - Company Profile.png"
-                class="rounded w-100 h-100"
+                class="rounded w-100 h-100 image"
                 alt="Company Profile Landing Page Website"
               />
             </div>
@@ -1566,7 +1571,7 @@
             <div class="card shadow bg-body h-100">
               <img
                 src="assets/img/Mockup - App Kost-an.id.png"
-                class="rounded w-100 h-100"
+                class="rounded w-100 h-100 image"
                 alt="App Kost-an.Id"
               />
             </div>
@@ -1640,7 +1645,7 @@
             <div class="card shadow bg-body h-100">
               <img
                 src="assets/img/Project - RT Cash Management Database.png"
-                class="rounded w-100 h-100"
+                class="rounded w-100 h-100 image"
                 alt="Website RT Cash Management Database"
               />
             </div>
@@ -1731,7 +1736,7 @@
             <div class="card shadow bg-body h-100">
               <img
                 src="assets/img/Mockup - Student Data System.png"
-                class="rounded w-100 h-100"
+                class="rounded w-100 h-100 image"
                 alt="Project Student Data System"
               />
             </div>
@@ -1814,7 +1819,7 @@
             <div class="card shadow bg-body h-100">
               <img
                 src="assets/img/Mockup - Simple Multi Project.png"
-                class="rounded w-100 h-100"
+                class="rounded w-100 h-100 image"
                 alt="Simple Multi Project"
               />
             </div>
@@ -2322,6 +2327,18 @@
       AOS.init({
         once: true,
         duration: 800,
+      });
+    </script>
+
+    <!-- Viewer Animate -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.10.2/viewer.min.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const images = document.querySelectorAll(".image");
+        images.forEach((image) => {
+          new Viewer(image);
+        });
       });
     </script>
 
