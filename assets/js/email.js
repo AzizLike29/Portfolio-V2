@@ -115,12 +115,20 @@ function sendEmail() {
   }).then((message) => {
     loadingIndicator.classList.add("d-none");
     if (message == "OK") {
+      // Audio Success Play
+      const successAudio = new Audio("assets/audio/success-tone.mp3");
+      successAudio.volume = 1.0;
+      successAudio.play();
       Swal.fire({
         title: "Success!",
         text: "Congrats, Sent message succesfully!",
         icon: "success",
       });
     } else {
+      // Audio Error Play
+      const errorAudio = new Audio("assets/audio/error-tone.mp3");
+      errorAudio.volume = 1.0;
+      errorAudio.play();
       Swal.fire({
         title: "Error!",
         text: "Failed to send the email. Please try again later.",
