@@ -4,11 +4,105 @@ const email = document.getElementById("email");
 const subject = document.getElementById("subject");
 const message = document.getElementById("message");
 
+function generateEmailBody() {
+  return `
+    <div style="max-width: 600px; margin: 0 auto; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #333; background-color: #ffffff;">
+      
+      <!-- Header -->
+      <div style="background-color: #111827; padding: 24px; text-align: center;">
+        <h1 style="margin: 0; color: white; font-size: 20px; font-weight: 600;">
+          New Contact Form Submission
+        </h1>
+      </div>
+      
+      <!-- Content -->
+      <div style="padding: 32px 24px; background-color: #ffffff; border: 1px solid #e5e7eb;">
+        
+        <!-- Contact Details -->
+        <div style="margin-bottom: 32px;">
+          <h2 style="color: #111827; font-size: 16px; font-weight: 600; margin: 0 0 16px 0; text-transform: uppercase; letter-spacing: 0.5px;">
+            Contact Details
+          </h2>
+          
+          <table style="width: 100%; border-collapse: collapse;">
+            <tr>
+              <td style="padding: 12px 0; border-bottom: 1px solid #f9fafb; font-weight: 600; color: #6b7280; width: 100px;">
+                Name
+              </td>
+              <td style="padding: 12px 0; border-bottom: 1px solid #f9fafb; color: #111827;">
+                ${fullName.value}
+              </td>
+            </tr>
+            <tr>
+              <td style="padding: 12px 0; border-bottom: 1px solid #f9fafb; font-weight: 600; color: #6b7280;">
+                Email
+              </td>
+              <td style="padding: 12px 0; border-bottom: 1px solid #f9fafb; color: #111827;">
+                <a href="mailto:${
+                  email.value
+                }" style="color: #10b981; text-decoration: none;">
+                  ${email.value}
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td style="padding: 12px 0; font-weight: 600; color: #6b7280;">
+                Subject
+              </td>
+              <td style="padding: 12px 0; color: #111827; font-weight: 500;">
+                ${subject.value}
+              </td>
+            </tr>
+          </table>
+        </div>
+        
+        <!-- Message -->
+        <div style="margin-bottom: 32px;">
+          <h2 style="color: #111827; font-size: 16px; font-weight: 600; margin: 0 0 16px 0; text-transform: uppercase; letter-spacing: 0.5px;">
+            Message
+          </h2>
+          <div style="background-color: #f9fafb; padding: 20px; border-radius: 6px; color: #111827; line-height: 1.7;">
+            ${message.value.replace(/\n/g, "<br>")}
+          </div>
+        </div>
+        
+        <!-- Reply Button -->
+        <div style="text-align: center; margin-bottom: 24px;">
+          <a href="mailto:${
+            email.value
+          }" style="display: inline-block; background-color: #10b981; color: white; padding: 12px 24px; text-decoration: none; font-weight: 600; font-size: 14px; border-radius: 4px;">
+            Reply to ${fullName.value}
+          </a>
+        </div>
+        
+        <!-- Timestamp -->
+        <div style="text-align: center; padding: 16px; background-color: #f9fafb; border-radius: 4px;">
+          <p style="margin: 0; font-size: 14px; color: #6b7280;">
+            Received on ${new Date().toLocaleDateString("en-US", {
+              weekday: "long",
+              year: "numeric",
+              month: "long",
+              day: "numeric",
+              hour: "2-digit",
+              minute: "2-digit",
+            })}
+          </p>
+        </div>
+      </div>
+      
+      <!-- Footer -->
+      <div style="background-color: #f9fafb; padding: 20px; text-align: center; border-top: 1px solid #f9fafb;">
+        <p style="margin: 0; font-size: 13px; color: #6b7280;">
+          This email was sent from your portfolio contact form.
+        </p>
+      </div>
+    </div>
+  `;
+}
+
 function sendEmail() {
   const loadingIndicator = document.getElementById("loadingIndicator");
   loadingIndicator.classList.remove("d-none");
-
-  const bodyMessage = `name: ${fullName.value}<br> email: ${email.value}<br> subject: ${subject.value}<br> message: ${message.value}`;
 
   Email.send({
     Host: "smtp.elasticemail.com",
@@ -17,7 +111,7 @@ function sendEmail() {
     To: "abdulfirdaus590@gmail.com",
     From: "abdulfirdaus590@gmail.com",
     Subject: subject.value,
-    Body: bodyMessage,
+    Body: generateEmailBody(),
   }).then((message) => {
     loadingIndicator.classList.add("d-none");
     if (message == "OK") {

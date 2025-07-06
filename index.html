@@ -868,7 +868,7 @@
                 </li>
               </ul>
               <div
-                class="link-project row row-cols-1 row-cols-sm-2 row-cols-md-4"
+                class="link-project row row-cols-2 row-cols-sm-2 row-cols-md-4"
               >
                 <div class="col project-one">
                   <a
@@ -2433,8 +2433,9 @@
           class="container-fluid fw-medium bg-body-secondary d-flex justify-content-center p-3"
         >
           <p class="text-footer mt-1 mb-0">
-            <i class="bi bi-c-circle fw-normal"></i> 2023 |
-            <span>Designed</span> and <span> coded </span> with
+            <i class="bi bi-c-circle fw-normal"></i>
+            <span id="current-year"></span> | <span>Designed</span> and
+            <span> coded </span> with
             <i class="bi bi-heart-fill text-danger heart"></i> by Aziz
           </p>
         </div>
@@ -2462,6 +2463,7 @@
 
     <script>
       document.addEventListener("DOMContentLoaded", function () {
+        document.getElementById("current-year").textContent = new Date().getFullYear();
         const images = document.querySelectorAll(".image");
         images.forEach((image) => {
           new Viewer(image);
