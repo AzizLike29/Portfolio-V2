@@ -63,7 +63,24 @@
   };
 
   // Set tema pada saat halaman dimuat
-  setTheme(getPreferredTheme());
+  window.addEventListener("DOMContentLoaded", () => {
+    setTheme(getPreferredTheme());
+
+    // Toggle tema
+    document.querySelectorAll("[data-bs-theme-value]").forEach((toggle) => {
+      toggle.addEventListener("click", () => {
+        const theme = toggle.getAttribute("data-bs-theme-value");
+        setTheme(theme);
+      });
+    });
+
+    // Update ikon setiap menit untuk tema "auto"
+    setInterval(() => {
+      if (getStoredTheme() === "auto") {
+        setTheme("auto");
+      }
+    }, 60000);
+  });
 
   // Perubahan tema light dan dark
   window
@@ -122,5 +139,8 @@ document.addEventListener("DOMContentLoaded", function () {
   );
 
   // Carousel
-  const carousel = new bootstrap.Carousel("#carouselExampleInterval");
+  const carouselEl = document.querySelector("#carouselExampleInterval");
+  if (carouselEl) {
+    new bootstrap.Carousel(carouselEl);
+  }
 });
