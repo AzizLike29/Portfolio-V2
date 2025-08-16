@@ -2702,17 +2702,6 @@
     <!-- Viewer Animate -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.10.2/viewer.min.js"></script>
 
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        document.getElementById("current-year").textContent =
-          new Date().getFullYear();
-        const images = document.querySelectorAll(".image");
-        images.forEach((image) => {
-          new Viewer(image);
-        });
-      });
-    </script>
-
     <!-- Template SweetAlert2 -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- Template SMTP JS -->
@@ -2724,6 +2713,8 @@
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
     ></script>
+    <!-- Template Setting Year -->
+    <script src="assets/js/currentYear.js"></script>
     <!-- Template Email js -->
     <script src="assets/js/email.js"></script>
     <!-- Template copy and paste js -->
