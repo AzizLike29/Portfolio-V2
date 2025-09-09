@@ -1,0 +1,227 @@
+{
+    "head": {
+        "title": "Portfolio Aziz"
+    },
+
+    "nav": {
+        "language": {
+        "en": "Inggris",
+        "id": "Indonesia"
+        },
+        "theme": {
+        "light": "Terang",
+        "dark": "Gelap",
+        "auto": "Otomatis"
+        },
+        "section": {
+        "home": "Beranda",
+        "about": "Tentang",
+        "education": "Pendidikan",
+        "skill": "Keahlian",
+        "experience": "Pengalaman",
+        "certificate": "Sertifikat",
+        "contact": "Kontak",
+        "cv": "Unduh CV",
+        "portfolioPdf": "Unduh Portofolio PDF",
+        "name": "Hai, saya Aziz"
+        }
+    },
+
+    "home": {
+        "section": {
+        "textName": "Saya adalah pengembang web yang sedang meniti jalur menjadi pengembang web full-stack. Meski masih dalam tahap belajar, saya telah terlibat aktif dalam beberapa proyek yang membantu membangun fondasi kuat pada pemrograman JavaScript dan PHP. Proyek-proyek tersebut menjadi wadah bagi saya untuk mengasah pemahaman atas konsep dasar dan praktik terbaik dalam pengembangan web. Saya selalu antusias terhadap pengembangan web dan desain UI/UX. Setiap tantangan di tiap proyek adalah kesempatan untuk terus mengembangkan kemampuan, dengan tujuan akhir menjadi pengembang full-stack yang kompeten dan mampu menghadirkan solusi inovatif serta berkualitas.",
+        "live": "Bekasi Utara, Jawa Barat, Indonesia",
+        "dot": "Tersedia untuk Proyek Baru"
+        }
+    },
+
+    "about": {
+        "section": "Tentang",
+        "textName": "Saya lulusan jurusan Teknik Informatika yang memiliki keahlian di bidang pemrograman dan desain grafis serta pengalaman mengerjakan berbagai proyek. Dengan antusiasme tinggi, saya selalu bersemangat untuk terus belajar dan beradaptasi dengan perkembangan terbaru di industri teknologi informasi. Kemampuan komunikasi yang baik, kerja tim yang solid, serta kesiapan berkontribusi pada proyek menantang adalah aset saya. Saat ini saya mencari pengalaman kerja yang memungkinkan saya menerapkan dan mengembangkan keterampilan yang telah saya peroleh sejauh ini. Saya yakin dedikasi saya untuk belajar dan kontribusi positif terhadap tim dapat memberi nilai tambah bagi perusahaan."
+    },
+
+    "edu": {
+        "section": {
+        "titleAbout": "Pendidikan dan Organisasi",
+        "defAbout": "Riwayat pendidikan dan pengalaman organisasi",
+
+        "titleSchool": "Universitas Pelita Bangsa",
+        "defSchool": "Program Sarjana di Universitas Pelita Bangsa (UPB) merupakan kampus swasta hasil perubahan bentuk dari penggabungan antara Sekolah Tinggi Ilmu Ekonomi (STIE) dan Sekolah Tinggi Teknik (STT) sesuai dengan Keputusan Menteri Pendidikan Nasional Republik Indonesia Nomor: 664/KPTI/I/2019 tanggal 2 Agustus 2019.",
+        "pointOne": "Juara 3 lomba desain poster bertema pendidikan.",
+        "pointTwo": "Menyusun karya ilmiah bidang TIK untuk Gemastik XV di Universitas Brawijaya.",
+        "pointThree": "Aktif di Himpunan Mahasiswa Teknik Informatika (HIMATIF) selama 8 bulan.",
+        "pointFour": "Aktif menyelenggarakan seminar dan lokakarya nasional.",
+        "pointFive": "Mengajar mata kuliah Interaksi Manusia dan Komputer membahas materi UI/UX Design serta praktik aplikasinya.",
+        "date": "2021 - Sekarang",
+
+        "titleSchSmk": "SMK Bina Mandiri Bekasi",
+        "defSchSmk": "SMKS BINA MANDIRI merupakan salah satu satuan pendidikan jenjang SMK di Bintara, Kecamatan Bekasi Barat, Kota Bekasi, Jawa Barat. Dalam pelaksanaannya, SMKS BINA MANDIRI berada di bawah naungan Kementerian Pendidikan dan Kebudayaan.",
+        "pointOneSmk": "Mempelajari penggunaan proxy, instalasi Ubuntu dan Windows, serta perakitan kabel jaringan (straight dan crossover).",
+        "pointTwoSmk": "Mempelajari penggunaan Adobe Photoshop dan dasar-dasar bahasa C++.",
+        "pointThreeSmk": "Lulus uji kompetensi dengan hasil baik.",
+        "dateSmk": "2018 - 2021",
+
+        "titleOrgnz": "Himpunan Mahasiswa Teknik Informatika",
+        "jobOrgnz": "Departemen Komunikasi dan Media Informasi",
+        "pointOneOrgnz": "Mengelola 3 akun media sosial untuk meningkatkan keterlibatan.",
+        "pointTwoOrgnz": "Merencanakan dan membuat 30+ konten per bulan untuk meningkatkan visibilitas.",
+        "pointThreeOrgnz": "Menyebarkan informasi kepada 1000+ anggota HIMATIF serta audiens eksternal.",
+        "pointFourOrgnz": "Mendokumentasikan 10+ kegiatan setiap bulan untuk arsip dan publikasi.",
+        "dateOrgnz": "Mei - Desember 2022",
+
+        "titleOrgns": "Karang Taruna",
+        "jobOrgns": "Bidang Olahraga",
+        "pointOneOrgns": "Merencanakan dan melaksanakan kegiatan olahraga, seperti turnamen, lomba, atau aktivitas rekreasi.",
+        "pointTwoOrgns": "Mengusulkan dan mengembangkan program olahraga yang dapat meningkatkan partisipasi dan prestasi.",
+        "pointThreeOrgns": "Menyesuaikan program dengan kebutuhan dan minat anggota Karang Taruna.",
+        "dateOrgns": "Juli 2023 - Sekarang"
+        }
+    },
+
+    "skill": {
+        "title": "Keahlian",
+        "textTitle": "Keahlian, alat, dan teknologi yang saya kuasai"
+    },
+
+    "exp": {
+        "section": {
+        "title": "Pengalaman",
+        "defExp": "Berikut ringkasan singkat pengalaman terbaru saya"
+        },
+        "section1": {
+        "title": "PT.Food Station Tjipinang Jaya (PERSERODA)",
+        "defJob": "Programmer TI",
+        "jobOne": "Melakukan maintenance dan pengembangan lanjutan pada platform e-commerce FoodConnect dan FoodHub, termasuk perbaikan bug dan optimasi fitur yang ada.",
+        "jobTwo": "Mengintegrasikan sistem pembayaran Winpay (virtual account, QRIS, dan e-wallet), mencakup UI/UX frontend, logika backend, penanganan callback, dan pencatatan transaksi.",
+        "jobThree": "Mempresentasikan alur kerja dan fungsi sistem FoodHub secara teknis kepada pihak eksternal (klien atau mitra), termasuk arsitektur modul dan proses bisnis utama.",
+        "jobFour": "Mengawasi pengumpulan data harian dari platform mesin penjual otomatis selama Jakarta Fair (PRJ), mengolah dan menganalisis data di Excel, serta membuat laporan pivot untuk tinjauan manajemen.",
+        "jobFive": "Meningkatkan efisiensi operasional dengan membangun kartu harga dan fitur integrasi pemesanan WhatsApp ke dalam sistem MIS, memungkinkan pemesanan langsung dari WhatsApp dan pencetakan struk otomatis.",
+        "jobSix": "Membangun dasbor internal untuk menampilkan data penjualan dan pertumbuhan pelanggan secara visual. Dasbor menampilkan perbandingan target dan realisasi penjualan bulanan serta tren pertumbuhan pelanggan dari beberapa divisi untuk mendukung analisis dan pengambilan keputusan.",
+        "date": "19 Mei 2025 - Sekarang"
+        },
+        "section2": {
+        "title": "PT.Niramas Utama (INACO)",
+        "defJob": "Pengembang Web Full-Stack",
+        "projectOne": "E-Sign Pd",
+        "jobOne": "Membantu pengguna dalam pengembangan web.",
+        "jobTwo": "Membangun situs E-Sign Pd (Electronic Sign Product Development) untuk mengelola pembuatan formulir online.",
+        "jobThree": "Membuat 7 fitur, termasuk (registrasi, login, lupa kata sandi, pengguna, dasbor, formulir, dan persetujuan).",
+        "jobFour": "Fitur formulir mencakup hingga 8 jenis formulir berbeda, seperti surat pengantar sampel, pengecekan sampel other, dan karton. Formulir dibuat secara dinamis menggunakan HTML, CSS, dan JavaScript.",
+        "jobFive": "Proses persetujuan bertahap dengan QR code, disesuaikan dengan akses masing-masing pengguna.",
+
+        "projectTwo": "E-Nota Retur",
+        "jobSix": "Membantu pengembangan web untuk divisi akuntansi.",
+        "jobSeven": "Memigrasikan aplikasi dari desktop ke platform web menggunakan Laravel.",
+        "jobEight": "Membangun situs E-Nota Retur (Nota Retur Elektronik).",
+        "jobNine": "Menambahkan fitur registrasi, login, lupa kata sandi, kelola profil, manajemen nota, manajemen pengguna, riwayat nota (riwayat edit dan hapus), serta Master Data NPWP.",
+        "jobTen": "Mengimplementasikan fitur manajemen nota dengan kemampuan ekspor data ke Excel dan unduh template Excel.",
+        "jobEleven": "Menyediakan fungsi untuk melihat detail nota, ekspor ke PDF, dan menghapus data nota sesuai kebutuhan."
+        },
+        "section3": {
+        "title": "PT.Kalbe Farma, Tbk",
+        "defJob": "Pengembang Web Full-Stack",
+        "jobOne": "Membantu pengguna mengelola data manufaktur dalam pengembangan web.",
+        "jobTwo": "Membuat fitur master yang terdiri dari (NIE (Nomor Izin Edar), Produk, Kategori Produk, Bentuk Sediaan).",
+        "jobThree": "Membuat fitur transaksi yang terdiri dari (QA Reg Admin, RA (Regulatory Affairs)).",
+        "jobFour": "Membuat fitur jejak audit (audit trail) untuk mengekspor data dalam bentuk PDF.",
+        "jobFive": "Pengujian ke QA pada bulan April, mendapatkan progres 70%.",
+        "jobSix": "Presentasi hasil proyek pada bulan Juni dengan hasil akhir progres 90%.",
+        "date": "19 Februari - 30 Juni 2024"
+        },
+        "section4": {
+        "title": "Kampus Merdeka - Studi Independen Batch 5",
+        "defJob": "Program Web Developer",
+        "jobOne": "Proyek Akhir 1 membuat website company profile dengan HTML, CSS, dan JavaScript.",
+        "jobTwo": "Proyek Akhir 2 membuat landing page website, mengimplementasikan desain dari Figma Community menggunakan HTML, CSS, dan JavaScript.",
+        "jobThree": "Proyek Akhir 3 membuat landing page website, mengimplementasikan desain dari Figma Community menggunakan HTML, CSS, dan JavaScript.",
+        "jobFour": "Proyek Akhir 4 membuat website pengambilan data API prakiraan cuaca menggunakan HTML, CSS, dan JavaScript.",
+        "bdg1": "Proyek 1",
+        "bdg2": "Proyek 2",
+        "bdg3": "Proyek 3",
+        "bdg4": "Proyek 4",
+        "date": "14 Agustus - 31 Desember 2023"
+        },
+        "section5": {
+        "title": "Digital Talent dan Politeknik Negeri Malang",
+        "defJob": "Pengembang Web Junior",
+        "descJob": "Proyek akhir adalah membuat aplikasi mobile Kost-an.id. Fitur wajib meliputi halaman login, layar sambutan, serta fitur tambah, lihat, edit, dan hapus data menggunakan bahasa pemrograman Java dan basis data Firebase.",
+        "date": "13 Juni - 28 Juli 2023"
+        },
+        "section6": {
+        "title": "PT.Braja Mukti Cakra",
+        "defJob": "Admin Bahan Baku",
+        "jobOne": "Menginput data barang masuk dan pasokan.",
+        "jobTwo": "Mencetak identitas barang (tag FIFO).",
+        "jobThree": "Memeriksa kesesuaian barang dengan identitas yang telah dicetak.",
+        "jobFour": "Menginput data barang case bearing dan rotor brake.",
+        "jobFive": "Mengelola dan merapikan data.",
+        "date": "Juli 2019 - Oktober 2019"
+        }
+    },
+
+    "pjct": {
+        "section": {
+        "title": "Pengalaman Proyek",
+        "defPjct": "Beberapa proyek yang patut dicatat yang telah saya bangun"
+        },
+        "section1": {
+        "title": "Website Food Connect Store",
+        "date": "Mei - Juli 2025",
+        "desc": "Food Connect adalah situs e-commerce yang saya kembangkan untuk mempermudah proses jual beli kebutuhan pokok secara daring. Platform ini menawarkan berbagai produk seperti beras, gula, susu, tepung terigu, dan bahan pangan lainnya."
+        },
+        "section2": {
+        "title": "Website Klasifikasi KNN",
+        "date": "Desember 2024 - Januari 2025",
+        "desc": "Sistem ini dirancang untuk mendeskripsikan proses penerapan model machine learning ke dalam sistem web yang dibangun dengan bahasa pemrograman PHP. Model machine learning dikembangkan dan diuji menggunakan Python, kemudian diekspor dan diintegrasikan ke sistem berbasis PHP. Proses ini memungkinkan pemrosesan data dan prediksi dari model dapat diakses langsung melalui antarmuka web."
+        },
+        "section3": {
+        "title": "Pemantauan Pendaftaran Online",
+        "date": "19 Februari - 30 Juni 2024",
+        "desc": "Sistem Registration Online Monitoring adalah sistem pengumpulan dokumen dan pemantauan proses pendaftaran yang dilakukan di dalam aplikasi. Pendaftaran meliputi perpanjangan (registrasi ulang), variasi perubahan, dan penambahan data BPOM. Semua pendaftaran yang sedang berjalan untuk persiapan dokumen dapat dipantau melalui sistem, dan progres masing-masing pendaftaran dapat dilihat. Selain itu, sistem memudahkan untuk melihat kelengkapan dokumen pendaftaran karena dokumen yang diperlukan telah dipilih di dalam sistem."
+        },
+        "section4": {
+        "title": "Analisis Persentase Penduduk dengan Keluhan Kesehatan menurut Provinsi, Jenis Wilayah, dan Jenis Kelamin Menggunakan Algoritma K-Means Clustering (2020–2022)",
+        "date": "Desember 2023",
+        "jobOne": "Berhasil menerapkan konsep data mining dengan metode analisis deskriptif (mencari nilai rata-rata) serta menggunakan algoritma k-means clustering.",
+        "jobTwo": "Berdasarkan data penelitian dari Badan Pusat Statistik, rata-rata total keseluruhan laki-laki dan perempuan tertinggi terjadi pada tahun 2020.",
+        "jobThree": "Berdasarkan pengujian keluhan kesehatan di 34 provinsi, Aceh menempati peringkat pertama dengan jumlah keluhan kesehatan terbanyak.",
+        "jobFour": "Berdasarkan pengujian, perempuan termasuk kelompok dengan tingkat keluhan kesehatan yang tinggi di Indonesia.",
+        "jobFive": "Berdasarkan pengujian, wilayah perdesaan memiliki tingkat keluhan kesehatan yang relatif tinggi di Indonesia.",
+        "jobSix": "Berdasarkan pengujian, peningkatan terbesar terjadi di Sulawesi Selatan, sementara penurunan terjadi di Bali."
+        },
+        "sectionAll": "Klik di sini!"
+    },
+
+    "cntct": {
+        "section": {
+        "title": "Formulir Kontak",
+        "textTitle": "Ingin berdiskusi tentang proyek atau punya pertanyaan? Gunakan formulir kontak di bawah ini."
+        },
+        "input": {
+        "name": "Nama Anda",
+        "plc": {
+            "name": "Silakan tulis nama lengkap Anda",
+            "subject": "Pertanyaan tentang artikel Anda",
+            "message": "Pesan Anda dimulai dengan..."
+        },
+        "email": "Email Anda",
+        "subject": "Subjek",
+        "message": "Pesan"
+        }
+    },
+
+    "fot": {
+        "section": {
+        "title": "Hubungi Saya",
+        "textTitle": "Selanjutnya apa? Jangan ragu untuk menghubungi saya jika Anda mencari pengembang, memiliki pertanyaan, atau sekadar ingin terhubung.",
+        "medSoc": "Anda juga dapat menemukan saya di platform berikut!"
+        },
+        "bot": {
+        "one": "Dirancang",
+        "two": "dan",
+        "three": "dikodekan",
+        "four": "dengan",
+        "five": "oleh Aziz"
+        }
+    }
+}

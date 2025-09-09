@@ -7,7 +7,7 @@
       name="google-site-verification"
       content="XpIGGxDYPq8goTP5Wq-qQlMPLS5ahgNcMolgUVyEGw0"
     />
-    <title>Portfolio Aziz</title>
+    <title data-i18n="head.title">Portfolio Aziz</title>
     <!-- Font Awesome -->
     <script
       src="https://kit.fontawesome.com/35dd348907.js"
@@ -20,12 +20,6 @@
     <!-- Template Normalize CSS -->
     <link href="assets/css/normalize.css" rel="stylesheet" />
     <!-- Bootstrap Stylesheet -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
     <!-- AOS Library -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -54,62 +48,103 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="dropdown nav-item nav-link ms-auto">
-          <button
-            class="btn nav-item nav-link dropdown-toggle mx-2"
-            type="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-            title="Toggle Theme"
-            data-bs-toggle="tooltip"
-            data-bs-title="Toggle Theme"
-          >
-            <i
-              class="bi bi-sun-fill theme-icon-active"
-              data-theme-icon-active="bi-sun-fill"
-            ></i>
-          </button>
-          <ul class="dropdown-menu dropdown-menu-end">
-            <li>
-              <button
-                class="dropdown-item d-flex align-items-center"
-                type="button"
-                data-bs-theme-value="light"
-              >
-                <i
-                  class="bi bi-sun-fill me-2 opacity-50"
-                  data-theme-icon="bi-sun-fill"
-                ></i>
-                Light
-              </button>
-            </li>
-            <li>
-              <button
-                class="dropdown-item d-flex align-items-center"
-                type="button"
-                data-bs-theme-value="dark"
-              >
-                <i
-                  class="bi bi-moon-stars-fill me-2 opacity-50"
-                  data-theme-icon="bi-moon-stars-fill"
-                ></i>
-                Dark
-              </button>
-            </li>
-            <li>
-              <button
-                class="dropdown-item d-flex align-items-center"
-                type="button"
-                data-bs-theme-value="auto"
-              >
-                <i
-                  class="bi bi-circle-half me-2 opacity-50"
-                  data-theme-icon="bi-circle-half"
-                ></i>
-                Auto
-              </button>
-            </li>
-          </ul>
+        <div class="d-flex align-items-center ms-auto">
+          <!-- Dropdown select language -->
+          <div class="dropdown">
+            <button
+              class="btn nav-item nav-link dropdown-toggle mx-2"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              aria-label="Select Language"
+            >
+              <i class="bi bi-translate me-1"></i>
+              <span id="langFlag" class="text-uppercase"></span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li>
+                <button
+                  class="dropdown-item d-flex align-items-center"
+                  type="button"
+                  data-lang="en"
+                  data-i18n="nav.language.en"
+                >
+                  English
+                </button>
+              </li>
+              <li>
+                <button
+                  class="dropdown-item d-flex align-items-center"
+                  type="button"
+                  data-lang="id"
+                  data-i18n="nav.language.id"
+                >
+                  Indonesian
+                </button>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Dropdown toggle theme -->
+          <div class="dropdown nav-item nav-link ms-auto">
+            <button
+              class="btn nav-item nav-link dropdown-toggle mx-2"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              id="themeDropdown"
+              title="Toggle Theme"
+            >
+              <i
+                class="bi bi-sun-fill theme-icon-active"
+                data-theme-icon-active="bi-sun-fill"
+              ></i>
+            </button>
+            <ul
+              class="dropdown-menu dropdown-menu-end"
+              aria-labelledby="themeDropdown"
+            >
+              <li>
+                <button
+                  class="dropdown-item d-flex align-items-center"
+                  type="button"
+                  data-bs-theme-value="light"
+                >
+                  <i
+                    class="bi bi-sun-fill me-2 opacity-50"
+                    data-theme-icon="bi-sun-fill"
+                  ></i>
+                  <span data-i18n="nav.theme.light">Light</span>
+                </button>
+              </li>
+              <li>
+                <button
+                  class="dropdown-item d-flex align-items-center"
+                  type="button"
+                  data-bs-theme-value="dark"
+                >
+                  <i
+                    class="bi bi-moon-stars-fill me-2 opacity-50"
+                    data-theme-icon="bi-moon-stars-fill"
+                  ></i>
+                  <span data-i18n="nav.theme.dark">Dark</span>
+                </button>
+              </li>
+              <li>
+                <button
+                  class="dropdown-item d-flex align-items-center"
+                  type="button"
+                  data-bs-theme-value="auto"
+                >
+                  <i
+                    class="bi bi-circle-half me-2 opacity-50"
+                    data-theme-icon="bi-circle-half"
+                  ></i>
+                  <span data-i18n="nav.theme.auto">Auto</span>
+                </button>
+              </li>
+            </ul>
+          </div>
         </div>
         <div
           class="offcanvas offcanvas-start"
@@ -143,21 +178,34 @@
                   href="#home"
                   class="nav-link active"
                   onclick="closeOffcanvas()"
+                  data-i18n="nav.section.home"
                   >Home</a
                 >
               </li>
               <li class="nav-item">
-                <a href="#about" class="nav-link" onclick="closeOffcanvas()"
+                <a
+                  href="#about"
+                  class="nav-link"
+                  onclick="closeOffcanvas()"
+                  data-i18n="nav.section.about"
                   >About</a
                 >
               </li>
               <li class="nav-item">
-                <a href="#education" class="nav-link" onclick="closeOffcanvas()"
+                <a
+                  href="#education"
+                  class="nav-link"
+                  onclick="closeOffcanvas()"
+                  data-i18n="nav.section.education"
                   >Education</a
                 >
               </li>
               <li class="nav-item">
-                <a href="#skill" class="nav-link" onclick="closeOffcanvas()"
+                <a
+                  href="#skill"
+                  class="nav-link"
+                  onclick="closeOffcanvas()"
+                  data-i18n="nav.section.skill"
                   >Skill</a
                 >
               </li>
@@ -166,6 +214,7 @@
                   href="#experience"
                   class="nav-link"
                   onclick="closeOffcanvas()"
+                  data-i18n="nav.section.experience"
                   >Experience</a
                 >
               </li>
@@ -174,11 +223,16 @@
                   href="#certificate"
                   class="nav-link"
                   onclick="closeOffcanvas()"
+                  data-i18n="nav.section.certificate"
                   >Certificate</a
                 >
               </li>
               <li class="nav-item">
-                <a href="#contact" class="nav-link" onclick="closeOffcanvas()"
+                <a
+                  href="#contact"
+                  class="nav-link"
+                  onclick="closeOffcanvas()"
+                  data-i18n="nav.section.contact"
                   >Contact</a
                 >
               </li>
@@ -191,7 +245,7 @@
                   rel="noopener noreferrer"
                 >
                   <i class="fa-solid fa-download"></i>
-                  <span>Download CV</span>
+                  <span data-i18n="nav.section.cv">Download CV</span>
                 </a>
               </li>
               <li class="nav-item">
@@ -203,7 +257,9 @@
                   rel="noopener noreferrer"
                 >
                   <i class="fa-solid fa-download"></i>
-                  <span>Download Portfolio PDF</span>
+                  <span data-i18n="nav.section.portfolioPdf"
+                    >Download Portfolio PDF</span
+                  >
                 </a>
               </li>
             </ul>
@@ -224,9 +280,10 @@
             data-aos-easing="ease-in-sine"
           >
             <h2 class="fw-semibold">
-              <span class="home">Hi, I'm Aziz</span><span class="wave">👋</span>
+              <span class="home" data-i18n="nav.section.name">Hi, I'm Aziz</span
+              ><span class="wave">👋</span>
             </h2>
-            <p class="text-me">
+            <p class="text-me" data-i18n="home.section.textName">
               I am a web developer who is on my way to becoming a full-stack web
               developer. Although I am still in the learning phase, I have been
               actively involved in several projects that have helped me build a
@@ -240,8 +297,10 @@
               innovative and quality solutions.
             </p>
             <div class="live">
-              <img src="assets/img/Live.svg" alt="live" loading="lazy" /> North
-              Bekasi, West Java, Indonesia
+              <img src="assets/img/Live.svg" alt="live" loading="lazy" />
+              <span data-i18n="home.section.live"
+                >North Bekasi, West Java, Indonesia</span
+              >
               <div class="mb-2"></div>
               <img
                 src="assets/img/Point.svg"
@@ -249,7 +308,9 @@
                 class="dot"
                 loading="lazy"
               />
-              Avaliable For New Projects
+              <span data-i18n="home.section.dot"
+                >Avaliable For New Projects</span
+              >
             </div>
             <div class="d-flex pt-3 gap-2">
               <a
@@ -323,6 +384,7 @@
             data-aos-easing="ease-in-back"
             data-aos-delay="300"
             data-aos-offset="0"
+            data-i18n="about.section"
           >
             About
           </h2>
@@ -354,7 +416,7 @@
             data-aos-offset="300"
             data-aos-easing="ease-in-sine"
           >
-            <p class="text-me">
+            <p class="text-me" data-i18n="about.section.textName">
               I am an active last semester student majoring in Informatics
               Engineering who has expertise in programming and graphic design as
               well as experience in creating various projects. With great
@@ -383,8 +445,15 @@
           data-aos-delay="300"
           data-aos-offset="0"
         >
-          <h2 class="education text-uppercase">Education and Organization</h2>
-          <p class="education">Education history and organization experience</p>
+          <h2
+            class="education text-uppercase"
+            data-i18n="edu.section.titleAbout"
+          >
+            Education and Organization
+          </h2>
+          <p class="education" data-i18n="edu.section.defAbout">
+            Education history and organization experience
+          </p>
         </div>
         <div class="row row-cols-1 row-cols-md-2">
           <div class="col mb-4">
@@ -401,10 +470,13 @@
                 loading="lazy"
               />
               <div class="card-body">
-                <h5 class="card-title text-center fw-bold">
+                <h5
+                  class="card-title text-center fw-bold"
+                  data-i18n="edu.section.titleSchool"
+                >
                   Pelita Bangsa University
                 </h5>
-                <p class="card-text text-edu">
+                <p class="card-text text-edu" data-i18n="edu.section.defSchool">
                   Bachelor Degree in Pelita Bangsa University (UPB) is a private
                   campus resulting from a change in form from the merger between
                   the College of Economics (STIE) and the College of Engineering
@@ -413,23 +485,29 @@
                   664/KPTI/I/2019 dated August 2, 2019.
                 </p>
                 <ul>
-                  <li>3rd place for education-themed poster design.</li>
-                  <li>
+                  <li data-i18n="edu.section.pointOne">
+                    3rd place for education-themed poster design.
+                  </li>
+                  <li data-i18n="edu.section.pointTwo">
                     Participants made scientific work on ICT for Gemastik XV, at
                     Brawijaya University.
                   </li>
-                  <li>
+                  <li data-i18n="edu.section.pointThree">
                     Active in the informatics engineering student association
                     (HIMATIF) for 8 months.
                   </li>
-                  <li>Active in organizing national seminars and workshops.</li>
-                  <li>
+                  <li data-i18n="edu.section.pointFour">
+                    Active in organizing national seminars and workshops.
+                  </li>
+                  <li data-i18n="edu.section.pointFive">
                     Teaching human and computer interaction courses discussing
                     UI/UX Design material and practicing applications.
                   </li>
                 </ul>
                 <p class="card-text">
-                  <small class="date fw-medium">2021 - Present</small>
+                  <small class="date fw-medium" data-i18n="edu.section.date"
+                    >2021 - Present</small
+                  >
                 </p>
               </div>
             </div>
@@ -448,28 +526,35 @@
                 loading="lazy"
               />
               <div class="card-body">
-                <h5 class="card-title text-center fw-bold">
+                <h5
+                  class="card-title text-center fw-bold"
+                  data-i18n="edu.section.titleSchSmk"
+                >
                   SMK Bina Mandiri Bekasi
                 </h5>
-                <p class="card-text text-edu">
+                <p class="card-text text-edu" data-i18n="edu.section.defSchSmk">
                   SMKS BINA MANDIRI is one of the education units with SMK level
                   in Bintara, Bekasi Barat sub-district, Bekasi city, West Java.
                   In carrying out its activities, SMKS BINA MANDIRI is under the
                   auspices of the Ministry of Education and Culture.
                 </p>
                 <ul>
-                  <li>
+                  <li data-i18n="edu.section.pointOneSmk">
                     I learned how to use a proxy, install ubuntu, install
                     windows, and do cable routing (straight and crossover).
                   </li>
-                  <li>
+                  <li data-i18n="edu.section.pointTwoSmk">
                     I learned to use of Adobe Photoshop software and the basic
                     C++ Language.
                   </li>
-                  <li>Passed the competency test with good results.</li>
+                  <li data-i18n="edu.section.pointThreeSmk">
+                    Passed the competency test with good results.
+                  </li>
                 </ul>
                 <p class="card-text">
-                  <small class="date fw-medium">2018 - 2021</small>
+                  <small class="date fw-medium" data-i18n="edu.section.dateSmk"
+                    >2018 - 2021</small
+                  >
                 </p>
               </div>
             </div>
@@ -489,32 +574,40 @@
                 loading="lazy"
               />
               <div class="card-body">
-                <h5 class="card-title fw-bold">
+                <h5
+                  class="card-title fw-bold"
+                  data-i18n="edu.section.titleOrgnz"
+                >
                   Informatics Engineering Student Association
                 </h5>
-                <p class="card-title fw-medium fst-italic">
+                <p
+                  class="card-title fw-medium fst-italic"
+                  data-i18n="edu.section.jobOrgnz"
+                >
                   Communication and Information Media Department
                 </p>
                 <ul>
-                  <li>
+                  <li data-i18n="edu.section.pointOneOrgnz">
                     Manage 3 relevant social media accounts to increase
                     engagement.
                   </li>
-                  <li>
+                  <li data-i18n="edu.section.pointTwoOrgnz">
                     Plan and create 30+ monthly content pieces to increase
                     visibility.
                   </li>
-                  <li>
+                  <li data-i18n="edu.section.pointThreeOrgnz">
                     Provide information to 1000+ HIMATIF members as well as
                     external audiences.
                   </li>
-                  <li>
+                  <li data-i18n="edu.section.pointFourOrgnz">
                     Document 10+ activities every month for archive and
                     publication.
                   </li>
                 </ul>
                 <p class="card-text">
-                  <small class="date">May 2022 - December 2022</small>
+                  <small class="date" data-i18n="edu.section.dateOrgnz"
+                    >May - December 2022</small
+                  >
                 </p>
               </div>
             </div>
@@ -533,24 +626,36 @@
                 loading="lazy"
               />
               <div class="card-body">
-                <h5 class="card-title fw-bold">Karang Taruna</h5>
-                <p class="card-title fst-italic fw-medium">Sports Division</p>
+                <h5
+                  class="card-title fw-bold"
+                  data-i18n="edu.section.titleOrgns"
+                >
+                  Karang Taruna
+                </h5>
+                <p
+                  class="card-title fst-italic fw-medium"
+                  data-i18n="edu.section.jobOrgns"
+                >
+                  Sports Division
+                </p>
                 <ul>
-                  <li>
+                  <li data-i18n="edu.section.pointOneOrgns">
                     Plan and execute sports activities, such as tournaments,
                     competitions, or recreational activities.
                   </li>
-                  <li>
+                  <li data-i18n="edu.section.pointTwoOrgns">
                     Propose and develop sports programs that can increase
                     participation and achievement.
                   </li>
-                  <li>
+                  <li data-i18n="edu.section.pointThreeOrgns">
                     Adjusting the program to the needs and interests of Youth
                     Organization members.
                   </li>
                 </ul>
                 <p class="card-text">
-                  <small class="date">July 2023 - Present</small>
+                  <small class="date" data-i18n="edu.section.dateOrgns"
+                    >July 2023 - Present</small
+                  >
                 </p>
               </div>
             </div>
@@ -570,8 +675,8 @@
           data-aos-easing="ease-in-back"
           data-aos-delay="300"
         >
-          <h2 class="skill text-uppercase">Skill</h2>
-          <p class="skill">
+          <h2 class="skill text-uppercase" data-i18n="skill.title">Skill</h2>
+          <p class="skill" data-i18n="skill.textTitle">
             The skills, tools and technologies I am really good at
           </p>
         </div>
@@ -731,8 +836,10 @@
           data-aos-delay="300"
           data-aos-offset="0"
         >
-          <h2 class="experience text-uppercase">Experience</h2>
-          <p class="experience">
+          <h2 class="experience text-uppercase" data-i18n="exp.section.title">
+            Experience
+          </h2>
+          <p class="experience" data-i18n="exp.section.defExp">
             Here is a quick summary of my most recent experiences
           </p>
         </div>
@@ -746,43 +853,48 @@
             <img
               src="assets/img/Logo-Food-Station.png"
               class="card-img-top w-25 h-25 m-auto d-block object-fit-contain mt-2 mb-0 mob"
-              alt="Kalbe Farma"
+              alt="Food Station"
               loading="lazy"
             />
             <div class="card-body">
-              <h5 class="card-title fw-bold">
+              <h5 class="card-title fw-bold" data-i18n="exp.section1.title">
                 PT.Food Station Tjipinang Jaya (PERSERODA)
               </h5>
-              <p class="card-text fst-italic fw-medium">IT Programmer</p>
+              <p
+                class="card-text fst-italic fw-medium"
+                data-i18n="exp.section1.defJob"
+              >
+                IT Programmer
+              </p>
               <ul class="card-text">
-                <li>
+                <li data-i18n="exp.section1.jobOne">
                   Perform maintenance and continued development on FoodConnect
                   and FoodHub e-commerce platforms, including bug fixes and
                   optimization of existing features.
                 </li>
-                <li>
+                <li data-i18n="exp.section1.jobTwo">
                   Integrate the Winpay payment system (virtual account, QRIS,
                   and e-wallet), including frontend UI/UX, backend logic,
                   callback handling, and transaction logging.
                 </li>
-                <li>
+                <li data-i18n="exp.section1.jobThree">
                   Present the FoodHub system workflow and functions technically
                   to external parties (clients or partners), including module
                   architecture and key business processes.
                 </li>
-                <li>
+                <li data-i18n="exp.section1.jobFour">
                   Oversaw the daily data collection from the vending machine
                   platform during the Jakarta Fair (PRJ), processed and analyzed
                   the data in Excel, and generated pivot table reports for
                   management review.
                 </li>
-                <li>
+                <li data-i18n="exp.section1.jobFive">
                   Improve operational efficiency by building price cards and
                   WhatsApp order integration features into the MIS system,
                   enabling direct ordering from WhatsApp and automatic receipt
                   printing.
                 </li>
-                <li>
+                <li data-i18n="exp.section1.jobSix">
                   Built and internal dashboard to visually display sales and
                   customer growth data. This dashboard displays a comparison
                   chart of monthly sales targets and realizations, as well as
@@ -791,7 +903,9 @@
                 </li>
               </ul>
               <p class="card-text">
-                <small class="date">19 May 2025 - Present</small>
+                <small class="date" data-i18n="exp.section1.dateFs"
+                  >19 May 2025 - Present</small
+                >
               </p>
             </div>
           </div>
@@ -808,80 +922,101 @@
               loading="lazy"
             />
             <div class="card-body">
-              <h5 class="card-title fw-bold">PT.Niramas Utama (INACO)</h5>
-              <p class="card-text fst-italic fw-medium">
+              <h5 class="card-title fw-bold" data-i18n="exp.section2.title">
+                PT.Niramas Utama (INACO)
+              </h5>
+              <p
+                class="card-text fst-italic fw-medium"
+                data-i18n="exp.section2.defJob"
+              >
                 Fullstack Web Developer
               </p>
-              <h6 class="fw-semibold">E-Sign Pd</h6>
+              <h6 class="fw-semibold" data-i18n="exp.section2.projectOne">
+                E-Sign Pd
+              </h6>
               <ul class="card-text">
-                <li>Assist users with web development.</li>
-                <li>
+                <li data-i18n="exp.section2.jobOne">
+                  Assist users with web development.
+                </li>
+                <li data-i18n="exp.section2.jobTwo">
                   Build an E-Sign Pd (Electronic Sign Product Development)
                   website to manage online form creation.
                 </li>
-                <li>
+                <li data-i18n="exp.section2.jobThree">
                   Created 7 features, including (register, login, forgot
                   password, user, dashboard, form, and approval).
                 </li>
-                <li>
+                <li data-i18n="exp.section2.jobFour">
                   This form feature includes up to 8 different form types, such
                   as sample introduction, other sample checking, and cartons.
                   Forms are dynamically generated using HTML, CSS, and
                   JavaScript.
                 </li>
-                <li>
+                <li data-i18n="exp.section2.jobFive">
                   Gradual approval process with QR code, customized according to
                   each user's access.
                 </li>
               </ul>
-              <h6 class="fw-semibold">E-Nota Retur</h6>
+              <h6 class="fw-semibold" data-i18n="exp.sections2.projectTwo">
+                E-Nota Retur
+              </h6>
               <ul class="card-text">
-                <li>
+                <li data-i18n="exp.sections2.jobOne">
                   Assist users in web development for the accounting division.
                 </li>
-                <li>
+                <li data-i18n="exp.sections2.jobTwo">
                   Migrate applications from desktop to web platform using
                   Laravel.
                 </li>
-                <li>Build an E-Nota Retur (Electric Nota Retur) website.</li>
-                <li>
+                <li data-i18n="exp.sections2.jobThree">
+                  Build an E-Nota Retur (Electric Nota Retur) website.
+                </li>
+                <li data-i18n="exp.sections2.jobFour">
                   Added features of register, login, forgot password, manage
                   profile, nota management, user management, note history
                   (history edit and delete), and NPWP Master Data.
                 </li>
-                <li>
+                <li data-i18n="exp.sections2.jobFive">
                   Implemented an invoice management feature with the ability to
                   export data to Excel and download format excel.
                 </li>
-                <li>
+                <li data-i18n="exp.sections2.jobSix">
                   Provides functions to view invoice details, export to PDF, and
                   delete invoice data as needed.
                 </li>
               </ul>
-              <h6 class="fw-semibold">E-Receipt</h6>
+              <h6 class="fw-semibold" data-i18n="exp.sectionz.projectThree">
+                E-Receipt
+              </h6>
               <ul class="card-text">
-                <li>
+                <li data-i18n="exp.sectionz.jobOne">
                   Assist users in web development for the finance division.
                 </li>
-                <li>Build an E-Receipt (Electric Receipt) website.</li>
-                <li>
+                <li data-i18n="exp.sectionz.jobTwo">
+                  Build an E-Receipt (Electric Receipt) website.
+                </li>
+                <li data-i18n="exp.sectionz.jobThree">
                   Create account login, account register, forgot password, user
                   management, profile management, and supplier master data
                   features for account management.
                 </li>
-                <li>Create a dashboard feature for data statistics.</li>
-                <li>
+                <li data-i18n="exp.sectionz.jobFour">
+                  Create a dashboard feature for data statistics.
+                </li>
+                <li data-i18n="exp.sectionz.jobFive">
                   Create receipt management features to add data, change data,
                   import Excel data, and print data with PDF and Excel
                   formats.ats.
                 </li>
-                <li>
+                <li data-i18n="exp.sectionz.jobSix">
                   Create a report feature and settings to send email
                   notifications for each user.
                 </li>
               </ul>
               <p class="card-text">
-                <small class="date">26 July 2024 - 25 January 2025</small>
+                <small class="date" data-i18n="exp.sectionz.dateInaco"
+                  >26 July 2024 - 25 January 2025</small
+                >
               </p>
             </div>
           </div>
@@ -898,32 +1033,43 @@
               loading="lazy"
             />
             <div class="card-body">
-              <h5 class="card-title fw-bold">PT.Kalbe Farma Tbk</h5>
-              <p class="card-text fst-italic fw-medium">
+              <h5 class="card-title fw-bold" data-i18n="exp.section3.title">
+                PT.Kalbe Farma Tbk
+              </h5>
+              <p
+                class="card-text fst-italic fw-medium"
+                data-i18n="exp.section3.defJob"
+              >
                 Fullstack Web Developer
               </p>
               <ul class="card-text">
-                <li>Help users manage manucaturing data in web development.</li>
-                <li>
+                <li data-i18n="exp.section3.jobOne">
+                  Help users manage manucaturing data in web development.
+                </li>
+                <li data-i18n="exp.section3.jobTwo">
                   Create master features consisting of (NIE (Distribution
                   License Number), Product, Product Category, Dosage Form).
                 </li>
-                <li>
+                <li data-i18n="exp.section3.jobThree">
                   Create transaction features consisting of (QA Reg Admin, RA
                   (Regulatory Affairs)).
                 </li>
-                <li>
+                <li data-i18n="exp.section3.jobFour">
                   Create an audit trail feature to export data in the form of a
                   PDF.
                 </li>
-                <li>Testing to QA in April, getting 70% progress results.</li>
-                <li>
+                <li data-i18n="exp.section3.jobFive">
+                  Testing to QA in April, getting 70% progress results.
+                </li>
+                <li data-i18n="exp.section3.jobSix">
                   Presentation of project results in June with a final result
                   90% progress.
                 </li>
               </ul>
               <p class="card-text">
-                <small class="date">19 February - 30 June 2024</small>
+                <small class="date" data-i18n="exp.section3.dateKalbe"
+                  >19 February - 30 June 2024</small
+                >
               </p>
             </div>
           </div>
@@ -940,28 +1086,31 @@
               loading="lazy"
             />
             <div class="card-body">
-              <h5 class="card-title fw-bold">
+              <h5 class="card-title fw-bold" data-i18n="exp.section4.title">
                 Merdeka Campus - Independent Study Batch 5
               </h5>
-              <p class="card-text fst-italic fw-medium">
+              <p
+                class="card-text fst-italic fw-medium"
+                data-i18n="exp.section4.defJob"
+              >
                 Web Developer Program
               </p>
               <ul class="card-text">
-                <li>
+                <li data-i18n="exp.section4.jobOne">
                   Final Project 1 create a company profile website with HTML,
                   CSS, JavaScript.
                 </li>
-                <li>
+                <li data-i18n="exp.section4.jobTwo">
                   Final Project 2 create a website landing page, design
                   implementation in figma community features by using HTML, CSS,
                   JavaScript.
                 </li>
-                <li>
+                <li data-i18n="exp.section4.jobThree">
                   Final Project 3 create a website landing page, implement the
                   design in figma community features using HTML, CSS,
                   JavaScript.
                 </li>
-                <li>
+                <li data-i18n="exp.section4.jobFour">
                   Final Project 4 creates a weather forecast API data retrieval
                   website using HTML, CSS, JavaScript.
                 </li>
@@ -979,7 +1128,9 @@
                     data-bs-title="Web Landing Page"
                     title="Web Landing Page"
                   >
-                    <i class="bi bi-link btn btn-outline-secondary mx-2"
+                    <i
+                      class="bi bi-link btn btn-outline-secondary mx-2"
+                      data-i18n="exp.section4.bdg1"
                       >Project 1</i
                     >
                   </a>
@@ -994,7 +1145,9 @@
                     data-bs-title="Web Landing Page"
                     title="Web Landing Page"
                   >
-                    <i class="bi bi-link btn btn-outline-secondary mx-2"
+                    <i
+                      class="bi bi-link btn btn-outline-secondary mx-2"
+                      data-i18n="exp.section4.bdg2"
                       >Project 2</i
                     >
                   </a>
@@ -1009,7 +1162,9 @@
                     data-bs-title="Web Landing Page"
                     title="Web Landing Page"
                   >
-                    <i class="bi bi-link btn btn-outline-secondary mx-2"
+                    <i
+                      class="bi bi-link btn btn-outline-secondary mx-2"
+                      data-i18n="exp.section4.bdg3"
                       >Project 3</i
                     >
                   </a>
@@ -1024,14 +1179,18 @@
                     data-bs-title="Web Weather API"
                     title="Web Weather API"
                   >
-                    <i class="bi bi-link btn btn-outline-secondary mx-2"
+                    <i
+                      class="bi bi-link btn btn-outline-secondary mx-2"
+                      data-i18n="exp.section4.bdg4"
                       >Project 4</i
                     >
                   </a>
                 </div>
               </div>
               <p class="card-text">
-                <small class="date">14 August - 31 December 2023</small>
+                <small class="date" data-i18n="exp.section4.dateHacktiv8"
+                  >14 August - 31 December 2023</small
+                >
               </p>
             </div>
           </div>
@@ -1048,20 +1207,25 @@
               loading="lazy"
             />
             <div class="card-body">
-              <h5 class="card-title fw-bold">
+              <h5 class="card-title fw-bold" data-i18n="exp.section5.title">
                 Digital Talent and State Polytechnic of Malang
               </h5>
-              <p class="card-text fst-italic fw-medium">
+              <p
+                class="card-text fst-italic fw-medium"
+                data-i18n="exp.section5.defJob"
+              >
                 Junior Mobile Developer
               </p>
-              <p class="description">
+              <p class="description" data-i18n="exp.section5.descJob">
                 The final project is to create a Kost-an.id mobile application.
                 The mandatory features are the login page, welcome screen, and
                 add, view, edit, and delete data features using the Java
                 programming language, Database (Firebase).
               </p>
               <p class="card-text">
-                <small class="date">13 June - 28 July 2023</small>
+                <small class="date" data-i18n="exp.section5.dateDigital"
+                  >13 June - 28 July 2023</small
+                >
               </p>
             </div>
           </div>
@@ -1078,20 +1242,37 @@
               loading="lazy"
             />
             <div class="card-body">
-              <h5 class="card-title fw-bold">PT. Braja Mukti Cakra</h5>
-              <p class="card-text fst-italic fw-medium">Admin Raw Material</p>
+              <h5 class="card-title fw-bold" data-i18n="exp.section6.title">
+                PT.Braja Mukti Cakra
+              </h5>
+              <p
+                class="card-text fst-italic fw-medium"
+                data-i18n="exp.section6.defJob"
+              >
+                Admin Raw Material
+              </p>
               <ul class="card-text">
-                <li>Inputting incoming and supply data.</li>
-                <li>Printing the identity of goods (tag fifo).</li>
-                <li>
+                <li data-i18n="exp.section6.jobOne">
+                  Inputting incoming and supply data.
+                </li>
+                <li data-i18n="exp.section6.jobTwo">
+                  Printing the identity of goods (tag fifo).
+                </li>
+                <li data-i18n="exp.section6.jobThree">
                   Checking whether the goods match the goods that have been
                   printed.
                 </li>
-                <li>Inputting case bearing and rotor brake goods data.</li>
-                <li>Organize and tidy up data.</li>
+                <li data-i18n="exp.section6.jobFour">
+                  Inputting case bearing and rotor brake goods data.
+                </li>
+                <li data-i18n="exp.section6.jobFive">
+                  Organize and tidy up data.
+                </li>
               </ul>
               <p class="card-text">
-                <small class="date">July 2019 - October 2019</small>
+                <small class="date" data-i18n="exp.section6.dateBmc"
+                  >July 2019 - October 2019</small
+                >
               </p>
             </div>
           </div>
@@ -1110,8 +1291,12 @@
           data-aos-delay="300"
           data-aos-offset="0"
         >
-          <h2 class="project text-uppercase">Experience Project</h2>
-          <p class="project">Some of the noteworthy projects I have built</p>
+          <h2 class="project text-uppercase" data-i18n="pjct.section.title">
+            Experience Project
+          </h2>
+          <p class="project" data-i18n="pjct.section.defPjct">
+            Some of the noteworthy projects I have built
+          </p>
         </div>
         <!-- Start Project 1 -->
         <div
@@ -1134,12 +1319,16 @@
             <div class="card shadow bg-body p-3 h-100">
               <div class="d-flex justify-content-center">
                 <div class="text-center">
-                  <h6 class="fw-semibold">Website Food Connect Store</h6>
-                  <span class="date-project">May - July 2025</span>
+                  <h6 class="fw-semibold" data-i18n="pjct.section1.title">
+                    Website Food Connect Store
+                  </h6>
+                  <span class="date-project" data-i18n="pjct.section1.date"
+                    >May - July 2025</span
+                  >
                 </div>
               </div>
               <div class="mt-3">
-                <p class="description">
+                <p class="description" data-i18n="pjct.section1.desc">
                   Food Connect is an e-commerce website that I developed to
                   simplify the process of buying and selling basic necessities
                   online. The platform offers a variety of products such as
@@ -1214,12 +1403,16 @@
             <div class="card shadow bg-body p-3 h-100">
               <div class="d-flex justify-content-center">
                 <div class="text-center">
-                  <h6 class="fw-semibold">Website Klasifikasi KNN</h6>
-                  <span class="date-project">December 2024 - January 2025</span>
+                  <h6 class="fw-semibold" data-i18n="pjct.section2.title">
+                    Website Klasifikasi KNN
+                  </h6>
+                  <span class="date-project" data-i18n="pjct.section2.date"
+                    >December 2024 - January 2025</span
+                  >
                 </div>
               </div>
               <div class="mt-3">
-                <p class="description">
+                <p class="description" data-i18n="pjct.section2.desc">
                   This system is designed to describe the process of
                   implementing machine learning models into a web system built
                   using the PHP programming language. The machine learning model
@@ -1300,12 +1493,16 @@
             <div class="card shadow bg-body p-3 h-100">
               <div class="d-flex justify-content-center">
                 <div class="text-center">
-                  <h6 class="fw-semibold">Registration Online Monitoring</h6>
-                  <span class="date-project">19 February - 30 June 2024</span>
+                  <h6 class="fw-semibold" data-i18n="pjct.section3.title">
+                    Registration Online Monitoring
+                  </h6>
+                  <span class="date-project" data-i18n="pjct.section3.date"
+                    >19 February - 30 June 2024</span
+                  >
                 </div>
               </div>
               <div class="mt-3">
-                <p class="description">
+                <p class="description" data-i18n="pjct.section3.desc">
                   Registration Online Monitoring System is a document collection
                   system and monitoring of the registration process carried out
                   in the application. The registration in question is renewal
@@ -1397,40 +1594,42 @@
             <div class="card shadow bg-body p-3 h-100">
               <div class="d-flex justify-content-center">
                 <div class="text-center">
-                  <h6 class="fw-semibold">
+                  <h6 class="fw-semibold" data-i18n="pjct.section4.title">
                     Analysis of the Percentage of Population with Health
                     Complaints by Province, Region Type, and Gender Using
                     K-Means Clustering Algorithm (2020-2022)
                   </h6>
-                  <span class="date-project">December 2023</span>
+                  <span class="date-project" data-i18n="pjct.section4.date"
+                    >December 2023</span
+                  >
                 </div>
               </div>
               <div class="mt-3">
                 <ul class="description">
-                  <li>
+                  <li data-i18n="pjct.section4.jobOne">
                     Successfully applied the concept of data mining with the
                     descriptive analysis method (finding the average value) and
                     using the k-means clustering algorithm.
                   </li>
-                  <li>
+                  <li data-i18n="pjct.section4.jobTwo">
                     Based on research data taken from the source of the
                     Indonesian central statistics agency, the overall total
                     average of men and women is the highest in 2020.
                   </li>
-                  <li>
+                  <li data-i18n="pjct.section4.jobThree">
                     Based on testing of Indonesian health complaints in 34
                     provinces, Aceh ranked first with the most health
                     complaints.
                   </li>
-                  <li>
+                  <li data-i18n="pjct.section4.jobFour">
                     Based on testing, women are one of the highest-ranked health
                     complaints in Indonesia.
                   </li>
-                  <li>
+                  <li data-i18n="pjct.section4.jobFive">
                     Based on testing, rural areas are one of the most common
                     health complaints in Indonesia.
                   </li>
-                  <li>
+                  <li data-i18n="pjct.section4.jobSix">
                     Based on testing, the largest increase occurred in South
                     Sulawesi, and a decrease occurred in Bali.
                   </li>
@@ -1504,15 +1703,17 @@
             <div class="card shadow bg-body p-3 h-100">
               <div class="d-flex justify-content-center">
                 <div class="text-center">
-                  <h6 class="fw-semibold">
+                  <h6 class="fw-semibold" data-i18n="pjct.section5.title">
                     Application of Logistic Regression Algorithm on Most
                     Streamed Spotify Songs 2023 Data Set
                   </h6>
-                  <span class="date-project">April 2023</span>
+                  <span class="date-project" data-i18n="pjct.section5.date"
+                    >April 2023</span
+                  >
                 </div>
               </div>
               <div class="mt-3">
-                <p class="description">
+                <p class="description" data-i18n="pjct.section5.desc">
                   The use of a logistic regression algorithm on the Spotify
                   dataset provides useful predictions of song popularity based
                   on certain attributes. For future research, it is recommended
@@ -1587,22 +1788,24 @@
             <div class="card shadow bg-body p-3 h-100">
               <div class="d-flex justify-content-center">
                 <div class="text-center">
-                  <h6 class="fw-semibold">
+                  <h6 class="fw-semibold" data-i18n="pjct.section6.title">
                     Website Design UI SDN Karang Asih 01
                   </h6>
-                  <span class="date-project">September 2023</span>
+                  <span class="date-project" data-i18n="pjct.section6.date"
+                    >September 2023</span
+                  >
                 </div>
               </div>
               <div class="mt-3">
                 <ul class="description">
-                  <li>
+                  <li data-i18n="pjct.section6.jobOne">
                     Designing wireframe and website design SDN Karang Asih 01.
                   </li>
-                  <li>
+                  <li data-i18n="pjct.section6.jobTwo">
                     Conceptualize UI/UX per-page navigation such as "About Us"
                     and "Contact" with separate HTML.
                   </li>
-                  <li>
+                  <li data-i18n="pjct.section6.jobThree">
                     Deliver website design results to institutions and collect
                     feedback to ensure conformity with needs and expectations.
                   </li>
@@ -1671,20 +1874,26 @@
             <div class="card shadow bg-body p-3 h-100">
               <div class="d-flex justify-content-center">
                 <div class="text-center">
-                  <h6 class="fw-semibold">
+                  <h6 class="fw-semibold" data-i18n="pjct.section7.title">
                     UI/UX of Richeese Factory Application Design
                   </h6>
-                  <span class="date-project">June 2023</span>
+                  <span class="date-project" data-i18n="pjct.section7.date"
+                    >June 2023</span
+                  >
                 </div>
               </div>
               <div class="mt-3">
                 <ul class="description">
-                  <li>Designing wireframe and UI designs and prototypes.</li>
-                  <li>
+                  <li data-i18n="pjct.section7.jobOne">
+                    Designing wireframe and UI designs and prototypes.
+                  </li>
+                  <li data-i18n="pjct.section7.jobTwo">
                     Create mock-ups as designs or models of the product being
                     created.
                   </li>
-                  <li>Present and promote work using posters.</li>
+                  <li data-i18n="pjct.section7.jobThree">
+                    Present and promote work using posters.
+                  </li>
                 </ul>
               </div>
               <div class="container text-center">
@@ -1752,18 +1961,24 @@
             <div class="card shadow bg-body p-3 h-100">
               <div class="d-flex justify-content-center">
                 <div class="text-center">
-                  <h6 class="fw-semibold">UI/UX Shoe Store App Design</h6>
-                  <span class="date-project">May 2023</span>
+                  <h6 class="fw-semibold" data-i18n="pjct.section8.title">
+                    UI/UX Shoe Store App Design
+                  </h6>
+                  <span class="date-project" data-i18n="pjct.section8.date"
+                    >May 2023</span
+                  >
                 </div>
               </div>
               <div class="mt-3">
                 <ul class="description">
-                  <li>Designing wireframe and UI designs and prototypes</li>
-                  <li>
+                  <li data-i18n="pjct.section8.jobOne">
+                    Designing wireframe and UI designs and prototypes
+                  </li>
+                  <li data-i18n="pjct.section8.jobTwo">
                     Customize the contents of the shoe store application
                     according to needs.
                   </li>
-                  <li>
+                  <li data-i18n="pjct.section8.jobThree">
                     Create mock-ups as designs or models of the product being
                     created.
                   </li>
@@ -1829,21 +2044,27 @@
             <div class="card shadow bg-body p-3 h-100">
               <div class="d-flex justify-content-center">
                 <div class="text-center">
-                  <h6 class="fw-semibold">Tutoring Website Landing Page</h6>
-                  <span class="date-project">August 2023</span>
+                  <h6 class="fw-semibold" data-i18n="pjct.section9.title">
+                    Tutoring Website Landing Page
+                  </h6>
+                  <span class="date-project" data-i18n="pjct.section9.date"
+                    >August 2023</span
+                  >
                 </div>
               </div>
               <div class="mt-3">
                 <ul class="description">
-                  <li>
+                  <li data-i18n="pjct.section9.jobOne">
                     Designing wireframes and website design tutoring at
                     pintara.id Company.
                   </li>
-                  <li>Apply the concept of landing pages on the website.</li>
-                  <li>
+                  <li data-i18n="pjct.section9.jobTwo">
+                    Apply the concept of landing pages on the website.
+                  </li>
+                  <li data-i18n="pjct.section9.jobThree">
                     Create a company logo and create an attractive page look.
                   </li>
-                  <li>
+                  <li data-i18n="pjct.section9.jobFour">
                     Conduct interviews about websites that have been made to the
                     company.
                   </li>
@@ -1909,18 +2130,24 @@
             <div class="card shadow bg-body p-3 h-100">
               <div class="d-flex justify-content-center">
                 <div class="text-center">
-                  <h6 class="fw-semibold">Kost-an.id Application</h6>
-                  <span class="date-project">August 2023</span>
+                  <h6 class="fw-semibold" data-i18n="pjct.section10.title">
+                    Kost-an.id Application
+                  </h6>
+                  <span class="date-project" data-i18n="pjct.section10.date"
+                    >August 2023</span
+                  >
                 </div>
               </div>
               <div class="mt-3">
                 <ul class="description">
-                  <li>
+                  <li data-i18n="pjct.section10.jobOne">
                     Create a CRUD-based application system (Create, Read,
                     Update, Delete).
                   </li>
-                  <li>The data entered will be saved to firebase.</li>
-                  <li>
+                  <li data-i18n="pjct.section10.jobTwo">
+                    The data entered will be saved to firebase.
+                  </li>
+                  <li data-i18n="pjct.section10.jobThree">
                     Presenting the work to the jury through the zoom online
                     application.
                   </li>
@@ -1985,27 +2212,33 @@
             <div class="card shadow bg-body p-3 h-100">
               <div class="d-flex justify-content-center">
                 <div class="text-center">
-                  <h6 class="fw-semibold">RT Cash Management Database</h6>
-                  <span class="date-project">June - July 2023</span>
+                  <h6 class="fw-semibold" data-i18n="pjct.section11.title">
+                    RT Cash Management Database
+                  </h6>
+                  <span class="date-project" data-i18n="pjct.section11.date"
+                    >June - July 2023</span
+                  >
                 </div>
               </div>
               <div class="mt-3">
                 <ul class="description">
-                  <li>Designing website design using figma software.</li>
-                  <li>
+                  <li data-i18n="pjct.section11.jobOne">
+                    Designing website design using figma software.
+                  </li>
+                  <li data-i18n="pjct.section11.jobTwo">
                     Creating 2 RT cash management website systems, the first
                     website system uses native css, the second website system
                     uses bootstrap 5 as a frontend framework and codeigniter 4
                     as a backend framework.
                   </li>
-                  <li>
+                  <li data-i18n="pjct.section11.jobThree">
                     The entered data will be stored into the MySQL database.
                   </li>
-                  <li>
+                  <li data-i18n="pjct.section11.jobFour">
                     Make a usecase plan of the groove groove diagram of the
                     system process created using figma.
                   </li>
-                  <li>
+                  <li data-i18n="pjct.section11.jobFive">
                     Promote uploaded works on YouTube and domain the system.
                   </li>
                 </ul>
@@ -2078,26 +2311,30 @@
             <div class="card shadow bg-body p-3 h-100">
               <div class="d-flex justify-content-center">
                 <div class="text-center">
-                  <h6 class="fw-semibold">Student Data System</h6>
-                  <span class="date-project">November 2022 - January 2023</span>
+                  <h6 class="fw-semibold" data-i18n="pjct.section12.title">
+                    Student Data System
+                  </h6>
+                  <span class="date-project" data-i18n="pjct.section12.date"
+                    >November 2022 - January 2023</span
+                  >
                 </div>
               </div>
               <div class="mt-3">
                 <ul class="description">
-                  <li>
+                  <li data-i18n="pjct.section12.jobOne">
                     Create a CRUD-based student data system (Create, Read,
                     Update, Delete).
                   </li>
-                  <li>
+                  <li data-i18n="pjct.section12.jobTwo">
                     Login data and student data will be saved into the MySQL
                     database.
                   </li>
-                  <li>
+                  <li data-i18n="pjct.section12.jobThree">
                     Create a standing banner design to promote the work made and
                     successfully achieve the voting target of 50 people to
                     students of other majors.
                   </li>
-                  <li>
+                  <li data-i18n="pjct.section12.jobFour">
                     The final project of the semester 3 points of the Object
                     Orientation Programming.
                   </li>
@@ -2163,22 +2400,26 @@
             <div class="card shadow bg-body p-3 h-100">
               <div class="d-flex justify-content-center">
                 <div class="text-center">
-                  <h6 class="fw-semibold">Simple Multi Project</h6>
-                  <span class="date-project">November 2022 - January 2023</span>
+                  <h6 class="fw-semibold" data-i18n="pjct.section13.title">
+                    Simple Multi Project
+                  </h6>
+                  <span class="date-project" data-i18n="pjct.section13.date"
+                    >November 2022 - January 2023</span
+                  >
                 </div>
               </div>
               <div class="mt-3">
                 <ul class="description">
-                  <li>
+                  <li data-i18n="pjct.section13.jobOne">
                     Create a login system by entering a username and password, a
                     registration system by entering additional data in the form
                     of email.
                   </li>
-                  <li>
+                  <li data-i18n="pjct.section13.jobTwo">
                     Displays the choice of calculator program or sound player to
                     be accessed.
                   </li>
-                  <li>
+                  <li data-i18n="pjct.section13.jobThree">
                     The registration data will be automatically saved into the
                     MySQL database.
                   </li>
@@ -2233,8 +2474,10 @@
           data-aos-delay="300"
           data-aos-offset="0"
         >
-          <h2 class="certificate text-uppercase">Activity Certificate</h2>
-          <p class="certificate">
+          <h2 class="certificate text-uppercase" data-i18n="ctc.section.title">
+            Activity Certificate
+          </h2>
+          <p class="certificate" data-i18n="ctc.section.defCtc">
             Some of the certificate projects I have achieved are
           </p>
         </div>
@@ -2491,8 +2734,10 @@
           data-aos-delay="300"
           data-aos-offset="0"
         >
-          <h2 class="contact text-uppercase">Contact Form</h2>
-          <p class="contact">
+          <h2 class="contact text-uppercase" data-i18n="cntct.section.title">
+            Contact Form
+          </h2>
+          <p class="contact" data-i18n="cntct.section.textTitle">
             Want to talk about the project or have questions? Use the contact
             form below
           </p>
@@ -2503,10 +2748,14 @@
           data-aos-delay="300"
         >
           <div class="col-md-5 mr-auto mb-5">
-            <span class="txt">Questions, Comments, Concerns?</span>
+            <span class="txt" data-i18n="cntct.section.textQuecon"
+              >Questions, Comments, Concerns?</span
+            >
             <br />
-            <span class="mb-5 content-txt"
-              >We'd love to <span class="hear">hear</span> from you!</span
+            <span class="mb-5 content-txt" data-i18n="cntct.section.spanOne"
+              >We'd love to
+              <span class="hear" data-i18n="cntct.section.spanTwo">hear</span>
+              from you!</span
             >
           </div>
           <div class="col-md-6 mr-auto">
@@ -2518,20 +2767,33 @@
             >
               <div class="row">
                 <div class="col-md-12 form-group">
-                  <label for="name" class="col-form-label">Your Name</label>
+                  <label
+                    for="name"
+                    class="col-form-label"
+                    data-i18n="cntct.input.name"
+                    >Your Name</label
+                  >
                   <input
                     type="text"
                     class="form-control item"
                     name="text"
                     id="name"
+                    data-i18n-placeholder="cntct.input.plc.name"
                     placeholder="Please write your full name"
                   />
-                  <div class="error-txt">Name can't be blank</div>
+                  <div class="error-txt" data-i18n="cntct.input.al.name">
+                    Name can't be blank
+                  </div>
                 </div>
               </div>
               <div class="row">
                 <div class="col-md-12 form-group">
-                  <label for="email" class="col-form-label">Your Email</label>
+                  <label
+                    for="email"
+                    class="col-form-label"
+                    data-i18n="cntct.input.email"
+                    >Your Email</label
+                  >
                   <input
                     type="text"
                     class="form-control item"
@@ -2540,41 +2802,61 @@
                     id="email"
                     placeholder="something@website.com"
                   />
-                  <div class="error-txt email">Email can't be blank</div>
+                  <div class="error-txt email" data-i18n="cntct.input.al.email">
+                    Email can't be blank
+                  </div>
                 </div>
               </div>
               <div class="row">
                 <div class="col-md-12 form-group">
-                  <label for="subject" class="col-form-label">Subject</label>
+                  <label
+                    for="subject"
+                    class="col-form-label"
+                    data-i18n="cntct.input.subject"
+                    >Subject</label
+                  >
                   <input
                     type="text"
                     class="form-control item"
                     name="subject"
                     id="subject"
+                    data-i18n-placeholder="cntct.input.plc.subject"
                     placeholder="Question about your article"
                   />
-                  <div class="error-txt">Subject can't be blank</div>
+                  <div class="error-txt" data-i18n="cntct.input.al.subject">
+                    Subject can't be blank
+                  </div>
                 </div>
               </div>
               <div class="row">
                 <div class="col-md-12 form-group">
-                  <label for="message" class="col-form-label">Message</label>
+                  <label
+                    for="message"
+                    class="col-form-label"
+                    data-i18n="cntct.input.message"
+                    >Message</label
+                  >
                   <textarea
                     class="form-control item"
                     name="message"
                     id="message"
                     cols="30"
                     rows="7"
+                    data-i18n-placeholder="cntct.input.plc.message"
                     placeholder="Your message starts with..."
                   ></textarea>
-                  <div class="error-txt">Message can't be blank</div>
+                  <div class="error-txt" data-i18n="cntct.input.al.message">
+                    Message can't be blank
+                  </div>
                 </div>
               </div>
               <div
                 class="d-flex align-items-center mt-3 d-none"
                 id="loadingIndicator"
               >
-                <strong role="status">Loading...</strong>
+                <strong role="status" data-i18n="cntct.role.status"
+                  >Loading...</strong
+                >
                 <div class="spinner-border ms-auto" aria-hidden="true"></div>
               </div>
               <div class="row">
@@ -2603,8 +2885,10 @@
         data-aos-offset="0"
       >
         <div class="text-foter">
-          <h2 class="footer text-uppercase">Get In Touch</h2>
-          <p class="footer">
+          <h2 class="footer text-uppercase" data-i18n="fot.section.title">
+            Get In Touch
+          </h2>
+          <p class="footer" data-i18n="fot.section.textTitle">
             What’s next? Feel free to reach out to me if you're looking for a
             developer, have a query, or simply want to connect.
           </p>
@@ -2632,7 +2916,9 @@
               onclick="copyText('phoneNumber', 'telep')"
             ></i>
           </div>
-          <span class="pt-3">You may also find me on these platforms!</span>
+          <span class="pt-3" data-i18n="fot.section.medSoc"
+            >You may also find me on these platforms!</span
+          >
           <div class="d-flex align-item justify-content-center gap-2">
             <a
               href="https://github.com/AzizLike29"
@@ -2675,9 +2961,13 @@
         >
           <p class="text-footer mt-1 mb-0">
             <i class="bi bi-c-circle fw-normal"></i>
-            <span id="current-year"></span> | <span>Designed</span> and
-            <span> coded </span> with
-            <i class="bi bi-heart-fill text-danger heart"></i> by Aziz
+            <span id="current-year"></span> |
+            <span data-i18n="fot.section.botOne">Designed</span>
+            <span data-i18n="fot.section.botTwo">and</span>
+            <span data-i18n="fot.section.botThree">coded</span>
+            <span data-i18n="fot.section.botFour">with</span>
+            <i class="bi bi-heart-fill text-danger heart"></i>
+            <span data-i18n="fot.section.botFive">by Aziz</span>
           </p>
         </div>
       </div>
@@ -2690,6 +2980,8 @@
     ></a>
     <!-- End Icons Top Button -->
 
+    <!-- Bundle JS -->
+    <script src="/assets/js/bootstrap.bundle.min.js"></script>
     <!-- Template AOS -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
@@ -2701,7 +2993,6 @@
 
     <!-- Viewer Animate -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.10.2/viewer.min.js"></script>
-
     <!-- Template SweetAlert2 -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- Template SMTP JS -->
@@ -2713,6 +3004,8 @@
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
     ></script>
+    <!-- Template Select Language -->
+    <script src="assets/js/selectLanguage.js"></script>
     <!-- Template Setting Year -->
     <script src="assets/js/currentYear.js"></script>
     <!-- Template Email js -->
@@ -2730,11 +3023,6 @@
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
       integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
       crossorigin="anonymous"
     ></script>
   </body>

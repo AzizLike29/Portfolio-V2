@@ -1,0 +1,247 @@
+{
+    "head": {
+        "title": "Portfolio Aziz"
+    },
+
+    "nav": {
+        "language": {
+        "en": "English",
+        "id": "Indonesian"
+        },
+        "theme": {
+        "light": "Light",
+        "dark": "Dark",
+        "auto": "Auto"
+        },
+        "section": {
+        "home": "Home",
+        "about": "About",
+        "education": "Education",
+        "skill": "Skill",
+        "experience": "experience",
+        "certificate": "Certificate",
+        "contact": "Contact",
+        "cv": "Download CV",
+        "portfolioPdf": "Download Portfolio PDF",
+        "name": "Hi, I'm Aziz"
+        }
+    },
+
+    "home": {
+        "section": {
+        "textName": "I am a web developer who is on my way to becoming a full-stack web developer. Although I am still in the learning phase, I have been actively involved in several projects that have helped me build a solid foundation of expertise in JavaScript and PHP programming. These projects serve as a platform for me to hone my understanding of basic concepts and best practices in web development. I have always been passionate about web development and UI/UX design. Every challenge in every project is an opportunity for me to continue developing my skills, with the ultimate goal of becoming a competent full-stack web developer capable of delivering innovative and quality solutions.",
+        "live": "North Bekasi, West Java, Indonesia",
+        "dot": "Available For New Projects"
+        }
+    },
+
+    "about": {
+        "section": "About",
+        "textName": "I am a graduate of Informatics Engineering who has expertise in programming and graphic design as well as experience in creating various projects. With great enthusiasm, I am always eager to keep learning and adapting to the latest developments in the information technology industry. Good communication skills, strong teamwork, and the readiness to contribute to challenging projects are my assets. Currently, I am looking for work experience that will allow me to apply and develop the skills I have acquired so far. I am confident that my dedication to learning and my positive contribution to the team can add value to the company."
+    },
+
+    "edu": {
+        "section": {
+        "titleAbout": "Education and Organization",
+        "defAbout": "Education history and organization experience",
+
+        "titleSchool": "Pelita Bangsa University",
+        "defSchool": "Bachelor Degree in Pelita Bangsa University (UPB) is a private campus resulting from a change in form from the merger between the College of Economics (STIE) and the College of Engineering (STT) in accordance with the Decree of the Minister of National Education of the Republic of Indonesia Number: 664/KPTI/I/2019 dated August 2, 2019.",
+        "pointOne": "3rd place for education-themed poster design.",
+        "pointTwo": "Participants made scientific work on ICT for Gemastik XV, at Brawijaya University.",
+        "pointThree": "Active in the informatics engineering student association (HIMATIF) for 8 months.",
+        "pointFour": "Active in organizing national seminars and workshops.",
+        "pointFive": "Teaching human and computer interaction courses discussing UI/UX Design material and practicing applications.",
+        "date": "2021 - Present",
+
+        "titleSchSmk": "SMK Bina Mandiri Bekasi",
+        "defSchSmk": "SMKS BINA MANDIRI is one of the education units with SMK level in Bintara, Bekasi Barat sub-district, Bekasi city, West Java. In carrying out its activities, SMKS BINA MANDIRI is under the auspices of the Ministry of Education and Culture.",
+        "pointOneSmk": "I learned how to use a proxy, install ubuntu, install windows, and do cable routing (straight and crossover).",
+        "pointTwoSmk": "I learned to use of Adobe Photoshop software and the basic C++ Language.",
+        "pointThreeSmk": "Passed the competency test with good results.",
+        "dateSmk": "2018 - 2021",
+
+        "titleOrgnz": "Informatics Engineering Student Association",
+        "jobOrgnz": "Communication and Information Media Department",
+        "pointOneOrgnz": "Manage 3 relevant social media accounts to increase engagement.",
+        "pointTwoOrgnz": "Plan and create 30+ monthly content pieces to increase visibility.",
+        "pointThreeOrgnz": "Provide information to 1000+ HIMATIF members as well as external audiences.",
+        "pointFourOrgnz": "Document 10+ activities every month for archive and publication.",
+        "dateOrgnz": "May - December 2022",
+
+        "titleOrgns": "Karang Taruna",
+        "jobOrgns": "Sports Division",
+        "pointOneOrgns": "Plan and execute sports activities, such as tournaments, competitions, or recreational activities.",
+        "pointTwoOrgns": "Propose and develop sports programs that can increase participation and achievement.",
+        "pointThreeOrgns": "Adjusting the program to the needs and interests of Youth Organization members.",
+        "dateOrgns": "July 2023 - Present"
+        }
+    },
+
+    "skill": {
+        "title": "Skill",
+        "textTitle": "The skills, tools and technologies I am really good at"
+    },
+
+    "exp": {
+        "section": {
+        "title": "Experience",
+        "defExp": "Here is a quick summary of my most recent experiences"
+        },
+        "section1": {
+        "title": "PT.Food Station Tjipinang Jaya (PERSERODA)",
+        "defJob": "IT Programmer",
+        "jobOne": "Perform maintenance and continued development on FoodConnect and FoodHub e-commerce platforms, including bug fixes and optimization of existing features.",
+        "jobTwo": "Integrate the Winpay payment system (virtual account, QRIS, and e-wallet), including frontend UI/UX, backend logic, callback handling, and transaction logging.",
+        "jobThree": "Present the FoodHub system workflow and functions technically to external parties (clients or partners), including module architecture and key business processes.",
+        "jobFour": "Oversaw the daily data collection from the vending machine platform during the Jakarta Fair (PRJ), processed and analyzed the data in Excel, and generated pivot table reports for management review.",
+        "jobFive": "Improve operational efficiency by building price cards and WhatsApp order integration features into the MIS system, enabling direct ordering from WhatsApp and automatic receipt printing.",
+        "jobSix": "Built and internal dashboard to visually display sales and customer growth data. This dashboard displays a comparison chart of monthly sales targets and realizations, as well as customer growth trends from several divisions to help analysis and decision-making.",
+        "date": "19 May 2025 - Present"
+        },
+        "section2": {
+        "title": "PT.Niramas Utama (INACO)",
+        "defJob": "Fullstack Web Developer",
+        "projectOne": "E-Sign Pd",
+        "jobOne": "Assist users with web development.",
+        "jobTwo": "Build an E-Sign Pd (Electronic Sign Product Development) website to manage online form creation.",
+        "jobThree": "Created 7 features, including (register, login, forgot password, user, dashboard, form, and approval).",
+        "jobFour": "This form feature includes up to 8 different form types, such as sample introduction, other sample checking, and cartons. Forms are dynamically generated using HTML, CSS, and JavaScript.",
+        "jobFive": "Gradual approval process with QR code, customized according to each user's access.",
+
+        "projectTwo": "E-Nota Retur",
+        "jobSix": "Assist users in web development for the accounting division.",
+        "jobSeven": "Migrate applications from desktop to web platform using Laravel.",
+        "jobEight": "Build an E-Nota Retur (Electric Nota Retur) website.",
+        "jobNine": "Added features of register, login, forgot password, manage profile, nota management, user management, note history (history edit and delete), and NPWP Master Data.",
+        "jobTen": "Implemented an invoice management feature with the ability to export data to Excel and download format excel.",
+        "jobEleven": "Provides functions to view invoice details, export to PDF, and delete invoice data as needed."
+        },
+        "section3": {
+        "title": "PT.Kalbe Farma, Tbk",
+        "defJob": "Fullstack Web Developer",
+        "jobOne": "Help users manage manucaturing data in web development.",
+        "jobTwo": "Create master features consisting of (NIE (Distribution License Number), Product, Product Category, Dosage Form).",
+        "jobThree": "Create transaction features consisting of (QA Reg Admin, RA (Regulatory Affairs)).",
+        "jobFour": "Create an audit trail feature to export data in the form of a PDF.",
+        "jobFive": "Testing to QA in April, getting 70% progress results.",
+        "jobSix": "Presentation of project results in June with a final result 90% progress.",
+        "date": "19 February - 30 June 2024"
+        },
+        "section4": {
+        "title": "Merdeka Campus - Independent Study Batch 5",
+        "defJob": "Web Developer Program",
+        "jobOne": "Final Project 1 create a company profile website with HTML, CSS, JavaScript.",
+        "jobTwo": "Final Project 2 create a website landing page, design implementation in figma community features by using HTML, CSS, JavaScript.",
+        "jobThree": "Final Project 3 create a website landing page, implement the design in figma community features using HTML, CSS, JavaScript.",
+        "jobFour": "Final Project 4 creates a weather forecast API data retrieval website using HTML, CSS, JavaScript.",
+        "bdg1": "Project 1",
+        "bdg2": "Project 2",
+        "bdg3": "Project 3",
+        "bdg4": "Project 4",
+        "date": "14 August - 31 December 2023"
+        },
+        "section5": {
+        "title": "Digital Talent and State Polytechnic of Malang",
+        "defJob": "Junior Web Developer",
+        "descJob": "The final project is to create a Kost-an.id mobile application. The mandatory features are the login page, welcome screen, and add, view, edit, and delete data features using the Java programming language, Database (Firebase).",
+        "date": "13 June - 28 July 2023"
+        },
+        "section6": {
+        "title": "PT.Braja Mukti Cakra",
+        "defJob": "Admin Raw Material",
+        "jobOne": "Inputting incoming and supply data.",
+        "jobTwo": "Printing the identity of goods (tag fifo).",
+        "jobThree": "Checking whether the goods match the goods that have been printed.",
+        "jobFour": "Inputting case bearing and rotor brake goods data.",
+        "jobFive": "Organize and tidy up data.",
+        "date": "July 2019 - October 2019"
+        }
+    },
+
+    "pjct": {
+        "section": {
+        "title": "Experience Project",
+        "defPjct": "Some of the noteworthy projects I have built"
+        },
+        "section1": {
+        "title": "Website Food Connect Store",
+        "date": "May - July 2025",
+        "desc": "Food Connect is an e-commerce website that I developed to simplify the process of buying and selling basic necessities online. The platform offers a variety of products such as rice, sugar, milk, wheat flour, and other food items."
+        },
+        "section2": {
+        "title": "Website Klasifikasi KNN",
+        "date": "December 2024 - January 2025",
+        "desc": "This system is designed to describe the process of implementing machine learning models into a web system built using the PHP programming language. The machine learning model is developed and tested using Python, then exported and integrated into a PHP-based system. This process allows data processing and predictions generated by the model to be accessed directly through a web interface."
+        },
+        "section3": {
+        "title": "Registration Online Monitoring",
+        "date": "19 February - 30 June 2024",
+        "desc": "Registration Online Monitoring System is a document collection system and monitoring of the registration process carried out in the application. The registration in question is renewal (re-registration), variation of changes, and additional BPOM data. All registrations that are being carried out for document preparation can be monitored through the system, and the progress of each registration can be seen. progress of each of these registrations. In addition, it can make it easier to see the completeness of registration documents because the required documents have been selected in the system."
+        },
+        "section4": {
+        "title": "Analysis of the Percentage of Population with Health Complaints by Province, Region Type, and Gender Using K-Means Clustering Algorithm (2020-2022)",
+        "date": "December 2023",
+        "jobOne": "Successfully applied the concept of data mining with the descriptive analysis method (finding the average value) and using the k-means clustering algorithm.",
+        "jobTwo": "Based on research data taken from the source of the Indonesian central statistics agency, the overall total average of men and women is the highest in 2020.",
+        "jobThree": "Based on testing of Indonesian health complaints in 34 provinces, Aceh ranked first with the most health complaints.",
+        "jobFour": "Based on testing, women are one of the highest-ranked health complaints in Indonesia.",
+        "jobFive": "Based on testing, rural areas are one of the most common health complaints in Indonesia.",
+        "jobSix": "Based on testing, the largest increase occurred in South Sulawesi, and a decrease occurred in Bali."
+        },
+        "sectionAll": "Click Here!"
+    },
+
+    "ctc": {
+        "section": {
+        "title": "Activity Certificate",
+        "defCtc": "Some of the certificate projects I have achieved are"
+        }
+    },
+
+    "cntct": {
+        "section": {
+        "title": "Contact Form",
+        "textTitle": "Want to talk about the project or have questions? Use the contact form below",
+        "textQuecon": "Questions, Comments, Concerns?",
+        "spanOne": "We'd love to",
+        "spanTwo": "hear",
+        "spanThree": "from you!"
+        },
+        "input": {
+        "name": "Your Name",
+        "plc": {
+            "name": "Please write your full name",
+            "subject": "Question about your article",
+            "message": "Your message starts with..."
+        },
+        "al": {
+            "name": "Name can't be blank",
+            "email": "Email can't be blank",
+            "subject": "Subject can't be blank",
+            "message": "Message can't be blank"
+        },
+        "email": "Your Email",
+        "subject": "Subject",
+        "message": "Message"
+        },
+        "role": {
+        "status": "Loading..."
+        }
+    },
+
+    "fot": {
+        "section": {
+        "title": "Get In Touch",
+        "textTitle": "What’s next? Feel free to reach out to me if you're looking for a developer, have a query, or simply want to connect.",
+        "medSoc": "You may also find me on these platforms!"
+        },
+        "bot": {
+        "one": "Designed",
+        "two": "and",
+        "three": "coded",
+        "four": "with",
+        "five": "by Aziz"
+        }
+    }
+}
