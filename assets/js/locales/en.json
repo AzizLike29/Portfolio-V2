@@ -36,8 +36,10 @@
     },
 
     "about": {
-        "section": "About",
+        "section": {
+        "title": "About",
         "textName": "I am a graduate of Informatics Engineering who has expertise in programming and graphic design as well as experience in creating various projects. With great enthusiasm, I am always eager to keep learning and adapting to the latest developments in the information technology industry. Good communication skills, strong teamwork, and the readiness to contribute to challenging projects are my assets. Currently, I am looking for work experience that will allow me to apply and develop the skills I have acquired so far. I am confident that my dedication to learning and my positive contribution to the team can add value to the company."
+        }
     },
 
     "edu": {

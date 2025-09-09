@@ -36,8 +36,10 @@
     },
 
     "about": {
-        "section": "Tentang",
+        "section": {
+        "title": "Tentang",    
         "textName": "Saya lulusan jurusan Teknik Informatika yang memiliki keahlian di bidang pemrograman dan desain grafis serta pengalaman mengerjakan berbagai proyek. Dengan antusiasme tinggi, saya selalu bersemangat untuk terus belajar dan beradaptasi dengan perkembangan terbaru di industri teknologi informasi. Kemampuan komunikasi yang baik, kerja tim yang solid, serta kesiapan berkontribusi pada proyek menantang adalah aset saya. Saat ini saya mencari pengalaman kerja yang memungkinkan saya menerapkan dan mengembangkan keterampilan yang telah saya peroleh sejauh ini. Saya yakin dedikasi saya untuk belajar dan kontribusi positif terhadap tim dapat memberi nilai tambah bagi perusahaan."
+        }
     },
 
     "edu": {
