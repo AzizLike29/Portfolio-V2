@@ -29,7 +29,7 @@
 
     "home": {
         "section": {
-        "textName": "Saya adalah pengembang web yang sedang meniti jalur menjadi pengembang web full-stack. Meski masih dalam tahap belajar, saya telah terlibat aktif dalam beberapa proyek yang membantu membangun fondasi kuat pada pemrograman JavaScript dan PHP. Proyek-proyek tersebut menjadi wadah bagi saya untuk mengasah pemahaman atas konsep dasar dan praktik terbaik dalam pengembangan web. Saya selalu antusias terhadap pengembangan web dan desain UI/UX. Setiap tantangan di tiap proyek adalah kesempatan untuk terus mengembangkan kemampuan, dengan tujuan akhir menjadi pengembang full-stack yang kompeten dan mampu menghadirkan solusi inovatif serta berkualitas.",
+        "textName": "Pengembang web di jalur full-stack. Membangun dengan JavaScript & PHP, menerapkan clean code, dan peduli pada UI/UX. Terus belajar untuk merilis solusi yang sederhana dan andal.",
         "live": "Bekasi Utara, Jawa Barat, Indonesia",
         "dot": "Tersedia untuk Proyek Baru"
         }
@@ -38,7 +38,7 @@
     "about": {
         "section": {
         "title": "Tentang",    
-        "textName": "Saya lulusan jurusan Teknik Informatika yang memiliki keahlian di bidang pemrograman dan desain grafis serta pengalaman mengerjakan berbagai proyek. Dengan antusiasme tinggi, saya selalu bersemangat untuk terus belajar dan beradaptasi dengan perkembangan terbaru di industri teknologi informasi. Kemampuan komunikasi yang baik, kerja tim yang solid, serta kesiapan berkontribusi pada proyek menantang adalah aset saya. Saat ini saya mencari pengalaman kerja yang memungkinkan saya menerapkan dan mengembangkan keterampilan yang telah saya peroleh sejauh ini. Saya yakin dedikasi saya untuk belajar dan kontribusi positif terhadap tim dapat memberi nilai tambah bagi perusahaan."
+        "textName": "Lulusan Teknik Informatika dengan pengalaman langsung di pemrograman dan desain grafis. Pembelajar cepat, komunikator yang jelas, dan kolaboratif. Mencari kesempatan untuk menerapkan dan berkembang sembari memberi nilai nyata."
         }
     },
 
@@ -99,6 +99,8 @@
         "jobFour": "Mengawasi pengumpulan data harian dari platform mesin penjual otomatis selama Jakarta Fair (PRJ), mengolah dan menganalisis data di Excel, serta membuat laporan pivot untuk tinjauan manajemen.",
         "jobFive": "Meningkatkan efisiensi operasional dengan membangun kartu harga dan fitur integrasi pemesanan WhatsApp ke dalam sistem MIS, memungkinkan pemesanan langsung dari WhatsApp dan pencetakan struk otomatis.",
         "jobSix": "Membangun dasbor internal untuk menampilkan data penjualan dan pertumbuhan pelanggan secara visual. Dasbor menampilkan perbandingan target dan realisasi penjualan bulanan serta tren pertumbuhan pelanggan dari beberapa divisi untuk mendukung analisis dan pengambilan keputusan.",
+        "jobSeven": "Mengembangkan fitur MIS untuk mengintegrasikan katalog produk Food Station ke platform Food Hub (176 toko), memperluas distribusi B2B dan menyederhanakan proses pemesanan di tingkat toko",
+        "jobEight": "Merancang tata letak booth untuk aktivasi merek Food Station pada Jakarta International Investment, Trade, Tourism, and SMEs Expo (JITEX) menggunakan SketchUp 3D.",
         "date": "19 Mei 2025 - Sekarang"
         },
         "section2": {
@@ -197,7 +199,9 @@
     "cntct": {
         "section": {
         "title": "Formulir Kontak",
-        "textTitle": "Ingin berdiskusi tentang proyek atau punya pertanyaan? Gunakan formulir kontak di bawah ini."
+        "textTitle": "Ingin berdiskusi tentang proyek atau punya pertanyaan? Gunakan formulir kontak di bawah ini.",
+        "textQuecon": "Pertanyaan, komentar, atau kendala?",
+        "hearLine": "Kami akan sangat <span class='hear'>senang</span> mendengar kabar dari Anda!"
         },
         "input": {
         "name": "Nama Anda",

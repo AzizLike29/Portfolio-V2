@@ -25,9 +25,24 @@ document.addEventListener('DOMContentLoaded', () => {
     // Terapkan terjemahan ke semua elemen yang punya data-i18n atau data-i18n-attr
     function applyI18n() {
         document.querySelectorAll('[data-i18n]').forEach(el => {
-            const key = el.getAttribute('data-i18n');
+            const raw = (el.getAttribute('data-i18n') || '').trim();
+            let useHTML = false;
+            let key = raw;
+
+            // Dukung prefix [html]key.path
+            if (raw.startsWith('[html]')) {
+                useHTML = true;
+                key = raw.slice(6).trim();
+            }
+
             const val = getByPath(currentDict, key);
-            if (val != null) el.textContent = val;
+            if (val == null) return;
+
+            if (useHTML) {
+                el.innerHTML = val;     // inject sebagai HTML
+            } else {
+                el.textContent = val;   // teks biasa
+            }
         });
 
         document.querySelectorAll('[data-i18n-attr]').forEach(el => {

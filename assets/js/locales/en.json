@@ -29,7 +29,7 @@
 
     "home": {
         "section": {
-        "textName": "I am a web developer who is on my way to becoming a full-stack web developer. Although I am still in the learning phase, I have been actively involved in several projects that have helped me build a solid foundation of expertise in JavaScript and PHP programming. These projects serve as a platform for me to hone my understanding of basic concepts and best practices in web development. I have always been passionate about web development and UI/UX design. Every challenge in every project is an opportunity for me to continue developing my skills, with the ultimate goal of becoming a competent full-stack web developer capable of delivering innovative and quality solutions.",
+        "textName": "Web developer on a full-stack track. I build with JavaScript & PHP, practice clean code, and care about UI/UX. Always learning to ship simple, reliable solutions.",
         "live": "North Bekasi, West Java, Indonesia",
         "dot": "Available For New Projects"
         }
@@ -38,7 +38,7 @@
     "about": {
         "section": {
         "title": "About",
-        "textName": "I am a graduate of Informatics Engineering who has expertise in programming and graphic design as well as experience in creating various projects. With great enthusiasm, I am always eager to keep learning and adapting to the latest developments in the information technology industry. Good communication skills, strong teamwork, and the readiness to contribute to challenging projects are my assets. Currently, I am looking for work experience that will allow me to apply and develop the skills I have acquired so far. I am confident that my dedication to learning and my positive contribution to the team can add value to the company."
+        "textName": "Informatics graduate with hands-on experience in programming and graphic design. Fast learner, clear communicator, team player. Seeking opportunities to apply and grow while delivering real value."
         }
     },
 
@@ -99,6 +99,8 @@
         "jobFour": "Oversaw the daily data collection from the vending machine platform during the Jakarta Fair (PRJ), processed and analyzed the data in Excel, and generated pivot table reports for management review.",
         "jobFive": "Improve operational efficiency by building price cards and WhatsApp order integration features into the MIS system, enabling direct ordering from WhatsApp and automatic receipt printing.",
         "jobSix": "Built and internal dashboard to visually display sales and customer growth data. This dashboard displays a comparison chart of monthly sales targets and realizations, as well as customer growth trends from several divisions to help analysis and decision-making.",
+        "jobSeven": "Built MIS features to integrate Food Station's product catalog into the Food Hub platform (176 stores), expanding B2B distribution and streamlining per-store ordering.",
+        "jobEight": "Designed the booth layout for food Station's brand activation at Jakarta International Investment, Trade, Tourism, and SMEs Expo (JITEX) using SketchUp 3D.",
         "date": "19 May 2025 - Present"
         },
         "section2": {
@@ -206,9 +208,7 @@
         "title": "Contact Form",
         "textTitle": "Want to talk about the project or have questions? Use the contact form below",
         "textQuecon": "Questions, Comments, Concerns?",
-        "spanOne": "We'd love to",
-        "spanTwo": "hear",
-        "spanThree": "from you!"
+        "hearLine": "We'd love to <span class='hear'>hear</span> from you!"
         },
         "input": {
         "name": "Your Name",
