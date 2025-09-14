@@ -219,7 +219,6 @@ a.linkedin:focus i.fa-linkedin-in {
 
 /* about */
 h2.home,
-h2.about,
 h2.education,
 h2.organization,
 h2.skill,
@@ -234,7 +233,6 @@ h2.footer {
   font-family: "Roboto", sans-serif;
 }
 
-h2.about:before,
 h2.education:before,
 h2.organization:before,
 h2.skill:before,
@@ -254,10 +252,6 @@ h2.footer:before {
   border-radius: 70px;
   transform: translateX(-50%);
   background: #808588;
-}
-
-h2.about:hover::before {
-  width: 100%;
 }
 
 @keyframes float {
@@ -612,7 +606,6 @@ footer {
 
 /* Mode Dark */
 [data-bs-theme="dark"] h2.home,
-[data-bs-theme="dark"] h2.about,
 [data-bs-theme="dark"] h2.education,
 [data-bs-theme="dark"] h2.organization,
 [data-bs-theme="dark"] h2.skill,
@@ -625,7 +618,6 @@ footer {
 }
 
 [data-bs-theme="light"] h2.home,
-[data-bs-theme="light"] h2.about,
 [data-bs-theme="light"] h2.education,
 [data-bs-theme="light"] h2.organization,
 [data-bs-theme="light"] h2.skill,
@@ -834,11 +826,6 @@ only screen and (max-width: 414px) {
 
   h2.education:hover::before {
     width: 60%;
-  }
-
-  section#about {
-    margin-top: -20px;
-    margin-bottom: 0;
   }
 
   .inner-container {

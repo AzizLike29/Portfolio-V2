@@ -15,7 +15,6 @@
         },
         "section": {
         "home": "Beranda",
-        "about": "Tentang",
         "education": "Pendidikan",
         "skill": "Keahlian",
         "experience": "Pengalaman",
@@ -29,16 +28,9 @@
 
     "home": {
         "section": {
-        "textName": "Pengembang web di jalur full-stack. Membangun dengan JavaScript & PHP, menerapkan clean code, dan peduli pada UI/UX. Terus belajar untuk merilis solusi yang sederhana dan andal.",
+        "textName": "Pengembang web di jalur full-stack. Membangun dengan JavaScript & PHP, menerapkan clean code, dan peduli pada UI/UX. Terus belajar untuk merilis solusi yang sederhana dan andal. Lulusan Teknik Informatika dengan pengalaman langsung di pemrograman dan desain grafis. Pembelajar cepat, komunikator yang jelas, dan kolaboratif. Mencari kesempatan untuk menerapkan dan berkembang sembari memberi nilai nyata.",
         "live": "Bekasi Utara, Jawa Barat, Indonesia",
         "dot": "Tersedia untuk Proyek Baru"
-        }
-    },
-
-    "about": {
-        "section": {
-        "title": "Tentang",    
-        "textName": "Lulusan Teknik Informatika dengan pengalaman langsung di pemrograman dan desain grafis. Pembelajar cepat, komunikator yang jelas, dan kolaboratif. Mencari kesempatan untuk menerapkan dan berkembang sembari memberi nilai nyata."
         }
     },
 
@@ -201,7 +193,7 @@
         "title": "Formulir Kontak",
         "textTitle": "Ingin berdiskusi tentang proyek atau punya pertanyaan? Gunakan formulir kontak di bawah ini.",
         "textQuecon": "Pertanyaan, komentar, atau kendala?",
-        "hearLine": "Kami akan sangat <span class='hear'>senang</span> mendengar kabar dari Anda!"
+        "hearLine": "Kami <span class='hear'>senang</span> mendengar dari Anda!"
         },
         "input": {
         "name": "Nama Anda",

@@ -15,7 +15,6 @@
         },
         "section": {
         "home": "Home",
-        "about": "About",
         "education": "Education",
         "skill": "Skill",
         "experience": "experience",
@@ -29,16 +28,9 @@
 
     "home": {
         "section": {
-        "textName": "Web developer on a full-stack track. I build with JavaScript & PHP, practice clean code, and care about UI/UX. Always learning to ship simple, reliable solutions.",
+        "textName": "Web developer on a full-stack track. I build with JavaScript & PHP, practice clean code, and care about UI/UX. Always learning to ship simple, reliable solutions. Informatics graduate with hands-on experience in programming and graphic design. Fast learner, clear communicator, team player. Seeking opportunities to apply and grow while delivering real value.",
         "live": "North Bekasi, West Java, Indonesia",
         "dot": "Available For New Projects"
-        }
-    },
-
-    "about": {
-        "section": {
-        "title": "About",
-        "textName": "Informatics graduate with hands-on experience in programming and graphic design. Fast learner, clear communicator, team player. Seeking opportunities to apply and grow while delivering real value."
         }
     },
 
