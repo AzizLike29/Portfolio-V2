@@ -38,9 +38,8 @@ function generateEmailBody() {
                 Email
               </td>
               <td style="padding: 12px 0; border-bottom: 1px solid #f9fafb; color: #111827;">
-                <a href="mailto:${
-                  email.value
-                }" style="color: #10b981; text-decoration: none;">
+                <a href="mailto:${email.value
+    }" style="color: #10b981; text-decoration: none;">
                   ${email.value}
                 </a>
               </td>
@@ -68,9 +67,8 @@ function generateEmailBody() {
         
         <!-- Reply Button -->
         <div style="text-align: center; margin-bottom: 24px;">
-          <a href="mailto:${
-            email.value
-          }" style="display: inline-block; background-color: #10b981; color: white; padding: 12px 24px; text-decoration: none; font-weight: 600; font-size: 14px; border-radius: 4px;">
+          <a href="mailto:${email.value
+    }" style="display: inline-block; background-color: #10b981; color: white; padding: 12px 24px; text-decoration: none; font-weight: 600; font-size: 14px; border-radius: 4px;">
             Reply to ${fullName.value}
           </a>
         </div>
@@ -79,13 +77,13 @@ function generateEmailBody() {
         <div style="text-align: center; padding: 16px; background-color: #f9fafb; border-radius: 4px;">
           <p style="margin: 0; font-size: 14px; color: #6b7280;">
             Received on ${new Date().toLocaleDateString("en-US", {
-              weekday: "long",
-              year: "numeric",
-              month: "long",
-              day: "numeric",
-              hour: "2-digit",
-              minute: "2-digit",
-            })}
+      weekday: "long",
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+      hour: "2-digit",
+      minute: "2-digit",
+    })}
           </p>
         </div>
       </div>
@@ -101,40 +99,43 @@ function generateEmailBody() {
 }
 
 function sendEmail() {
+  // Audio Email
+  const successAudio = new Audio("assets/audio/success-tone.mp3");
+  const errorAudio = new Audio("assets/audio/error-tone.mp3");
+
+  // Set Volume Audio
+  successAudio.volume = 1.0;
+  errorAudio.volume = 1.0;
+
   const loadingIndicator = document.getElementById("loadingIndicator");
   loadingIndicator.classList.remove("d-none");
 
-  Email.send({
-    Host: "smtp.elasticemail.com",
-    Username: "abdulfirdaus590@gmail.com",
-    Password: "27FF159C670ECB4712C04546EC82B3F50260",
-    To: "abdulfirdaus590@gmail.com",
-    From: "abdulfirdaus590@gmail.com",
-    Subject: subject.value,
-    Body: generateEmailBody(),
-  }).then((message) => {
+  emailjs.send("service_qxtabei", "template_9bhjbzo", {
+    fullName: document.getElementById("name").value,
+    email: document.getElementById("email").value,
+    subject: document.getElementById("subject").value,
+    message: document.getElementById("message").value,
+  }).then(() => {
     loadingIndicator.classList.add("d-none");
-    if (message == "OK") {
-      // Audio Success Play
-      const successAudio = new Audio("assets/audio/success-tone.mp3");
-      successAudio.volume = 1.0;
-      successAudio.play();
-      Swal.fire({
-        title: "Success!",
-        text: "Congrats, Sent message succesfully!",
-        icon: "success",
-      });
-    } else {
-      // Audio Error Play
-      const errorAudio = new Audio("assets/audio/error-tone.mp3");
-      errorAudio.volume = 1.0;
-      errorAudio.play();
-      Swal.fire({
-        title: "Error!",
-        text: "Failed to send the email. Please try again later.",
-        icon: "error",
-      });
-    }
+    // Audio Success Play
+    successAudio.currentTime = 0;
+    successAudio.play().catch(() => { });
+
+    Swal.fire({
+      title: "Success!",
+      text: "Congrats, Sent message succesfully!",
+      icon: "success",
+    });
+  }).catch(() => {
+    // Audio Error Play
+    errorAudio.currentTime = 0;
+    errorAudio.play().catch(() => { });
+
+    Swal.fire({
+      title: "Error!",
+      text: "Failed to send the email. Please try again later.",
+      icon: "error",
+    });
   });
 }
 
@@ -198,8 +199,6 @@ form.addEventListener("submit", (e) => {
     !message.classList.contains("error")
   ) {
     sendEmail();
-
     form.reset();
-    return false;
   }
 });
