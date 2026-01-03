@@ -15,7 +15,8 @@ emoji.style.opacity = 0;
 anime.timeline({
   loop: true,
   complete: () => {
-    emoji.style.opacity = 0; // Reset emoji visibility at the end of each loop
+    emoji.style.opacity = 0;
+    anime.set(".home .letter", { opacity: 0 });
   }
 })
   .add({
@@ -23,26 +24,23 @@ anime.timeline({
     targets: ".home .letter",
     opacity: [0, 1],
     easing: "easeInOutQuad",
-    duration: 500,
-    delay: (el, i) => 150 * (i + 1),
+    duration: 400,
+    delay: (el, i) => 100 * i
   })
   .add({
     // Show emoji after letters appear
     targets: ".wave",
     opacity: [0, 1],
-    duration: 500,
-    easing: "easeInOutQuad",
-    begin: () => {
-      emoji.style.opacity = 1; // Ensure emoji is visible
-    }
+    duration: 400,
+    easing: "easeInOutQuad"
   })
   .add({
     // Fade out the whole block after a delay
-    targets: ".fw-semibold",
+    targets: ".home-wrapper",
     opacity: 0,
-    duration: 1000,
+    duration: 800,
     easing: "easeOutExpo",
-    delay: 1000,
+    delay: 1000
   });
 
 // Define continuous waving animation for the emoji
@@ -56,6 +54,5 @@ anime({
     { value: 0, duration: 150 },
   ],
   easing: "easeInOutSine",
-  duration: 1000,
   loop: true
 });

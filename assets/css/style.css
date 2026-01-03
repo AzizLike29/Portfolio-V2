@@ -41,9 +41,25 @@ p.description {
   text-align: justify;
 }
 
+.home-wrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.home {
+  display: inline-block;
+}
+
+.home .letter {
+  display: inline-block;
+  opacity: 0;
+}
+
 .wave {
   display: inline-block;
   transform-origin: 70% 70%;
+  will-change: transform;
 }
 
 @keyframes pulse {
