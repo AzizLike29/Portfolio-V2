@@ -173,7 +173,9 @@
     "pjct": {
         "section": {
         "title": "Experience Project",
-        "defPjct": "Some of the noteworthy projects I have built"
+        "defPjct": "Some of the noteworthy projects I have built",
+        "filter": "Filter by Category",
+        "allprjct": "All Projects"
         },
         "section1": {
         "title": "Website Food Connect Store",

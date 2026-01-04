@@ -173,7 +173,9 @@
     "pjct": {
         "section": {
         "title": "Pengalaman Proyek",
-        "defPjct": "Beberapa proyek penting yang telah saya bangun"
+        "defPjct": "Beberapa proyek penting yang telah saya bangun",
+        "filter": "Filter berdasarkan Kategori",
+        "allprjct": "Semua Proyek"
         },
         "section1": {
         "title": "Website Toko Food Connect",
