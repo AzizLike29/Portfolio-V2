@@ -94,7 +94,7 @@
         "jobSeven": "Mengembangkan fitur MIS untuk mengintegrasikan katalog produk Food Station ke platform Food Hub (176 toko), memperluas distribusi B2B dan menyederhanakan proses pemesanan di tingkat toko",
         "jobEight": "Merancang tata letak booth untuk aktivasi merek Food Station pada Jakarta International Investment, Trade, Tourism, and SMEs Expo (JITEX) menggunakan SketchUp 3D.",
         "jobNine": "Berpartisipasi secara aktif dalam mempromosikan dan menawarkan produk Food Station di pameran nasional dan internasional, seperti Trade Expo Indonesia (Tangerang) dan Jakarta Indonesia Days, serta berinteraksi dengan pengunjung lokal dan asing.",
-        "date": "19 Mei 2025 - Sekarang"
+        "dateFs": "19 Mei 2025 - Sekarang"
         },
         "section2": {
         "title": "PT.Niramas Utama (INACO)",
@@ -112,7 +112,16 @@
         "jobEight": "Membangun situs E-Nota Retur (Nota Retur Elektronik).",
         "jobNine": "Menambahkan fitur registrasi, login, lupa kata sandi, kelola profil, manajemen nota, manajemen pengguna, riwayat nota (riwayat edit dan hapus), serta Master Data NPWP.",
         "jobTen": "Mengimplementasikan fitur manajemen nota dengan kemampuan ekspor data ke Excel dan unduh template Excel.",
-        "jobEleven": "Menyediakan fungsi untuk melihat detail nota, ekspor ke PDF, dan menghapus data nota sesuai kebutuhan."
+        "jobEleven": "Menyediakan fungsi untuk melihat detail nota, ekspor ke PDF, dan menghapus data nota sesuai kebutuhan.",
+
+        "projectThree": "E-Receipt",
+        "jobTwelve": "Membantu pengguna dalam pengembangan web untuk divisi keuangan.",
+        "jobThirteen": "Bangun situs web E-Receipt (Bukti Pembayaran Elektronik).",
+        "jobFourteen": "Buat fitur login akun, pendaftaran akun, lupa kata sandi, pengelolaan pengguna, pengelolaan profil, dan data master pemasok untuk pengelolaan akun.",
+        "jobFifteen": "Buat fitur dasbor untuk statistik data.",
+        "jobSixteen": "Buat fitur manajemen bukti pembayaran untuk menambah data, mengubah data, mengimpor data Excel, dan mencetak data dalam format PDF dan Excel.",
+        "jobSeventeen": "Buat fitur laporan dan pengaturan untuk mengirim notifikasi email untuk setiap pengguna",
+        "dateInaco": "26 Juli 2024 - 25 Januari 2025"
         },
         "section3": {
         "title": "PT.Kalbe Farma, Tbk",
@@ -123,7 +132,7 @@
         "jobFour": "Membuat fitur jejak audit (audit trail) untuk mengekspor data dalam bentuk PDF.",
         "jobFive": "Pengujian ke QA pada bulan April, mendapatkan progres 70%.",
         "jobSix": "Presentasi hasil proyek pada bulan Juni dengan hasil akhir progres 90%.",
-        "date": "19 Februari - 30 Juni 2024"
+        "dateKalbe": "19 Februari - 30 Juni 2024"
         },
         "section4": {
         "title": "Kampus Merdeka - Studi Independen Batch 5",
@@ -136,13 +145,13 @@
         "bdg2": "Proyek 2",
         "bdg3": "Proyek 3",
         "bdg4": "Proyek 4",
-        "date": "14 Agustus - 31 Desember 2023"
+        "dateHacktiv8": "14 Agustus - 31 Desember 2023"
         },
         "section5": {
         "title": "Digital Talent dan Politeknik Negeri Malang",
         "defJob": "Pengembang Web Junior",
         "descJob": "Proyek akhir adalah membuat aplikasi mobile Kost-an.id. Fitur wajib meliputi halaman login, layar sambutan, serta fitur tambah, lihat, edit, dan hapus data menggunakan bahasa pemrograman Java dan basis data Firebase.",
-        "date": "13 Juni - 28 Juli 2023"
+        "dateDigital": "13 Juni - 28 Juli 2023"
         },
         "section6": {
         "title": "PT.Braja Mukti Cakra",
@@ -152,41 +161,118 @@
         "jobThree": "Memeriksa kesesuaian barang dengan identitas yang telah dicetak.",
         "jobFour": "Menginput data barang case bearing dan rotor brake.",
         "jobFive": "Mengelola dan merapikan data.",
-        "date": "Juli 2019 - Oktober 2019"
+        "dateBmc": "Juli 2019 - Oktober 2019"
         }
     },
 
     "pjct": {
         "section": {
         "title": "Pengalaman Proyek",
-        "defPjct": "Beberapa proyek yang patut dicatat yang telah saya bangun"
+        "defPjct": "Beberapa proyek penting yang telah saya bangun"
         },
         "section1": {
-        "title": "Website Food Connect Store",
-        "date": "Mei - Juli 2025",
-        "desc": "Food Connect adalah situs e-commerce yang saya kembangkan untuk mempermudah proses jual beli kebutuhan pokok secara daring. Platform ini menawarkan berbagai produk seperti beras, gula, susu, tepung terigu, dan bahan pangan lainnya."
+        "title": "PT. Sanghiang Perkasa (Kalbe Nutritionals)",
+        "defJob": "Asisten Engineer Digitalisasi",
+        "dateKn": "08 Desember 2025 - Sekarang"
         },
         "section2": {
-        "title": "Website Klasifikasi KNN",
-        "date": "Desember 2024 - Januari 2025",
-        "desc": "Sistem ini dirancang untuk mendeskripsikan proses penerapan model machine learning ke dalam sistem web yang dibangun dengan bahasa pemrograman PHP. Model machine learning dikembangkan dan diuji menggunakan Python, kemudian diekspor dan diintegrasikan ke sistem berbasis PHP. Proses ini memungkinkan pemrosesan data dan prediksi dari model dapat diakses langsung melalui antarmuka web."
+        "title": "Website Toko Food Connect",
+        "date": "Mei - Juli 2025",
+        "desc": "Food Connect adalah sebuah website e-commerce yang saya kembangkan untuk mempermudah proses jual beli kebutuhan pokok secara online. Platform ini menyediakan berbagai produk seperti beras, gula, susu, tepung terigu, dan berbagai bahan makanan lainnya."
         },
         "section3": {
-        "title": "Pemantauan Pendaftaran Online",
-        "date": "19 Februari - 30 Juni 2024",
-        "desc": "Sistem Registration Online Monitoring adalah sistem pengumpulan dokumen dan pemantauan proses pendaftaran yang dilakukan di dalam aplikasi. Pendaftaran meliputi perpanjangan (registrasi ulang), variasi perubahan, dan penambahan data BPOM. Semua pendaftaran yang sedang berjalan untuk persiapan dokumen dapat dipantau melalui sistem, dan progres masing-masing pendaftaran dapat dilihat. Selain itu, sistem memudahkan untuk melihat kelengkapan dokumen pendaftaran karena dokumen yang diperlukan telah dipilih di dalam sistem."
+        "title": "Website Klasifikasi KNN",
+        "date": "Desember 2024 - Januari 2025",
+        "desc": "Sistem ini dirancang untuk menjelaskan proses penerapan model machine learning ke dalam sebuah sistem web yang dibangun menggunakan bahasa pemrograman PHP. Model machine learning dikembangkan dan diuji menggunakan Python, kemudian diekspor dan diintegrasikan ke dalam sistem berbasis PHP. Proses ini memungkinkan pengolahan data dan hasil prediksi dari model dapat diakses langsung melalui antarmuka web."
         },
         "section4": {
-        "title": "Analisis Persentase Penduduk dengan Keluhan Kesehatan menurut Provinsi, Jenis Wilayah, dan Jenis Kelamin Menggunakan Algoritma K-Means Clustering (2020–2022)",
+        "title": "Monitoring Pendaftaran Online",
+        "date": "19 Februari - 30 Juni 2024",
+        "desc": "Sistem Monitoring Pendaftaran Online merupakan sistem pengumpulan dokumen dan pemantauan proses pendaftaran yang dilakukan di dalam aplikasi. Pendaftaran yang dimaksud meliputi perpanjangan (pendaftaran ulang), variasi perubahan, serta penambahan data BPOM. Seluruh pendaftaran yang sedang berjalan dalam tahap persiapan dokumen dapat dipantau melalui sistem, dan perkembangan dari setiap pendaftaran dapat dilihat. Selain itu, sistem ini mempermudah pengecekan kelengkapan dokumen pendaftaran karena dokumen yang dibutuhkan telah dipilih di dalam sistem."
+        },
+        "section5": {
+        "title": "Analisis Persentase Penduduk dengan Keluhan Kesehatan Berdasarkan Provinsi, Tipe Wilayah, dan Jenis Kelamin Menggunakan Algoritma K-Means Clustering (2020-2022)",
         "date": "Desember 2023",
-        "jobOne": "Berhasil menerapkan konsep data mining dengan metode analisis deskriptif (mencari nilai rata-rata) serta menggunakan algoritma k-means clustering.",
-        "jobTwo": "Berdasarkan data penelitian dari Badan Pusat Statistik, rata-rata total keseluruhan laki-laki dan perempuan tertinggi terjadi pada tahun 2020.",
-        "jobThree": "Berdasarkan pengujian keluhan kesehatan di 34 provinsi, Aceh menempati peringkat pertama dengan jumlah keluhan kesehatan terbanyak.",
-        "jobFour": "Berdasarkan pengujian, perempuan termasuk kelompok dengan tingkat keluhan kesehatan yang tinggi di Indonesia.",
-        "jobFive": "Berdasarkan pengujian, wilayah perdesaan memiliki tingkat keluhan kesehatan yang relatif tinggi di Indonesia.",
-        "jobSix": "Berdasarkan pengujian, peningkatan terbesar terjadi di Sulawesi Selatan, sementara penurunan terjadi di Bali."
+        "jobOne": "Berhasil menerapkan konsep data mining dengan metode analisis deskriptif (mencari nilai rata-rata) serta menggunakan algoritma K-Means Clustering.",
+        "jobTwo": "Berdasarkan data penelitian yang diambil dari Badan Pusat Statistik Indonesia, rata-rata total keseluruhan laki-laki dan perempuan tertinggi terjadi pada tahun 2020.",
+        "jobThree": "Berdasarkan pengujian data keluhan kesehatan di 34 provinsi di Indonesia, Provinsi Aceh menempati peringkat pertama dengan jumlah keluhan kesehatan terbanyak.",
+        "jobFour": "Berdasarkan hasil pengujian, perempuan merupakan salah satu kelompok dengan tingkat keluhan kesehatan tertinggi di Indonesia.",
+        "jobFive": "Berdasarkan hasil pengujian, wilayah pedesaan menjadi salah satu wilayah dengan tingkat keluhan kesehatan tertinggi di Indonesia.",
+        "jobSix": "Berdasarkan hasil pengujian, peningkatan terbesar terjadi di Sulawesi Selatan, sedangkan penurunan terjadi di Bali."
+        },
+        "section6": {
+        "title": "Penerapan Algoritma Regresi Logistik pada Dataset Lagu Spotify Paling Banyak Diputar Tahun 2023",
+        "date": "April 2023",
+        "desc": "Penggunaan algoritma regresi logistik pada dataset Spotify memberikan prediksi yang berguna terkait popularitas lagu berdasarkan atribut tertentu. Untuk penelitian selanjutnya, disarankan untuk mengeksplorasi lebih dalam faktor-faktor yang memengaruhi popularitas lagu, seperti artis, genre, dan strategi kampanye pemasaran."
+        },
+        "section7": {
+        "title": "Desain UI Website SDN Karang Asih 01",
+        "date": "September 2023",
+        "jobOne": "Merancang wireframe dan desain website SDN Karang Asih 01.",
+        "jobTwo": "Mengonsep navigasi UI/UX per halaman seperti \"Tentang Kami\" dan \"Kontak\" menggunakan file HTML terpisah.",
+        "jobThree": "Menyampaikan hasil desain website kepada pihak institusi dan mengumpulkan umpan balik untuk memastikan kesesuaian dengan kebutuhan dan harapan."
+        },
+        "section8": {
+        "title": "Desain UI/UX Aplikasi Richeese Factory",
+        "date": "Juni 2023",
+        "jobOne": "Merancang wireframe serta desain dan prototipe UI.",
+        "jobTwo": "Membuat mock-up sebagai desain atau model dari produk yang dikembangkan.",
+        "jobThree": "Mempresentasikan dan mempromosikan hasil karya menggunakan poster."
+        },
+        "section9": {
+        "title": "Desain UI/UX Aplikasi Toko Sepatu",
+        "date": "Mei 2023",
+        "jobOne": "Merancang wireframe serta desain dan prototipe UI.",
+        "jobTwo": "Menyesuaikan isi aplikasi toko sepatu sesuai dengan kebutuhan.",
+        "jobThree": "Membuat mock-up sebagai desain atau model dari produk yang dikembangkan."
+        },
+        "section10": {
+        "title": "Landing Page Website Bimbingan Belajar",
+        "date": "Agustus 2023",
+        "jobOne": "Merancang wireframe dan desain website bimbingan belajar di perusahaan pintara.id.",
+        "jobTwo": "Menerapkan konsep landing page pada website.",
+        "jobThree": "Membuat logo perusahaan serta tampilan halaman yang menarik.",
+        "jobFour": "Melakukan wawancara terkait website yang telah dibuat kepada pihak perusahaan."
+        },
+        "section11": {
+        "title": "Aplikasi Kost-an.id",
+        "date": "Agustus 2023",
+        "jobOne": "Membuat sistem aplikasi berbasis CRUD (Create, Read, Update, Delete).",
+        "jobTwo": "Data yang dimasukkan akan disimpan ke dalam Firebase.",
+        "jobThree": "Mempresentasikan hasil karya kepada dewan juri melalui aplikasi Zoom secara daring."
+        },
+        "section12": {
+        "title": "Database Manajemen Kas RT",
+        "date": "Juni - Juli 2023",
+        "jobOne": "Merancang desain website menggunakan perangkat lunak Figma.",
+        "jobTwo": "Membuat dua sistem website manajemen kas RT, sistem pertama menggunakan CSS native, sedangkan sistem kedua menggunakan Bootstrap 5 sebagai framework frontend dan CodeIgniter 4 sebagai framework backend.",
+        "jobThree": "Data yang dimasukkan akan disimpan ke dalam database MySQL.",
+        "jobFour": "Membuat perencanaan use case dan diagram alur proses sistem menggunakan Figma.",
+        "jobFive": "Mempromosikan hasil karya yang diunggah ke YouTube dan melakukan deployment sistem menggunakan domain."
+        },
+        "section13": {
+        "title": "Sistem Data Mahasiswa",
+        "date": "November 2022 - Januari 2023",
+        "jobOne": "Membuat sistem data mahasiswa berbasis CRUD (Create, Read, Update, Delete).",
+        "jobTwo": "Data login dan data mahasiswa disimpan ke dalam database MySQL.",
+        "jobThree": "Membuat desain standing banner untuk mempromosikan karya yang dibuat dan berhasil mencapai target voting sebanyak 50 orang dari mahasiswa jurusan lain.",
+        "jobFour": "Proyek akhir Semester 3 pada mata kuliah Pemrograman Berorientasi Objek."
+        },
+        "section14": {
+        "title": "Proyek Sederhana Multi Program",
+        "date": "November 2022 - Januari 2023",
+        "jobOne": "Membuat sistem login dengan memasukkan username dan password, serta sistem registrasi dengan memasukkan data tambahan berupa email.",
+        "jobTwo": "Menampilkan pilihan program kalkulator atau pemutar suara untuk diakses.",
+        "jobThree": "Data registrasi akan secara otomatis disimpan ke dalam database MySQL."
         },
         "sectionAll": "Klik di sini!"
+    },
+
+    "ctc": {
+        "section": {
+        "title": "Sertifikat Kegiatan",
+        "defCtc": "Beberapa proyek sertifikat yang telah saya selesaikan adalah"
+        }
     },
 
     "cntct": {

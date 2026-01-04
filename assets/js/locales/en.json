@@ -83,6 +83,11 @@
         "defExp": "Here is a quick summary of my most recent experiences"
         },
         "section1": {
+        "title": "PT.Sanghiang Perkasa (Kalbe Nutritionals)",
+        "defJob": "Digitalization Engineer Asisstant",
+        "dateKn": "08 December 2025 - Present"
+        },
+        "section2": {
         "title": "PT.Food Station Tjipinang Jaya (PERSERODA)",
         "defJob": "IT Programmer",
         "jobOne": "Perform maintenance and continued development on FoodConnect and FoodHub e-commerce platforms, including bug fixes and optimization of existing features.",
@@ -94,9 +99,9 @@
         "jobSeven": "Built MIS features to integrate Food Station's product catalog into the Food Hub platform (176 stores), expanding B2B distribution and streamlining per-store ordering.",
         "jobEight": "Designed the booth layout for food Station's brand activation at Jakarta International Investment, Trade, Tourism, and SMEs Expo (JITEX) using SketchUp 3D.",
         "jobNine": "Actively participate in promoting and offering Food Station products at national and international exhibitions, such as Trade Expo Indonesia (Tangerang) and Jakarta Indonesia Days, as well as communicating with local and foreign visitors.",
-        "date": "19 May 2025 - Present"
+        "dateFs": "19 May 2025 - Present"
         },
-        "section2": {
+        "section3": {
         "title": "PT.Niramas Utama (INACO)",
         "defJob": "Fullstack Web Developer",
         "projectOne": "E-Sign Pd",
@@ -112,9 +117,18 @@
         "jobEight": "Build an E-Nota Retur (Electric Nota Retur) website.",
         "jobNine": "Added features of register, login, forgot password, manage profile, nota management, user management, note history (history edit and delete), and NPWP Master Data.",
         "jobTen": "Implemented an invoice management feature with the ability to export data to Excel and download format excel.",
-        "jobEleven": "Provides functions to view invoice details, export to PDF, and delete invoice data as needed."
+        "jobEleven": "Provides functions to view invoice details, export to PDF, and delete invoice data as needed.",
+
+        "projectThree": "E-Receipt",
+        "jobTwelve": "Assist users in web development for the finance division.",
+        "jobThirteen": "Build an E-Receipt (Electric Receipt) website.",
+        "jobFourteen": "Create account login, account register, forgot password, user management, profile management, and supplier master data features for account management.",
+        "jobFifteen": "Create a dashboard feature for data statistics.",
+        "jobSixteen": "Create receipt management features to add data, change data, import Excel data, and print data with PDF and Excel formats.ats.",
+        "jobSeventeen": "Create a report feature and settings to send email notifications for each user",
+        "dateInaco": "26 July 2024 - 25 January 2025"
         },
-        "section3": {
+        "section4": {
         "title": "PT.Kalbe Farma, Tbk",
         "defJob": "Fullstack Web Developer",
         "jobOne": "Help users manage manucaturing data in web development.",
@@ -123,9 +137,9 @@
         "jobFour": "Create an audit trail feature to export data in the form of a PDF.",
         "jobFive": "Testing to QA in April, getting 70% progress results.",
         "jobSix": "Presentation of project results in June with a final result 90% progress.",
-        "date": "19 February - 30 June 2024"
+        "dateKalbe": "19 February - 30 June 2024"
         },
-        "section4": {
+        "section5": {
         "title": "Merdeka Campus - Independent Study Batch 5",
         "defJob": "Web Developer Program",
         "jobOne": "Final Project 1 create a company profile website with HTML, CSS, JavaScript.",
@@ -136,15 +150,15 @@
         "bdg2": "Project 2",
         "bdg3": "Project 3",
         "bdg4": "Project 4",
-        "date": "14 August - 31 December 2023"
+        "dateHacktiv8": "14 August - 31 December 2023"
         },
-        "section5": {
+        "section6": {
         "title": "Digital Talent and State Polytechnic of Malang",
         "defJob": "Junior Web Developer",
         "descJob": "The final project is to create a Kost-an.id mobile application. The mandatory features are the login page, welcome screen, and add, view, edit, and delete data features using the Java programming language, Database (Firebase).",
-        "date": "13 June - 28 July 2023"
+        "dateDigital": "13 June - 28 July 2023"
         },
-        "section6": {
+        "section7": {
         "title": "PT.Braja Mukti Cakra",
         "defJob": "Admin Raw Material",
         "jobOne": "Inputting incoming and supply data.",
@@ -152,7 +166,7 @@
         "jobThree": "Checking whether the goods match the goods that have been printed.",
         "jobFour": "Inputting case bearing and rotor brake goods data.",
         "jobFive": "Organize and tidy up data.",
-        "date": "July 2019 - October 2019"
+        "dateBmc": "July 2019 - October 2019"
         }
     },
 
@@ -185,6 +199,71 @@
         "jobFour": "Based on testing, women are one of the highest-ranked health complaints in Indonesia.",
         "jobFive": "Based on testing, rural areas are one of the most common health complaints in Indonesia.",
         "jobSix": "Based on testing, the largest increase occurred in South Sulawesi, and a decrease occurred in Bali."
+        },
+        "section5": {
+        "title": "Application of Logistic Regression Algorithm on Most Streamed Spotify Songs 2023 Dataset",
+        "date": "April 2023",
+        "desc": "The use of a logistic regression algorithm on the Spotify dataset provides useful predictions of song popularity based on certain attributes. For future research, it is recommended to further explore factors that affect song popularity, such as artists, genres, and marketing campaign strategies."
+        },
+        "section6": {
+        "title": "Website Design UI SDN Karang Asih 01",
+        "date": "September 2023",
+        "jobOne": "Designing wireframe and website design SDN Karang Asih 01",
+        "jobTwo": "Conceptualize UI/UX per-page navigation such as \"About Us\" and \"Contact\" with separate HTML.",
+        "jobThree": "Deliver website design results to institutions and collect feedback to ensure conformity with needs and expectations."
+        },
+        "section7": {
+        "title": "UI/UX of Richeese Factory Application Design",
+        "date": "June 2023",
+        "jobOne": "Designing wireframe and UI designs and prototypes.",
+        "jobTwo": "Create mock-ups as designs or models of the product being created.",
+        "jobThree": "Present and promote work using posters."
+        },
+        "section8": {
+        "title": "UI/UX Shoe Store App Design",
+        "date": "May 2023",
+        "jobOne": "Designing wireframe and UI designs and prototypes.",
+        "jobTwo": "Customize the contents of the shoe store application according to needs.",
+        "jobThree": "Create mock-ups as designs or models of the product being created."
+        },
+        "section9": {
+        "title": "Tutoring Website Landing Page",
+        "date": "August 2023",
+        "jobOne": "Designing wireframes and website design tutoring at pintara.id Company.",
+        "jobTwo": "Apply the concept of landing pages on the website.",
+        "jobThree": "Create a company logo and create an attractive page look.",
+        "jobFour": "Conduct interviews about websites that have been made to the company."
+        },
+        "section10": {
+        "title": "Kost-an.id Application",
+        "date": "August 2023",
+        "jobOne": "Create a CRUD-based application system (Create, Read, Update, Delete)",
+        "jobTwo": "The data entered will be saved to firebase.",
+        "jobThree": "Presenting the work to the jury through the zoom online application."
+        },
+        "section11": {
+        "title": "RT Cash Management Database",
+        "date": "June - July 2023",
+        "jobOne": "Designing website design using figma software.",
+        "jobTwo": "Creating 2 RT cash management website systems, the first website system uses native css, the second website system uses bootstrap 5 as a frontend framework and codeigniter 4 as a backend framework.",
+        "jobThree": "The entered data will be stored into the MySQL database.",
+        "jobFour": "Make a usecase plan of the groove diagram of the system process created using figma",
+        "jobFive": "Promote uploaded works on YouTube and domain the system"
+        },
+        "section12": {
+        "title": "Student Data System",
+        "date": "November 2022 - January 2023",
+        "jobOne": "Create a CRUD-based student data system (Create, Read, Update, Delete).",
+        "jobTwo": "Login data and student data will be saved into the MySQL database.",
+        "jobThree": "Create a standing banner design to promote the work made and successfully achieve the voting target of 50 people to students of other majors.",
+        "jobFour": "The final project of the semester 3 points of the Object Orientation Programming"
+        },
+        "section13": {
+        "title": "Simple Multi Project",
+        "date": "November 2022 - January 2023",
+        "jobOne": "Create a login system by entering a username and password, a registration system by entering additional data in the form of email.",
+        "jobTwo": "Displays the choice of calculator program or sound player to be accessed.",
+        "jobThree": "The registration data will be automatically saved into the MySQL database."
         },
         "sectionAll": "Click Here!"
     },

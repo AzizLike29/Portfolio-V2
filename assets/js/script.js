@@ -144,3 +144,26 @@ document.addEventListener("DOMContentLoaded", function () {
     new bootstrap.Carousel(carouselEl);
   }
 });
+
+document.querySelectorAll('[data-filter]').forEach(button => {
+  button.addEventListener('click', function () {
+    const filter = this.getAttribute('data-filter');
+    const badge = document.getElementById('activeFilterBadge');
+
+    // Update active state in dropdown
+    document.querySelectorAll('[data-filter]').forEach(item => {
+      item.classList.remove('active');
+    });
+    this.classList.add('active');
+
+    // Update badge text
+    badge.textContent = this.textContent.trim();
+
+    // Trigger the hidden tab button
+    const tabButton = document.getElementById(filter + '-tab');
+    if (tabButton) {
+      const tab = new bootstrap.Tab(tabButton);
+      tab.show();
+    }
+  });
+});
