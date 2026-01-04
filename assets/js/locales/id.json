@@ -265,6 +265,12 @@
         "jobTwo": "Menampilkan pilihan program kalkulator atau pemutar suara untuk diakses.",
         "jobThree": "Data registrasi akan secara otomatis disimpan ke dalam database MySQL."
         },
+        "section14": {
+        "title": "Mendeteksi Jerawat pada Wajah Menggunakan CNN (Convolutional Neural Network)",
+        "date": "September 2025",
+        "desc": "Jerawat pada wajah terjadi ketika pori-pori tersumbat oleh minyak, sel kulit mati, atau bakteri, sehingga menghasilkan bintik-bintik seperti komedo, papula, pustula, atau benjolan. Dengan bantuan model pembelajaran mesin, kondisi ini dapat dianalisis untuk membantu mendeteksi dan mengklasifikasikan jenis jerawat."
+        },
+
         "sectionAll": "Klik di sini!"
     },
 

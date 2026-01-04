@@ -265,6 +265,11 @@
         "jobTwo": "Displays the choice of calculator program or sound player to be accessed.",
         "jobThree": "The registration data will be automatically saved into the MySQL database."
         },
+        "section14": {
+        "title": "Detecting Acne on the Face Using a CNN (Convolutional Neural Network)",
+        "date": "September 2025",
+        "desc": "Acne on the face occurs when pores become clogged with oil, dead skin cells, or bacteria, resulting in spots such as blackheads, papules, pustules, or bumps. With the help of machine learning models, this condition can be analyzed to help detect and classify the type of acne."
+        },
         "sectionAll": "Click Here!"
     },
 
