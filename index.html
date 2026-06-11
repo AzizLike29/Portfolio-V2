@@ -20,7 +20,9 @@
     <link
       rel="preload"
       as="image"
-      href="assets/img/Home-Aziz.webp"
+      href="assets/img/Home-Aziz-800.webp"
+      imagesrcset="assets/img/Home-Aziz-400.webp 400w, assets/img/Home-Aziz-800.webp 800w"
+      imagesizes="(max-width: 575px) 400px, 800px"
       fetchpriority="high"
     />
 
@@ -40,20 +42,33 @@
     <link href="assets/css/style.css" rel="stylesheet" />
     <!-- Template Normalize CSS -->
     <link href="assets/css/normalize.css" rel="stylesheet" />
-    <!-- Bootstrap Stylesheet -->
+    <!-- Bootstrap Stylesheet (critical) -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+
     <!-- AOS Library -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/aos@next/dist/aos.css"
+      media="print"
+      onload="this.media='all'"
+    />
     <!-- Bootstrap Icons -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+      media="print"
+      onload="this.media='all'"
     />
-    <!-- Viewer Animate -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.10.2/viewer.min.css"
-    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://unpkg.com/aos@next/dist/aos.css"
+      />
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+      />
+    </noscript>
   </head>
   <body>
     <!-- Start Navbar -->
@@ -368,11 +383,13 @@
                 <div class="background-box"></div>
                 <img
                   class="image-box"
-                  src="assets/img/Home-Aziz.webp"
+                  src="assets/img/Home-Aziz-800.webp"
+                  srcset="assets/img/Home-Aziz-400.webp 400w, assets/img/Home-Aziz-800.webp 800w"
+                  sizes="(max-width: 575px) 400px, 800px"
                   alt="Home Image"
                   fetchpriority="high"
                   width="400"
-                  height="400"
+                  height="364"
                 />
               </div>
             </div>

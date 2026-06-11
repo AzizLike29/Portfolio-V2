@@ -1,7 +1,3 @@
-// App initialization + on-demand (lazy) loading of heavy libraries.
-// Heavy libs (EmailJS, SweetAlert2, ViewerJS) are only fetched when actually
-// needed (form interaction / certificate click) to keep initial load fast.
-
 // ---- AOS (scroll animations) ----
 if (window.AOS) {
   AOS.init({ once: true, duration: 800 });
