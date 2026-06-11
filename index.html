@@ -8,8 +8,25 @@
       content="XpIGGxDYPq8goTP5Wq-qQlMPLS5ahgNcMolgUVyEGw0"
     />
     <title data-i18n="head.title">Portfolio Aziz</title>
+
+    <!-- Preconnect to third-party origins  -->
+    <link rel="preconnect" href="https://kit.fontawesome.com" crossorigin />
+    <link rel="preconnect" href="https://ka-f.fontawesome.com" crossorigin />
+    <link rel="preconnect" href="https://unpkg.com" crossorigin />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+
+    <!-- Preload LCP hero image -->
+    <link
+      rel="preload"
+      as="image"
+      href="assets/img/Home-Aziz.webp"
+      fetchpriority="high"
+    />
+
     <!-- Font Awesome -->
     <script
+      defer
       src="https://kit.fontawesome.com/35dd348907.js"
       crossorigin="anonymous"
     ></script>
@@ -353,7 +370,9 @@
                   class="image-box"
                   src="assets/img/Home-Aziz.webp"
                   alt="Home Image"
-                  loading="lazy"
+                  fetchpriority="high"
+                  width="400"
+                  height="400"
                 />
               </div>
             </div>
@@ -4891,47 +4910,26 @@
     ></a>
     <!-- End Icons Top Button -->
 
-    <!-- Bundle JS -->
-    <script src="/assets/js/bootstrap.bundle.min.js"></script>
-    <!-- Template AOS -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <!-- Template Email JS -->
-    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-    <script>
-      AOS.init({
-        once: true,
-        duration: 800,
-      });
-
-      emailjs.init("fYB6BIFA5x6qsuyz7");
-    </script>
-
-    <!-- Viewer Animate -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.10.2/viewer.min.js"></script>
-    <!-- Template SweetAlert2 -->
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <!-- Template Moving Letters JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
-    <!-- Template Select Language -->
-    <script src="assets/js/selectLanguage.js"></script>
-    <!-- Template Setting Year -->
-    <script src="assets/js/currentYear.js"></script>
-    <!-- Template Email js -->
-    <script src="assets/js/email.js"></script>
-    <!-- Template copy and paste js -->
-    <script src="assets/js/copyPaste.js"></script>
-    <!-- Template animated -->
-    <script src="assets/js/animated.js"></script>
-    <!-- Template JS -->
-    <script src="assets/js/script.js"></script>
-    <!-- Side JS -->
-    <script src="assets/js/side.js"></script>
-    <!-- pooper JS Tooltips -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <!-- Bootstrap bundle (includes Popper) -->
+    <script defer src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS (scroll animations) -->
+    <script defer src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- anime.js (hero text animation, above the fold) -->
     <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-      crossorigin="anonymous"
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
     ></script>
+
+    <!-- App scripts -->
+    <script defer src="assets/js/selectLanguage.js"></script>
+    <script defer src="assets/js/currentYear.js"></script>
+    <script defer src="assets/js/email.js"></script>
+    <script defer src="assets/js/copyPaste.js"></script>
+    <script defer src="assets/js/animated.js"></script>
+    <script defer src="assets/js/script.js"></script>
+    <script defer src="assets/js/side.js"></script>
+
+    <!-- Init and on-demand loader for heavy libraries -->
+    <script defer src="assets/js/appInit.js"></script>
   </body>
 </html>

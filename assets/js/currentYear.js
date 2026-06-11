@@ -1,8 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("current-year").textContent =
         new Date().getFullYear();
-    const images = document.querySelectorAll(".image");
-    images.forEach((image) => {
-        new Viewer(image);
-    });
+    // ViewerJS is now loaded on-demand (see appInit.js) when an image is clicked.
 });
