@@ -10,8 +10,6 @@
     <title data-i18n="head.title">Portfolio Aziz</title>
 
     <!-- Preconnect to third-party origins  -->
-    <link rel="preconnect" href="https://kit.fontawesome.com" crossorigin />
-    <link rel="preconnect" href="https://ka-f.fontawesome.com" crossorigin />
     <link rel="preconnect" href="https://unpkg.com" crossorigin />
     <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
     <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
@@ -26,12 +24,6 @@
       fetchpriority="high"
     />
 
-    <!-- Font Awesome -->
-    <script
-      defer
-      src="https://kit.fontawesome.com/35dd348907.js"
-      crossorigin="anonymous"
-    ></script>
     <!-- Icons Website -->
     <link
       rel="shortcut icon"
@@ -42,8 +34,8 @@
     <link href="assets/css/style.css" rel="stylesheet" />
     <!-- Template Normalize CSS -->
     <link href="assets/css/normalize.css" rel="stylesheet" />
-    <!-- Bootstrap Stylesheet (critical) -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Bootstrap Stylesheet (critical, purged of unused classes) -->
+    <link href="assets/css/bootstrap.purged.css" rel="stylesheet" />
 
     <!-- AOS Library -->
     <link
@@ -270,7 +262,7 @@
                   role="button"
                   rel="noopener noreferrer"
                 >
-                  <i class="fa-solid fa-download"></i>
+                  <i class="bi bi-download"></i>
                   <span data-i18n="nav.section.cv">Download CV</span>
                 </a>
               </li>
@@ -282,7 +274,7 @@
                   role="button"
                   rel="noopener noreferrer"
                 >
-                  <i class="fa-solid fa-download"></i>
+                  <i class="bi bi-download"></i>
                   <span data-i18n="nav.section.portfolioPdf"
                     >Download Portfolio PDF</span
                   >
@@ -341,7 +333,7 @@
                 rel="noopener noreferrer"
                 data-bs-title="WhatsApp"
                 title="WhatsApp"
-                ><i class="fab fa-whatsapp"></i
+                ><i class="bi bi-whatsapp"></i
               ></a>
               <a
                 class="btn btn-square btn-social instagram"
@@ -350,7 +342,7 @@
                 rel="noopener noreferrer"
                 data-bs-title="Instagram"
                 title="Instagram"
-                ><i class="fab fa-instagram"></i
+                ><i class="bi bi-instagram"></i
               ></a>
               <a
                 class="btn btn-square btn-social youtube"
@@ -359,7 +351,7 @@
                 data-bs-title="YouTube"
                 title="YouTube"
                 rel="noopener noreferrer"
-                ><i class="fab fa-youtube"></i
+                ><i class="bi bi-youtube"></i
               ></a>
               <a
                 class="btn btn-square btn-social linkedin"
@@ -368,7 +360,7 @@
                 rel="noopener noreferrer"
                 data-bs-title="LinkedIn"
                 title="LinkedIn"
-                ><i class="fab fa-linkedin-in"></i
+                ><i class="bi bi-linkedin"></i
               ></a>
             </div>
           </div>
@@ -4876,7 +4868,7 @@
               data-bs-title="Github"
             >
               <i
-                class="fa-brands fa-github fs-3 mt-1 mb-0 git"
+                class="bi bi-github fs-3 mt-1 mb-0 git"
                 id="link-github"
               ></i>
             </a>
@@ -4889,7 +4881,7 @@
               data-bs-title="Facebook"
             >
               <i
-                class="fa-brands fa-facebook fs-3 mt-1 mb-0 fb"
+                class="bi bi-facebook fs-3 mt-1 mb-0 fb"
                 id="link-fb"
               ></i>
             </a>
