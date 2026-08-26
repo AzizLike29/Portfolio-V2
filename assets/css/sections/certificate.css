@@ -1,0 +1,13 @@
+/* certificate */
+h2.certificate:hover::before {
+  width: 100%;
+}
+
+.certificate {
+  text-align: center;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  filter: invert(100%);
+}

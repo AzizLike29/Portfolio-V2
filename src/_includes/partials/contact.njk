@@ -1,0 +1,147 @@
+<section id="contact" class="contact">
+      <div class="container p-3 form">
+        <div
+          class="content text-center"
+          data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-back"
+          data-aos-delay="300"
+          data-aos-offset="0"
+        >
+          <h2 class="contact text-uppercase" data-i18n="cntct.section.title">
+            Contact Form
+          </h2>
+          <p class="contact" data-i18n="cntct.section.textTitle">
+            Want to talk about the project or have questions? Use the contact
+            form below
+          </p>
+        </div>
+        <div
+          class="row pt-2 d-flex justify-content-center"
+          data-aos="zoom-out-up"
+          data-aos-delay="300"
+        >
+          <div class="col-md-5 mr-auto mb-5">
+            <span class="txt" data-i18n="cntct.section.textQuecon"
+              >Questions, Comments, Concerns?</span
+            >
+            <br />
+            <span
+              class="mb-5 content-txt"
+              data-i18n="[html]cntct.section.hearLine"
+            ></span>
+          </div>
+          <div class="col-md-6 mr-auto">
+            <form
+              class="mb-5"
+              method="post"
+              id="contactForm"
+              name="contactForm"
+            >
+              <div class="row">
+                <div class="col-md-12 form-group">
+                  <label
+                    for="name"
+                    class="col-form-label"
+                    data-i18n="cntct.input.name"
+                    >Your Name</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control item"
+                    name="text"
+                    id="name"
+                    data-i18n-placeholder="cntct.input.plc.name"
+                    placeholder="Please write your full name"
+                  />
+                  <div class="error-txt" data-i18n="cntct.input.al.name">
+                    Name can't be blank
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12 form-group">
+                  <label
+                    for="email"
+                    class="col-form-label"
+                    data-i18n="cntct.input.email"
+                    >Your Email</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control item"
+                    name="email"
+                    aria-describedby="email"
+                    id="email"
+                    placeholder="something@website.com"
+                  />
+                  <div class="error-txt email" data-i18n="cntct.input.al.email">
+                    Email can't be blank
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12 form-group">
+                  <label
+                    for="subject"
+                    class="col-form-label"
+                    data-i18n="cntct.input.subject"
+                    >Subject</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control item"
+                    name="subject"
+                    id="subject"
+                    data-i18n-placeholder="cntct.input.plc.subject"
+                    placeholder="Question about your article"
+                  />
+                  <div class="error-txt" data-i18n="cntct.input.al.subject">
+                    Subject can't be blank
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12 form-group">
+                  <label
+                    for="message"
+                    class="col-form-label"
+                    data-i18n="cntct.input.message"
+                    >Message</label
+                  >
+                  <textarea
+                    class="form-control item"
+                    name="message"
+                    id="message"
+                    cols="30"
+                    rows="7"
+                    data-i18n-placeholder="cntct.input.plc.message"
+                    placeholder="Your message starts with..."
+                  ></textarea>
+                  <div class="error-txt" data-i18n="cntct.input.al.message">
+                    Message can't be blank
+                  </div>
+                </div>
+              </div>
+              <div
+                class="d-flex align-items-center mt-3 d-none"
+                id="loadingIndicator"
+              >
+                <strong role="status" data-i18n="cntct.role.status"
+                  >Loading...</strong
+                >
+                <div class="spinner-border ms-auto" aria-hidden="true"></div>
+              </div>
+              <div class="row">
+                <div class="col-md-12 mt-3">
+                  <input
+                    type="submit"
+                    class="btn form rounded-1 py-2 px-4 btn-contact fw-bold border-0"
+                    id="submit"
+                  />
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>

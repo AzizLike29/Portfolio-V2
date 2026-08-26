@@ -1,0 +1,141 @@
+/* project  */
+h2.project:hover::before {
+  width: 100%;
+}
+
+.project {
+  text-align: center;
+}
+
+img.image {
+  object-fit: cover;
+}
+
+#Streamed-Spotify,
+#Mockup-SDN,
+#Population-Percentages {
+  padding-top: 2rem;
+}
+
+.date-project {
+  color: #10b981;
+  font-family: "Alkatra", sans-serif;
+}
+
+p.figma,
+p.corel,
+p.mobbin,
+p.dribble,
+p.chamjo,
+p.lottie,
+p.android,
+p.java,
+p.firebase,
+p.php,
+p.mysql,
+p.ci4,
+p.bt5,
+p.vsc,
+p.nb,
+p.canva,
+p.data,
+p.clustering,
+p.excel,
+p.python,
+p.anaconda,
+p.numpy,
+p.tensorflow,
+p.scikit-learn,
+p.matplotlib,
+p.pil,
+p.google-colab,
+p.regression,
+p.tech,
+p.framework,
+p.database {
+  outline: 1px solid #4b5563;
+}
+
+p.figma:hover,
+p.corel:hover,
+p.mobbin:hover,
+p.dribble:hover,
+p.chamjo:hover,
+p.lottie:hover,
+p.android:hover,
+p.java:hover,
+p.firebase:hover,
+p.php:hover,
+p.mysql:hover,
+p.ci4:hover,
+p.bt5:hover,
+p.vsc:hover,
+p.nb:hover,
+p.canva:hover,
+p.data:hover,
+p.clustering:hover,
+p.excel:hover,
+p.python:hover,
+p.anaconda:hover,
+p.tensorflow:hover,
+p.numpy:hover,
+p.scikit-learn:hover,
+p.matplotlib:hover,
+p.pil:hover,
+p.google-colab:hover,
+p.regression:hover,
+p.tech:hover,
+p.framework:hover,
+p.database:hover {
+  background-color: #1f2937;
+  color: #ffffff;
+}
+
+p.vsc,
+p.database,
+p.clustering,
+p.data,
+p.regression {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+ul.description li {
+  text-align: justify;
+}
+
+[data-bs-theme="dark"] p.figma:hover,
+[data-bs-theme="dark"] p.corel:hover,
+[data-bs-theme="dark"] p.mobbin:hover,
+[data-bs-theme="dark"] p.dribble:hover,
+[data-bs-theme="dark"] p.chamjo:hover,
+[data-bs-theme="dark"] p.lottie:hover,
+[data-bs-theme="dark"] p.android:hover,
+[data-bs-theme="dark"] p.java:hover,
+[data-bs-theme="dark"] p.firebase:hover,
+[data-bs-theme="dark"] p.php:hover,
+[data-bs-theme="dark"] p.mysql:hover,
+[data-bs-theme="dark"] p.ci4:hover,
+[data-bs-theme="dark"] p.bt5:hover,
+[data-bs-theme="dark"] p.vsc:hover,
+[data-bs-theme="dark"] p.nb:hover,
+[data-bs-theme="dark"] p.canva:hover,
+[data-bs-theme="dark"] p.data:hover,
+[data-bs-theme="dark"] p.clustering:hover,
+[data-bs-theme="dark"] p.regression:hover,
+[data-bs-theme="dark"] p.excel:hover,
+[data-bs-theme="dark"] p.python:hover,
+[data-bs-theme="dark"] p.anaconda:hover,
+[data-bs-theme="dark"] p.numpy:hover,
+[data-bs-theme="dark"] p.tensorflow:hover,
+[data-bs-theme="dark"] p.scikit-learn:hover,
+[data-bs-theme="dark"] p.matplotlib:hover,
+[data-bs-theme="dark"] p.pil:hover,
+[data-bs-theme="dark"] p.google-colab:hover,
+[data-bs-theme="dark"] p.tech:hover,
+[data-bs-theme="dark"] p.framework:hover,
+[data-bs-theme="dark"] p.database:hover {
+  background-color: #e5e7eb;
+  color: #000 !important;
+}

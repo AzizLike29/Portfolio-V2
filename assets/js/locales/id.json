@@ -279,6 +279,11 @@
         "date": "September 2025",
         "desc": "Jerawat pada wajah terjadi ketika pori-pori tersumbat oleh minyak, sel kulit mati, atau bakteri, sehingga menghasilkan bintik-bintik seperti komedo, papula, pustula, atau benjolan. Dengan bantuan model pembelajaran mesin, kondisi ini dapat dianalisis untuk membantu mendeteksi dan mengklasifikasikan jenis jerawat."
         },
+        "section15": {
+        "title": "LHMS — Sistem Pemantauan & Bahaya Lereng",
+        "date": "2025 - 2026",
+        "desc": "Mengembangkan aplikasi web full-stack untuk inventarisasi, inspeksi, dan pengelolaan risiko lereng di sepanjang jalan. Sistem ini membantu engineer mencatat aset lereng, melakukan inspeksi berkala, menghitung tingkat bahaya, serta merencanakan pekerjaan mitigasi, dengan Role-Based Access Control (RBAC) yang memastikan hanya administrator yang dapat mengubah data, sementara konten publik tetap terbuka untuk semua orang."
+        },
 
         "sectionAll": "Klik di sini!"
     },

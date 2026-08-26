@@ -279,6 +279,11 @@
         "date": "September 2025",
         "desc": "Acne on the face occurs when pores become clogged with oil, dead skin cells, or bacteria, resulting in spots such as blackheads, papules, pustules, or bumps. With the help of machine learning models, this condition can be analyzed to help detect and classify the type of acne."
         },
+        "section15": {
+        "title": "LHMS — Slope Hazard & Monitoring System",
+        "date": "2025 - 2026",
+        "desc": "Developed a full-stack web application to inventory, inspect, and manage the risk of roadside slopes. The system helps engineers record slope assets, run periodic inspections, calculate hazard ratings, and plan mitigation work, with Role-Based Access Control (RBAC) ensuring only administrators can modify data while public content remains open to everyone."
+        },
         "sectionAll": "Click Here!"
     },
 

@@ -1,0 +1,113 @@
+/* navbar */
+a.nav-item.nav-link.active {
+  color: #4b5563;
+}
+
+a.nav-item.nav-link.active:hover {
+  text-decoration: none;
+}
+
+a.nav-item.nav-link:hover {
+  text-decoration: underline #000000;
+}
+
+a.download {
+  background-image: linear-gradient(to right, #111827, #6b7280);
+  font-weight: 500;
+  transition: background-position 0.3s ease, transform 0.3s ease;
+}
+
+a.download:hover {
+  transform: scale(0.9);
+}
+
+a.navbar-brand {
+  color: #111827;
+  font-weight: 700;
+  line-height: 36px;
+  word-wrap: break-word;
+}
+
+[data-bs-theme="dark"] a.download {
+  color: #1f2937;
+  background-image: linear-gradient(to right, #f9fafb, #10b981);
+}
+
+[data-bs-theme="light"] a.download {
+  color: #ffffff;
+}
+
+[data-bs-theme="dark"] a.nav-item.nav-link.active:hover {
+  text-decoration: none;
+}
+
+[data-bs-theme="dark"] a.nav-item.nav-link:hover {
+  text-decoration: underline #ffffff;
+}
+
+/* Footer */
+h2.footer:hover::before {
+  width: 100%;
+}
+
+a.email,
+a.telep {
+  text-decoration: none;
+}
+
+.text-footer {
+  font-size: 12px;
+}
+
+a.git:hover,
+a.fb:hover {
+  opacity: 0.7;
+  transform: scale(1.2);
+}
+
+.bi-c-circle~span {
+  color: #10b981;
+}
+
+.gotopbtn {
+  position: fixed;
+  height: 50px;
+  bottom: 50px;
+  right: 30px;
+}
+
+.bi-copy {
+  cursor: pointer;
+}
+
+footer {
+  margin-top: -20px;
+}
+
+#link-github,
+#link-fb {
+  color: #000000;
+}
+
+[data-bs-theme="dark"] span.email,
+[data-bs-theme="dark"] span.telep {
+  color: #9ca3af;
+}
+
+[data-bs-theme="light"] span.email,
+[data-bs-theme="light"] span.telep {
+  color: #000000;
+}
+
+[data-bs-theme="light"] .gotopbtn i {
+  color: #000000;
+}
+
+[data-bs-theme="dark"] .gotopbtn i {
+  color: #ffffff;
+}
+
+[data-bs-theme="dark"] i.git:before,
+[data-bs-theme="dark"] i.fb:before {
+  color: #ffffff;
+}

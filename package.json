@@ -1,0 +1,16 @@
+{
+  "name": "portfolio-v2",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Portfolio Aziz — static site built with Eleventy",
+  "scripts": {
+    "dev": "eleventy --serve",
+    "build": "eleventy",
+    "add": "node scripts/add-content.mjs",
+    "clean": "node -e \"require('fs').rmSync('_site',{recursive:true,force:true})\""
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0"
+  }
+}

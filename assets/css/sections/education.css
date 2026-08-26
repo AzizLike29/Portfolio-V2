@@ -1,0 +1,30 @@
+/* education */
+h2.education:hover::before {
+  width: 100%;
+}
+
+p.text-edu {
+  text-align: justify;
+}
+
+.card-body>ul,
+li {
+  text-align: justify;
+}
+
+p.card-text>.date {
+  color: #10b981;
+  font-family: "Alkatra", sans-serif;
+}
+
+img.bmc:hover,
+img.mob:hover,
+img.ina:hover,
+img.hack:hover,
+img.upb:hover,
+img.smk:hover,
+img.hima:hover,
+img.kartar:hover {
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}

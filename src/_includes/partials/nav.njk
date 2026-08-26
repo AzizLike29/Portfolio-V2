@@ -1,0 +1,223 @@
+<!-- Start Navbar -->
+    <nav class="navbar bg-body fixed-top shadow-sm">
+      <div class="container">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="d-flex align-items-center ms-auto">
+          <!-- Dropdown select language -->
+          <div class="dropdown">
+            <button
+              class="btn nav-item nav-link dropdown-toggle mx-2"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              aria-label="Select Language"
+            >
+              <span id="langFlag" class="text-uppercase"></span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li>
+                <button
+                  class="dropdown-item d-flex align-items-center"
+                  type="button"
+                  data-lang="en"
+                  data-i18n="nav.language.en"
+                >
+                  English
+                </button>
+              </li>
+              <li>
+                <button
+                  class="dropdown-item d-flex align-items-center"
+                  type="button"
+                  data-lang="id"
+                  data-i18n="nav.language.id"
+                >
+                  Indonesian
+                </button>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Dropdown toggle theme -->
+          <div class="dropdown nav-item nav-link ms-auto">
+            <button
+              class="btn nav-item nav-link dropdown-toggle mx-2"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              id="themeDropdown"
+              title="Toggle Theme"
+            >
+              <i
+                class="bi bi-sun-fill theme-icon-active"
+                data-theme-icon-active="bi-sun-fill"
+              ></i>
+            </button>
+            <ul
+              class="dropdown-menu dropdown-menu-end"
+              aria-labelledby="themeDropdown"
+            >
+              <li>
+                <button
+                  class="dropdown-item d-flex align-items-center"
+                  type="button"
+                  data-bs-theme-value="light"
+                >
+                  <i
+                    class="bi bi-sun-fill me-2 opacity-50"
+                    data-theme-icon="bi-sun-fill"
+                  ></i>
+                  <span data-i18n="nav.theme.light">Light</span>
+                </button>
+              </li>
+              <li>
+                <button
+                  class="dropdown-item d-flex align-items-center"
+                  type="button"
+                  data-bs-theme-value="dark"
+                >
+                  <i
+                    class="bi bi-moon-stars-fill me-2 opacity-50"
+                    data-theme-icon="bi-moon-stars-fill"
+                  ></i>
+                  <span data-i18n="nav.theme.dark">Dark</span>
+                </button>
+              </li>
+              <li>
+                <button
+                  class="dropdown-item d-flex align-items-center"
+                  type="button"
+                  data-bs-theme-value="auto"
+                >
+                  <i
+                    class="bi bi-circle-half me-2 opacity-50"
+                    data-theme-icon="bi-circle-half"
+                  ></i>
+                  <span data-i18n="nav.theme.auto">Auto</span>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="offcanvas offcanvas-start"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <div class="navbar-brand fw-bolder">
+              <img
+                src="assets/img/svg/ui/Icon.svg"
+                alt="Logo"
+                width="30"
+                height="24"
+                class="d-inline-block align-text-top icon"
+                loading="lazy"
+              />
+              Abdul Aziz Firdaus
+            </div>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a
+                  href="#home"
+                  class="nav-link active"
+                  onclick="closeOffcanvas()"
+                  data-i18n="nav.section.home"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href="#education"
+                  class="nav-link"
+                  onclick="closeOffcanvas()"
+                  data-i18n="nav.section.education"
+                  >Education</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href="#skill"
+                  class="nav-link"
+                  onclick="closeOffcanvas()"
+                  data-i18n="nav.section.skill"
+                  >Skill</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href="#experience"
+                  class="nav-link"
+                  onclick="closeOffcanvas()"
+                  data-i18n="nav.section.experience"
+                  >Experience</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href="#certificate"
+                  class="nav-link"
+                  onclick="closeOffcanvas()"
+                  data-i18n="nav.section.certificate"
+                  >Certificate</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href="#contact"
+                  class="nav-link"
+                  onclick="closeOffcanvas()"
+                  data-i18n="nav.section.contact"
+                  >Contact</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href="https://drive.google.com/file/d/1idQ-dIVaXpK__ZZk02aQLlvbLvn1odLc/view?usp=drive_link"
+                  class="btn download border-0 w-100 h-100 mw-100 mt-3"
+                  target="_blank"
+                  role="button"
+                  rel="noopener noreferrer"
+                >
+                  <i class="bi bi-download"></i>
+                  <span data-i18n="nav.section.cv">Download CV</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  href="https://drive.google.com/file/d/1-2FWhyLvwI8seikSUn-2s5nOUqLKVNCS/view?usp=drive_link"
+                  class="btn download border-0 w-100 h-100 mw-100 mt-3"
+                  target="_blank"
+                  role="button"
+                  rel="noopener noreferrer"
+                >
+                  <i class="bi bi-download"></i>
+                  <span data-i18n="nav.section.portfolioPdf"
+                    >Download Portfolio PDF</span
+                  >
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->

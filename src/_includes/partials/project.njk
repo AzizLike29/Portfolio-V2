@@ -1,0 +1,144 @@
+<section id="project">
+      <div class="container p-3">
+        <div
+          class="text-center"
+          data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-back"
+          data-aos-delay="300"
+          data-aos-offset="0"
+        >
+          <h2 class="project text-uppercase" data-i18n="pjct.section.title">
+            Experience Project
+          </h2>
+          <p class="project" data-i18n="pjct.section.defPjct">
+            Some of the noteworthy projects I have built
+          </p>
+        </div>
+
+        <!-- separate menus by section -->
+        <div class="mt-4" id="separate-menus">
+          <div
+            class="d-flex justify-content-center align-items-center gap-3 mb-4"
+          >
+            <!-- Filter Dropdown -->
+            <div class="dropdown">
+              <button
+                class="btn btn-outline-success dropdown-toggle"
+                type="button"
+                id="filterDropdown"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="bi bi-filter me-2"></i><span data-i18n="pjct.section.filter">Filter by Category</span>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="filterDropdown">
+                <li>
+                  <button class="dropdown-item active" data-filter="all" data-i18n="pjct.section.allprjct">
+                    All Projects
+                  </button>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <button class="dropdown-item" data-filter="web">
+                    <i class="bi bi-code-slash me-2"></i>Web Developer
+                  </button>
+                </li>
+                <li>
+                  <button class="dropdown-item" data-filter="mobile">
+                    <i class="bi bi-phone me-2"></i>Mobile Developer
+                  </button>
+                </li>
+                <li>
+                  <button class="dropdown-item" data-filter="uix">
+                    <i class="bi bi-palette me-2"></i>UI/UX Designer
+                  </button>
+                </li>
+                <li>
+                  <button class="dropdown-item" data-filter="data">
+                    <i class="bi bi-graph-up me-2"></i>Data Analyst
+                  </button>
+                </li>
+                <li>
+                  <button class="dropdown-item" data-filter="desktop-app">
+                    <i class="bi bi-laptop me-2"></i>Desktop App
+                  </button>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Active Filter Badge -->
+            <span class="badge bg-success" id="activeFilterBadge" data-i18n="pjct.section.allprjct"
+              >All Projects</span
+            >
+          </div>
+
+          <!-- Hidden tab buttons for Bootstrap -->
+          <ul class="nav nav-tabs d-none" id="projectTabs">
+            <li class="nav-item">
+              <button
+                class="nav-link active"
+                id="all-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#all"
+              >
+                All
+              </button>
+            </li>
+            <li class="nav-item">
+              <button
+                class="nav-link"
+                id="web-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#web"
+              >
+                Web
+              </button>
+            </li>
+            <li class="nav-item">
+              <button
+                class="nav-link"
+                id="mobile-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#mobile"
+              >
+                Mobile
+              </button>
+            </li>
+            <li class="nav-item">
+              <button
+                class="nav-link"
+                id="uix-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#uix"
+              >
+                UI/UX
+              </button>
+            </li>
+            <li class="nav-item">
+              <button
+                class="nav-link"
+                id="data-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#data"
+              >
+                Data
+              </button>
+            </li>
+            <li class="nav-item">
+              <button
+                class="nav-link"
+                id="desktop-app-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#desktop-app"
+              >
+                Desktop
+              </button>
+            </li>
+          </ul>
+
+          <div class="tab-content">
+            {% include "partials/project-tabs.njk" %}
+          </div>
+        </div>
+      </div>
+    </section>

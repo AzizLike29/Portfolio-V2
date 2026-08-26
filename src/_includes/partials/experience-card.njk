@@ -1,0 +1,101 @@
+{# Expects `item` in scope from experience.json #}
+<div
+  class="card shadow mb-4 w-100 h-100"
+  data-aos="fade-up"
+  data-aos-anchor-placement="top-bottom"
+  data-aos-delay="300"
+>
+  <img
+    src="{{ item.logo }}"
+    class="card-img-top w-25 h-25 m-auto d-block object-fit-contain mt-2 mb-0 {{ item.imgClass }}"
+    alt="{{ item.alt }}"
+    loading="lazy"
+  />
+  <div class="card-body">
+    <h5
+      class="card-title fw-bold"
+      data-i18n="exp.{{ item.i18nKey }}.title"
+    >
+      {{ item.titleFallback }}
+    </h5>
+    <p
+      class="card-text fst-italic fw-medium"
+      data-i18n="exp.{{ item.i18nKey }}.defJob"
+    >
+      {{ item.defJobFallback }}
+    </p>
+
+    {% if item.layout == "groupedProjects" %}
+      {% for group in item.groups %}
+      <h6
+        class="fw-semibold"
+        data-i18n="exp.{{ item.i18nKey }}.{{ group.titleKey }}"
+      >
+        {{ group.titleFallback }}
+      </h6>
+      <ul class="card-text">
+        {% for job in group.jobs %}
+        <li data-i18n="exp.{{ item.i18nKey }}.{{ job }}">
+          {{ item.jobFallbacks[job] }}
+        </li>
+        {% endfor %}
+      </ul>
+      {% endfor %}
+
+    {% elif item.layout == "desc" %}
+    <p
+      class="description"
+      data-i18n="exp.{{ item.i18nKey }}.descJob"
+    >
+      {{ item.descFallback }}
+    </p>
+
+    {% elif item.layout == "jobsWithLinks" %}
+    <ul class="card-text">
+      {% for job in item.jobs %}
+      <li data-i18n="exp.{{ item.i18nKey }}.{{ job }}">
+        {{ item.jobFallbacks[job] }}
+      </li>
+      {% endfor %}
+    </ul>
+    <div class="link-project row row-cols-2 row-cols-sm-2 row-cols-md-4">
+      {% for link in item.links %}
+      <div class="col {{ link.colClass }}">
+        <a
+          href="{{ link.url }}"
+          target="_blank"
+          rel="noopener noreferrer"
+          data-bs-toggle="tooltip"
+          data-bs-placement="top"
+          data-bs-title="{{ link.title }}"
+          title="{{ link.title }}"
+        >
+          <i
+            class="bi bi-link btn btn-outline-secondary mx-2"
+            data-i18n="exp.{{ item.i18nKey }}.{{ link.key }}"
+            >{{ link.fallback }}</i
+          >
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+
+    {% else %}
+    <ul class="card-text">
+      {% for job in item.jobs %}
+      <li data-i18n="exp.{{ item.i18nKey }}.{{ job }}">
+        {{ item.jobFallbacks[job] }}
+      </li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+
+    <p class="card-text">
+      <small
+        class="date"
+        data-i18n="exp.{{ item.i18nKey }}.{{ item.dateKey }}"
+        >{{ item.dateFallback }}</small
+      >
+    </p>
+  </div>
+</div>

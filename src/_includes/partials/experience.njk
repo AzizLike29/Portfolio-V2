@@ -1,0 +1,23 @@
+<section id="experience">
+  <div class="container p-3">
+    <div
+      class="text-center"
+      data-aos="fade-zoom-in"
+      data-aos-easing="ease-in-back"
+      data-aos-delay="300"
+      data-aos-offset="0"
+    >
+      <h2 class="experience text-uppercase" data-i18n="exp.section.title">
+        Experience
+      </h2>
+      <p class="experience" data-i18n="exp.section.defExp">
+        Here is a quick summary of my most recent experiences
+      </p>
+    </div>
+    <div class="row">
+      {% for item in experience %}
+      {% include "partials/experience-card.njk" %}
+      {% endfor %}
+    </div>
+  </div>
+</section>

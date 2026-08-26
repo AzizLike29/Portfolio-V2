@@ -1,0 +1,20 @@
+/* experience */
+h2.experience:hover::before {
+  width: 100%;
+}
+
+p.card-text>small.date {
+  color: #10b981;
+  font-family: "Alkatra", sans-serif;
+}
+
+.link-project a {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+[data-bs-theme="dark"] .link-project a {
+  color: #ffffff;
+}

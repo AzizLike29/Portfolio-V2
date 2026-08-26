@@ -1,0 +1,82 @@
+{# Renders one project card pair (image + details). Expects `project` in scope. #}
+<div
+  class="col-12 col-md-8"
+  data-aos="fade-up"
+  data-aos-anchor-placement="top-bottom"
+  data-aos-delay="300"
+>
+  <div class="card shadow bg-body h-100">
+    <img
+      src="{{ project.image }}"
+      class="rounded w-100 h-100 image"
+      alt="{{ project.alt }}"
+      loading="lazy"
+    />
+  </div>
+</div>
+<div
+  class="col-12 col-md-4"
+  data-aos="fade-up"
+  data-aos-anchor-placement="top-bottom"
+  data-aos-delay="300"
+>
+  <div class="card shadow bg-body p-3 h-100">
+    <div class="d-flex justify-content-center">
+      <div class="text-center">
+        <h6
+          class="fw-semibold"
+          data-i18n="pjct.{{ project.i18nKey }}.title"
+        >
+          {{ project.titleFallback }}
+        </h6>
+        <span
+          class="date-project"
+          data-i18n="pjct.{{ project.i18nKey }}.date"
+          >{{ project.dateFallback }}</span
+        >
+      </div>
+    </div>
+    <div class="mt-3">
+      {% if project.contentType == "jobs" %}
+      <ul class="description">
+        {% for job in project.jobs %}
+        <li data-i18n="pjct.{{ project.i18nKey }}.{{ job }}">
+          {{ project.jobFallbacks[job] }}
+        </li>
+        {% endfor %}
+      </ul>
+      {% else %}
+      <p class="description" data-i18n="pjct.{{ project.i18nKey }}.desc">
+        {{ project.descFallback }}
+      </p>
+      {% endif %}
+    </div>
+    <div class="container text-center">
+      <div class="row row-cols-2 mt-3">
+        {% for t in project.tech %}
+        <div class="col">
+          <p class="{{ t.kind }} text-nowrap rounded p-2">{{ t.label }}</p>
+        </div>
+        {% endfor %}
+      </div>
+      <div
+        class="btn btn-secondary d-flex justify-content-center align-items-center mt-3 mb-0"
+      >
+        <a
+          href="{{ project.url }}"
+          target="_blank"
+          class="text-decoration-none d-flex align-items-center text-white"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="assets/img/svg/ui/Hug-White.svg"
+            class="rounded float-start hug mx-1"
+            alt="Icon Click"
+            loading="lazy"
+          />
+          <span data-i18n="pjct.sectionAll">Click Here!</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,155 @@
+/* Contact and Form */
+h2.contact:hover::before {
+  width: 100%;
+}
+
+.contact {
+  background-color: #fff;
+  color: #999;
+  margin: 2;
+}
+
+span.txt {
+  color: #111827;
+  font-size: 1.875rem;
+  font-style: normal;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.content-txt {
+  color: #111827;
+  font-family: Basic;
+  font-size: 5.625rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 6.875rem;
+}
+
+.hear {
+  color: #6b7280;
+  font-family: Basic;
+  font-size: 5.625rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 6.875rem;
+}
+
+.form-control {
+  border: none;
+  border: 1px solid #d9d9d9;
+  border-radius: 0;
+}
+
+.form-control.item.error {
+  border-color: #d93025;
+}
+
+.form-group .error-txt {
+  font-size: 14.5px;
+  color: #d93025;
+  text-align: left;
+  margin: 5px 0 10px;
+  display: none;
+}
+
+.form-group.error .error-txt {
+  display: block;
+}
+
+.form-control:active,
+.form-control:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-color: #000;
+}
+
+.col-form-label {
+  color: #000;
+}
+
+.btnform,
+.form-control {
+  height: 55px;
+}
+
+.btnform:active,
+.btnform:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+#message {
+  resize: vertical;
+}
+
+input.btn-contact {
+  background-image: linear-gradient(to right, #111827, #6b7280);
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+input.btn-contact:hover {
+  transform: scale(0.98);
+  transition-delay: 0.1s;
+}
+
+input.btn-contact:not(:hover) {
+  transform: scale(1);
+  transition-delay: 0.1s;
+}
+
+[data-bs-theme="dark"] span.content-txt,
+[data-bs-theme="dark"] span.txt {
+  color: #ffffff;
+}
+
+[data-bs-theme="light"] span.content-txt,
+[data-bs-theme="light"] span.txt {
+  color: #111827;
+}
+
+[data-bs-theme="dark"] label.col-form-label {
+  color: #ffffff;
+}
+
+[data-bs-theme="light"] label.col-form-label {
+  color: #000000;
+}
+
+[data-bs-theme="dark"] #contact {
+  background-color: #212529;
+}
+
+[data-bs-theme="light"] #contact {
+  background-color: #ffffff;
+}
+
+h2.contact,
+p.contact {
+  background-color: inherit;
+}
+
+[data-bs-theme="dark"] .btn-contact {
+  color: #1f2937;
+  background-image: linear-gradient(to right, #f9fafb, #10b981);
+}
+
+[data-bs-theme="light"] .btn-contact {
+  background-image: linear-gradient(to right, #111827, #6b7280);
+}
+
+[data-bs-theme="light"] input.btn.form {
+  color: #ffffff;
+}
+
+[data-bs-theme="dark"] input.btn.form {
+  color: #1f2937;
+}
+
+[data-bs-theme="dark"] span.hear {
+  color: #10b981;
+}

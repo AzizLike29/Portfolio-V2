@@ -1,0 +1,77 @@
+{# All Projects #}
+<div class="tab-pane fade show active" id="all">
+  <div class="row">
+    <div class="col-12">
+      <div class="row g-4 pt-2">
+        {% for project in projects %}
+        {% include "partials/project-card.njk" %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+{# Web Developer #}
+<div class="tab-pane fade" id="web">
+  <div class="row">
+    <div class="col-12">
+      <div class="row g-4 pt-2">
+        {% for project in projects | hasCategory("web") %}
+        {% include "partials/project-card.njk" %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+{# Mobile Developer #}
+<div class="tab-pane fade" id="mobile">
+  <div class="row">
+    <div class="col-12">
+      <div class="row g-4 pt-2">
+        {% for project in projects | hasCategory("mobile") %}
+        {% include "partials/project-card.njk" %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+{# UI/UX Designer #}
+<div class="tab-pane fade" id="uix">
+  <div class="row">
+    <div class="col-12">
+      <div class="row g-4 pt-2">
+        {% for project in projects | hasCategory("uix") %}
+        {% include "partials/project-card.njk" %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+{# Data Analyst #}
+<div class="tab-pane fade" id="data">
+  <div class="row">
+    <div class="col-12">
+      <div class="row g-4 pt-2">
+        {% for project in projects | hasCategory("data") %}
+        {% include "partials/project-card.njk" %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+{# Desktop App #}
+<div class="tab-pane fade" id="desktop-app">
+  <div class="row">
+    <div class="col-12">
+      <div class="row g-4 pt-2">
+        {% for project in projects | hasCategory("desktop-app") %}
+        {% include "partials/project-card.njk" %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>

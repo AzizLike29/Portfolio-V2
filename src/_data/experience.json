@@ -1,0 +1,231 @@
+[
+  {
+    "i18nKey": "section1",
+    "logo": "assets/img/logos/Logo-Kalbe-Nutritionals.webp",
+    "alt": "Kalbe Nutrionals",
+    "imgClass": "mob",
+    "dateKey": "dateKn",
+    "layout": "jobs",
+    "jobs": [
+      "jobOne",
+      "jobTwo",
+      "jobThree",
+      "jobFour",
+      "jobFive",
+      "jobSix",
+      "jobSeven"
+    ],
+    "titleFallback": "PT.Sanghiang Perkasa (Kalbe Nutritionals)",
+    "defJobFallback": "Digitalization Engineer Assistant",
+    "dateFallback": "08 December 2025 - Present",
+    "jobFallbacks": {
+      "jobOne": "Continued the development of 4 Smart Maintenance web projects to support maintenance, engineering, and digitalization processes.",
+      "jobTwo": "Achieved 100% of the annual I2C target by creating 14 One Point Lessons (OPL) through a web-based learning platform.",
+      "jobThree": "Won 1st place in the internal administration category for the Smart Maintenance learning initiative.",
+      "jobFour": "Collaborated with 5 cross-functional teams: Oracle, IT, Digitalization, Engineering, and Maintenance.",
+      "jobFive": "Supported maintenance and engineering data alignment by coordinating with the Oracle team for system and data requirements.",
+      "jobSix": "Improved business process alignment by proactively working with users to define website flow and operational needs.",
+      "jobSeven": "Supported programmer recruitment by conducting technical tests and interviews for potential development partners."
+    }
+  },
+  {
+    "i18nKey": "section2",
+    "logo": "assets/img/logos/Logo-Food-Station.webp",
+    "alt": "Food Station",
+    "imgClass": "mob",
+    "dateKey": "dateFs",
+    "layout": "jobs",
+    "jobs": [
+      "jobOne",
+      "jobTwo",
+      "jobThree",
+      "jobFour",
+      "jobFive",
+      "jobSix",
+      "jobSeven",
+      "jobEight",
+      "jobNine"
+    ],
+    "titleFallback": "PT.Food Station Tjipinang Jaya (PERSERODA)",
+    "defJobFallback": "IT Programmer",
+    "dateFallback": "19 May - 18 November 2025",
+    "jobFallbacks": {
+      "jobOne": "Perform maintenance and continued development on FoodConnect and FoodHub e-commerce platforms, including bug fixes and optimization of existing features.",
+      "jobTwo": "Integrate the Winpay payment system (virtual account, QRIS, and e-wallet), including frontend UI/UX, backend logic, callback handling, and transaction logging.",
+      "jobThree": "Present the FoodHub system workflow and functions technically to external parties (clients or partners), including module architecture and key business processes.",
+      "jobFour": "Oversaw the daily data collection from the vending machine platform during the Jakarta Fair (PRJ), processed and analyzed the data in Excel, and generated pivot table reports for management review.",
+      "jobFive": "Improve operational efficiency by building price cards and WhatsApp order integration features into the MIS system, enabling direct ordering from WhatsApp and automatic receipt printing.",
+      "jobSix": "Built an internal dashboard to visually display sales and customer growth data. This dashboard displays a comparison chart of monthly sales targets and realizations, as well as customer growth trends from several divisions to help analysis and decision-making.",
+      "jobSeven": "Built MIS features to integrate Food Station's product catalog into the Food Hub platform (176 stores), expanding B2B distribution and streamlining per-store ordering.",
+      "jobEight": "Designed the booth layout for Food Station's brand activation at Jakarta International Investment, Trade, Tourism, and SMEs Expo (JITEX) using SketchUp 3D.",
+      "jobNine": "Actively participate in promoting and offering Food Station products at national and international exhibitions, such as Trade Expo Indonesia (Tangerang) and Jakarta Indonesia Days, as well as communicating with local and foreign visitors."
+    }
+  },
+  {
+    "i18nKey": "section3",
+    "logo": "assets/img/logos/Niramas-Utama.webp",
+    "alt": "Niramas Utama (Inaco)",
+    "imgClass": "ina",
+    "dateKey": "dateInaco",
+    "layout": "groupedProjects",
+    "groups": [
+      {
+        "titleKey": "projectOne",
+        "titleFallback": "E-Sign Pd",
+        "jobs": ["jobOne", "jobTwo", "jobThree", "jobFour", "jobFive"]
+      },
+      {
+        "titleKey": "projectTwo",
+        "titleFallback": "E-Nota Retur",
+        "jobs": [
+          "jobSix",
+          "jobSeven",
+          "jobEight",
+          "jobNine",
+          "jobTen",
+          "jobEleven"
+        ]
+      },
+      {
+        "titleKey": "projectThree",
+        "titleFallback": "E-Receipt",
+        "jobs": [
+          "jobTwelve",
+          "jobThirteen",
+          "jobFourteen",
+          "jobFifteen",
+          "jobSixteen",
+          "jobSeventeen"
+        ]
+      }
+    ],
+    "titleFallback": "PT.Niramas Utama (INACO)",
+    "defJobFallback": "Fullstack Web Developer",
+    "dateFallback": "26 July 2024 - 25 January 2025",
+    "jobFallbacks": {
+      "jobOne": "Assist users with web development.",
+      "jobTwo": "Build an E-Sign Pd (Electronic Sign Product Development) website to manage online form creation.",
+      "jobThree": "Created 7 features, including (register, login, forgot password, user, dashboard, form, and approval).",
+      "jobFour": "This form feature includes up to 8 different form types, such as sample introduction, other sample checking, and cartons. Forms are dynamically generated using HTML, CSS, and JavaScript.",
+      "jobFive": "Gradual approval process with QR code, customized according to each user's access.",
+      "jobSix": "Assist users in web development for the accounting division.",
+      "jobSeven": "Migrate applications from desktop to web platform using Laravel.",
+      "jobEight": "Build an E-Nota Retur (Electric Nota Retur) website.",
+      "jobNine": "Added features of register, login, forgot password, manage profile, nota management, user management, note history (history edit and delete), and NPWP Master Data.",
+      "jobTen": "Implemented an invoice management feature with the ability to export data to Excel and download format excel.",
+      "jobEleven": "Provides functions to view invoice details, export to PDF, and delete invoice data as needed.",
+      "jobTwelve": "Assist users in web development for the finance division.",
+      "jobThirteen": "Build an E-Receipt (Electric Receipt) website.",
+      "jobFourteen": "Create account login, account register, forgot password, user management, profile management, and supplier master data features for account management.",
+      "jobFifteen": "Create a dashboard feature for data statistics.",
+      "jobSixteen": "Create receipt management features to add data, change data, import Excel data, and print data with PDF and Excel formats.",
+      "jobSeventeen": "Create a report feature and settings to send email notifications for each user."
+    }
+  },
+  {
+    "i18nKey": "section4",
+    "logo": "assets/img/logos/Logo-Kalbe.webp",
+    "alt": "Kalbe Farma",
+    "imgClass": "mob",
+    "dateKey": "dateKalbe",
+    "layout": "jobs",
+    "jobs": [
+      "jobOne",
+      "jobTwo",
+      "jobThree",
+      "jobFour",
+      "jobFive",
+      "jobSix"
+    ],
+    "titleFallback": "PT.Kalbe Farma Tbk",
+    "defJobFallback": "Fullstack Web Developer",
+    "dateFallback": "19 February - 30 June 2024",
+    "jobFallbacks": {
+      "jobOne": "Help users manage manufacturing data in web development.",
+      "jobTwo": "Create master features consisting of (NIE (Distribution License Number), Product, Product Category, Dosage Form).",
+      "jobThree": "Create transaction features consisting of (QA Reg Admin, RA (Regulatory Affairs)).",
+      "jobFour": "Create an audit trail feature to export data in the form of a PDF.",
+      "jobFive": "Testing to QA in April, getting 70% progress results.",
+      "jobSix": "Presentation of project results in June with a final result 90% progress."
+    }
+  },
+  {
+    "i18nKey": "section5",
+    "logo": "assets/img/logos/Company-Hacktiv8.webp",
+    "alt": "Hacktiv8",
+    "imgClass": "hack",
+    "dateKey": "dateHacktiv8",
+    "layout": "jobsWithLinks",
+    "jobs": ["jobOne", "jobTwo", "jobThree", "jobFour"],
+    "links": [
+      {
+        "key": "bdg1",
+        "url": "https://kelompok3-final-project1.netlify.app/",
+        "title": "Web Landing Page",
+        "colClass": "project-one",
+        "fallback": "Project 1"
+      },
+      {
+        "key": "bdg2",
+        "url": "https://kelompok3-final-project-2.netlify.app/",
+        "title": "Web Landing Page",
+        "colClass": "project-two",
+        "fallback": "Project 2"
+      },
+      {
+        "key": "bdg3",
+        "url": "https://kelompok3-final-project-3.netlify.app/",
+        "title": "Web Landing Page",
+        "colClass": "project-three",
+        "fallback": "Project 3"
+      },
+      {
+        "key": "bdg4",
+        "url": "https://kelompok-3-final-project-4.netlify.app/",
+        "title": "Web Weather API",
+        "colClass": "project-four",
+        "fallback": "Project 4"
+      }
+    ],
+    "titleFallback": "Merdeka Campus - Independent Study Batch 5",
+    "defJobFallback": "Web Developer Program",
+    "dateFallback": "14 August - 31 December 2023",
+    "jobFallbacks": {
+      "jobOne": "Final Project 1 create a company profile website with HTML, CSS, JavaScript.",
+      "jobTwo": "Final Project 2 create a website landing page, design implementation in figma community features by using HTML, CSS, JavaScript.",
+      "jobThree": "Final Project 3 create a website landing page, implement the design in figma community features using HTML, CSS, JavaScript.",
+      "jobFour": "Final Project 4 creates a weather forecast API data retrieval website using HTML, CSS, JavaScript."
+    }
+  },
+  {
+    "i18nKey": "section6",
+    "logo": "assets/img/logos/Courses-Digital.webp",
+    "alt": "Digital Talent Scholarship",
+    "imgClass": "mob",
+    "dateKey": "dateDigital",
+    "layout": "desc",
+    "titleFallback": "Digital Talent and State Polytechnic of Malang",
+    "defJobFallback": "Junior Mobile Developer",
+    "descFallback": "The final project is to create a Kost-an.id mobile application. The mandatory features are the login page, welcome screen, and add, view, edit, and delete data features using the Java programming language, Database (Firebase).",
+    "dateFallback": "13 June - 28 July 2023"
+  },
+  {
+    "i18nKey": "section7",
+    "logo": "assets/img/logos/PT.BMC.webp",
+    "alt": "PT.Braja Mukti Cakra",
+    "imgClass": "bmc",
+    "dateKey": "dateBmc",
+    "layout": "jobs",
+    "jobs": ["jobOne", "jobTwo", "jobThree", "jobFour", "jobFive"],
+    "titleFallback": "PT.Braja Mukti Cakra",
+    "defJobFallback": "Admin Raw Material",
+    "dateFallback": "July 2019 - October 2019",
+    "jobFallbacks": {
+      "jobOne": "Inputting incoming and supply data.",
+      "jobTwo": "Printing the identity of goods (tag fifo).",
+      "jobThree": "Checking whether the goods match the goods that have been printed.",
+      "jobFour": "Inputting case bearing and rotor brake goods data.",
+      "jobFive": "Organize and tidy up data."
+    }
+  }
+]

@@ -1,0 +1,178 @@
+/* home */
+p.text-me,
+p.description {
+  text-align: justify;
+}
+
+.home-wrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.home {
+  display: inline-block;
+}
+
+.home .letter {
+  display: inline-block;
+  opacity: 0;
+}
+
+.wave {
+  display: inline-block;
+  transform-origin: 70% 70%;
+  will-change: transform;
+}
+
+.dot,
+i.heart::before {
+  animation: pulse 1s infinite;
+}
+
+/* whatsapp */
+a.whatsapp {
+  outline: 1px solid #27ae60;
+  position: relative;
+  display: inline-block;
+}
+
+a.whatsapp:hover,
+a.whatsapp:focus {
+  background-color: #27ae60;
+}
+
+a.whatsapp:active {
+  background-color: #ffffff;
+}
+
+i.fa-whatsapp {
+  color: #27ae60;
+}
+
+i.fa-whatsapp:hover {
+  color: #ffffff;
+}
+
+a.whatsapp:hover i.fa-whatsapp,
+a.whatsapp:focus i.fa-whatsapp {
+  color: #ffffff;
+}
+
+/* instagram */
+a.instagram {
+  outline: 1px solid #e1306c;
+  position: relative;
+  display: inline-block;
+}
+
+a.instagram:hover,
+a.instagram:focus {
+  background-color: #e1306c;
+}
+
+a.instagram:active {
+  background-color: #ffffff;
+}
+
+i.fa-instagram {
+  color: #e1306c;
+}
+
+a.instagram:hover i.fa-instagram,
+a.instagram:focus i.fa-instagram {
+  color: #ffffff;
+}
+
+/* youtube */
+a.youtube {
+  outline: 1px solid #c0392b;
+  position: relative;
+  display: inline-block;
+}
+
+a.youtube:hover,
+a.youtube:focus {
+  background-color: #c0392b;
+}
+
+a.youtube:active {
+  background-color: #ffffff;
+}
+
+i.fa-youtube {
+  color: #c0392b;
+}
+
+a.youtube:hover i.fa-youtube,
+a.youtube:focus i.fa-youtube {
+  color: #ffffff;
+}
+
+/* linkedin */
+a.linkedin {
+  outline: 1px solid #3498db;
+  position: relative;
+  display: inline-block;
+}
+
+a.linkedin:hover,
+a.linkedin:focus {
+  background-color: #3498db;
+}
+
+a.linkedin:active {
+  background-color: #ffffff;
+}
+
+i.fa-linkedin-in {
+  color: #3498db;
+}
+
+a.linkedin:hover i.fa-linkedin-in,
+a.linkedin:focus i.fa-linkedin-in {
+  color: #ffffff;
+}
+
+.outer-container {
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  display: inline-flex;
+}
+
+.inner-container {
+  width: 320px;
+  height: 360px;
+  position: relative;
+  transition: transform 0.9s ease;
+  transform: translateX(0px);
+  animation: float 6s ease-out infinite;
+}
+
+.inner-container:hover {
+  transform: scale(0.8);
+  filter: saturate(150%);
+}
+
+.background-box {
+  width: 280px;
+  height: 320px;
+  left: 20px;
+  top: 20px;
+  position: absolute;
+  background: #e5e7eb;
+  border: 8px #ffffff solid;
+}
+
+.image-box {
+  width: 280px;
+  height: 320px;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  border: 8px #ffffff solid;
+  object-fit: cover;
+}
