@@ -281,8 +281,13 @@
         },
         "section15": {
         "title": "LHMS — Sistem Pemantauan & Bahaya Lereng",
-        "date": "2025 - 2026",
+        "date": "Mei 2026 - Agu 2026",
         "desc": "Mengembangkan aplikasi web full-stack untuk inventarisasi, inspeksi, dan pengelolaan risiko lereng di sepanjang jalan. Sistem ini membantu engineer mencatat aset lereng, melakukan inspeksi berkala, menghitung tingkat bahaya, serta merencanakan pekerjaan mitigasi, dengan Role-Based Access Control (RBAC) yang memastikan hanya administrator yang dapat mengubah data, sementara konten publik tetap terbuka untuk semua orang."
+        },
+        "section16": {
+        "title": "Dashboard Risiko Lereng - GFM Consult",
+        "date": "Sep 2026 - Sekarang",
+        "desc": "Mengembangkan Dashboard Risiko Lereng operasional untuk mengelola inventaris lereng, penilaian risiko, inspeksi, perbaikan longsor, dan rencana mitigasi. Dilengkapi fitur pendukung seperti role-based access, peta interaktif, manajemen admin, CMS, dan laporan PDF untuk mempermudah pemantauan serta pengelolaan risiko lereng sehari-hari."
         },
 
         "sectionAll": "Klik di sini!"

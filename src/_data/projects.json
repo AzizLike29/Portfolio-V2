@@ -1,5 +1,55 @@
 [
   {
+    "id": "section16",
+    "i18nKey": "section16",
+    "image": "assets/img/projects/dashboard-slope-gfm.webp",
+    "alt": "Slope Risk Dashboard - GFM Consult",
+    "url": "https://lhms.gfm-consult.com/",
+    "contentType": "desc",
+    "jobs": [],
+    "jobFallbacks": {},
+    "titleFallback": "Slope Risk Dashboard - GFM Consult",
+    "dateFallback": "Sep 2026 - Present",
+    "descFallback": "Developed an Operational Slope Risk Dashboard to manage slope inventory, risk assessments, inspections, landslide repairs, and mitigation plans. Built supporting features including role-based access, interactive maps, admin management, CMS, and PDF reporting to streamline daily slope risk monitoring and management.",
+    "tech": [
+      {
+        "kind": "framework",
+        "label": "Laravel"
+      },
+      {
+        "kind": "tech",
+        "label": "PHP"
+      },
+      {
+        "kind": "tech",
+        "label": "MySQL"
+      },
+      {
+        "kind": "tech",
+        "label": "RBAC"
+      },
+      {
+        "kind": "framework",
+        "label": "Alpine JS"
+      },
+      {
+        "kind": "framework",
+        "label": "Tailwind CSS"
+      },
+      {
+        "kind": "tech",
+        "label": "Github"
+      },
+      {
+        "kind": "tech",
+        "label": "Hostinger"
+      }
+    ],
+    "categories": [
+      "web"
+    ]
+  },
+  {
     "id": "section15",
     "i18nKey": "section15",
     "image": "assets/img/projects/slope-gfm.webp",
@@ -9,7 +59,7 @@
     "jobs": [],
     "jobFallbacks": {},
     "titleFallback": "LHMS — Slope Hazard & Monitoring System",
-    "dateFallback": "2025 - 2026",
+    "dateFallback": "May 2026 - Aug 2026",
     "descFallback": "Developed a full-stack web application to inventory, inspect, and manage the risk of roadside slopes. The system helps engineers record slope assets, run periodic inspections, calculate hazard ratings, and plan mitigation work, with Role-Based Access Control (RBAC) ensuring only administrators can modify data while public content remains open to everyone.",
     "tech": [
       {

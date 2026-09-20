@@ -281,8 +281,13 @@
         },
         "section15": {
         "title": "LHMS — Slope Hazard & Monitoring System",
-        "date": "2025 - 2026",
+        "date": "May 2026 - Aug 2026",
         "desc": "Developed a full-stack web application to inventory, inspect, and manage the risk of roadside slopes. The system helps engineers record slope assets, run periodic inspections, calculate hazard ratings, and plan mitigation work, with Role-Based Access Control (RBAC) ensuring only administrators can modify data while public content remains open to everyone."
+        },
+        "section16": {
+        "title": "Slope Risk Dashboard - GFM Consult",
+        "date": "Sep 2026 - Present",
+        "desc": "Developed an Operational Slope Risk Dashboard to manage slope inventory, risk assessments, inspections, landslide repairs, and mitigation plans. Built supporting features including role-based access, interactive maps, admin management, CMS, and PDF reporting to streamline daily slope risk monitoring and management."
         },
         "sectionAll": "Click Here!"
     },
