@@ -7,8 +7,6 @@ function copyText(getId, copyType) {
     navigator.clipboard
       .writeText(textCopy)
       .then(function () {
-        console.log("Success Copy " + copyType + ": " + textCopy);
-
         // ubah icon ke icon paste check
         var iconElement = document.querySelector("#" + getId + " + .bi-copy");
         if (iconElement) {
@@ -60,3 +58,17 @@ function showNotification(type, message) {
     notif.style.display = 'none';
   }, 1500);
 }
+
+document.querySelectorAll('[data-copy-target]').forEach(function (copyButton) {
+  function handleCopy() {
+    copyText(copyButton.dataset.copyTarget, copyButton.dataset.copyType);
+  }
+
+  copyButton.addEventListener('click', handleCopy);
+  copyButton.addEventListener('keydown', function (event) {
+    if (event.key === 'Enter' || event.key === ' ') {
+      event.preventDefault();
+      handleCopy();
+    }
+  });
+});

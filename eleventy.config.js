@@ -1,5 +1,12 @@
+import { bundleAssets } from "./scripts/bundle-assets.mjs";
+
 /** @param {import("@11ty/eleventy").UserConfig} eleventyConfig */
 export default function (eleventyConfig) {
+  eleventyConfig.on("eleventy.before", () => {
+    bundleAssets();
+  });
+  eleventyConfig.addWatchTarget("assets/css/");
+  eleventyConfig.addWatchTarget("assets/js/");
   eleventyConfig.addPassthroughCopy("assets");
 
   eleventyConfig.addFilter("hasCategory", (projects, category) => {

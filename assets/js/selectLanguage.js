@@ -65,9 +65,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // Load kamus JSON sesuai bahasa
     async function loadDict(lang) {
         const url = new URL(`${lang}.json`, I18N_BASE).toString();
-        console.log('[i18n] GET', url);
         try {
-            const res = await fetch(url, { cache: 'no-store' });
+            const res = await fetch(url);
             if (!res.ok) throw new Error(`HTTP ${res.status}`);
             return await res.json();
         } catch (e) {
@@ -88,13 +87,19 @@ document.addEventListener('DOMContentLoaded', () => {
         langBtns.forEach(b => b.classList.toggle('active', b.dataset.lang === lang));
 
         currentDict = await loadDict(lang);
-        console.log("[i18n] Loaded dictionary", lang, currentDict);
         applyI18n();
     }
 
-    // Init bahasa awal
+    // Init bahasa awal. English copy is already in the HTML.
     const initial = localStorage.getItem('lang') || 'en';
-    setLangUI(initial);
+    if (initial === 'en') {
+        const region = langToRegion.en;
+        if (flagEl) flagEl.textContent = toFlagEmoji(region);
+        document.documentElement.setAttribute('lang', 'en');
+        langBtns.forEach(b => b.classList.toggle('active', b.dataset.lang === 'en'));
+    } else {
+        setLangUI(initial);
+    }
 
     // Handler klik bahasa
     langBtns.forEach(btn => {

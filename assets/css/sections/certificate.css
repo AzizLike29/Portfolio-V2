@@ -7,6 +7,13 @@ h2.certificate:hover::before {
   text-align: center;
 }
 
+.carousel-inner img {
+  aspect-ratio: 16 / 11;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
 .carousel-control-next-icon,
 .carousel-control-prev-icon {
   filter: invert(100%);

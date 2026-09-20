@@ -9,6 +9,9 @@ h2.project:hover::before {
 
 img.image {
   object-fit: cover;
+  aspect-ratio: 16 / 10;
+  width: 100%;
+  height: auto;
 }
 
 #Streamed-Spotify,

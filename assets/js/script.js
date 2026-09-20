@@ -82,7 +82,6 @@
     }, 60000);
   });
 
-  // Perubahan tema light dan dark
   window
     .matchMedia("(prefers-color-scheme: dark)")
     .addEventListener("change", () => {
@@ -91,24 +90,6 @@
         setTheme(getPreferredTheme());
       }
     });
-
-  // Halaman tema aktif
-  window.addEventListener("DOMContentLoaded", () => {
-    // Toggle tema
-    document.querySelectorAll("[data-bs-theme-value]").forEach((toggle) => {
-      toggle.addEventListener("click", () => {
-        const theme = toggle.getAttribute("data-bs-theme-value");
-        setTheme(theme);
-      });
-    });
-
-    // Update ikon setiap menit untuk tema "auto"
-    setInterval(() => {
-      if (getStoredTheme() === "auto") {
-        setTheme("auto");
-      }
-    }, 60000);
-  });
 })();
 
 // Kode untuk gotopbtn tidak diubah

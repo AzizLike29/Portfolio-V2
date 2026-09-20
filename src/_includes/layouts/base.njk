@@ -5,57 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <meta name="google-site-verification" content="XpIGGxDYPq8goTP5Wq-qQlMPLS5ahgNcMolgUVyEGw0"/>
     <title data-i18n="head.title">Portfolio Aziz</title>
-    <!-- Preconnect to third-party origins  -->
-    <link rel="preconnect" href="https://unpkg.com" crossorigin/>
-    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin/>
+    <script src="assets/js/theme-init.js"></script>
+    <link rel="preload" href="assets/fonts/poppins-latin-400.woff2" as="font" type="font/woff2" crossorigin/>
+    <link rel="preload" href="assets/fonts/roboto-latin-700.woff2" as="font" type="font/woff2" crossorigin/>
     <link
-    rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin/> <!-- Preload LCP hero image -->
-    <link
-    rel="preload"
+      rel="preload"
       as="image"
       href="assets/img/home/Home-Aziz-800.webp"
       imagesrcset="assets/img/home/Home-Aziz-400.webp 400w, assets/img/home/Home-Aziz-800.webp 800w"
-      imagesizes="(max-width: 575px) 400px, 800px"
-      fetchpriority="high"/> <!-- Icons Website -->
-    <link
-    rel="shortcut icon" href="assets/img/svg/ui/icons.svg" type="image/x-icon"/> <!-- Template Stylesheet CSS -->
-    <link
-    href="assets/css/style.css" rel="stylesheet"/> <!-- Template Normalize CSS -->
-    <link
-    href="assets/css/normalize.css" rel="stylesheet"/> <!-- Bootstrap Stylesheet (critical, purged of unused classes) -->
-    <link
-    href="assets/css/bootstrap.purged.css" rel="stylesheet"/> <!-- AOS Library -->
-    <link
-    rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" media="print" onload="this.media='all'"/> <!-- Bootstrap Icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
-      media="print"
-      onload="this.media='all'"/>
-    <noscript>
-      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"/>
-    </noscript>
+      imagesizes="280px"
+      media="(min-width: 768px)"
+      fetchpriority="high"/>
+    <link rel="shortcut icon" href="assets/img/svg/ui/icons.svg" type="image/svg+xml"/>
+    <link href="assets/build/app.css" rel="stylesheet"/>
   </head>
   <body>
     {% include "partials/nav.njk" %}
     {{ content | safe }}
     {% include "partials/footer.njk" %}
-    <!-- Bootstrap bundle (includes Popper) -->
     <script defer src="assets/js/vendor/bootstrap.bundle.min.js"></script>
-    <!-- AOS (scroll animations) -->
-    <script defer src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <!-- anime.js (hero text animation, above the fold) -->
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
-    <!-- App scripts -->
-    <script defer src="assets/js/selectLanguage.js"></script>
-    <script defer src="assets/js/currentYear.js"></script>
-    <script defer src="assets/js/email.js"></script>
-    <script defer src="assets/js/copyPaste.js"></script>
-    <script defer src="assets/js/animated.js"></script>
-    <script defer src="assets/js/script.js"></script>
-    <script defer src="assets/js/side.js"></script>
-    <!-- Init and on-demand loader for heavy libraries -->
-    <script defer src="assets/js/appInit.js"></script>
+    <script defer src="assets/build/app.js"></script>
   </body>
 </html>

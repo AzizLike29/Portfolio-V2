@@ -1,8 +1,3 @@
-// ---- AOS (scroll animations) ----
-if (window.AOS) {
-  AOS.init({ once: true, duration: 800 });
-}
-
 // ---- Helper: load an external script once, return a Promise ----
 const __loadedScripts = {};
 function loadScriptOnce(src) {
@@ -17,6 +12,41 @@ function loadScriptOnce(src) {
   });
   return __loadedScripts[src];
 }
+
+function loadStylesheetOnce(href) {
+  return new Promise((resolve, reject) => {
+    if (document.querySelector(`link[href="${href}"]`)) {
+      resolve();
+      return;
+    }
+    const link = document.createElement("link");
+    link.rel = "stylesheet";
+    link.href = href;
+    link.onload = resolve;
+    link.onerror = reject;
+    document.head.appendChild(link);
+  });
+}
+
+function whenIdle(fn) {
+  if ("requestIdleCallback" in window) {
+    requestIdleCallback(fn, { timeout: 2500 });
+  } else {
+    setTimeout(fn, 1);
+  }
+}
+
+// ---- AOS after first paint so hero LCP is not blocked ----
+whenIdle(() => {
+  Promise.all([
+    loadStylesheetOnce("assets/vendor/aos.css"),
+    loadScriptOnce("assets/vendor/aos.js"),
+  ])
+    .then(() => {
+      if (window.AOS) AOS.init({ once: true, duration: 800 });
+    })
+    .catch(() => {});
+});
 
 // ---- Lazy-load EmailJS + SweetAlert2 on first contact-form interaction ----
 (() => {
@@ -59,13 +89,7 @@ function loadScriptOnce(src) {
       if (!img) return;
       if (img.dataset.viewerReady) return;
 
-      // load CSS once
-      if (!document.querySelector(`link[href="${viewerCss}"]`)) {
-        const link = document.createElement("link");
-        link.rel = "stylesheet";
-        link.href = viewerCss;
-        document.head.appendChild(link);
-      }
+      loadStylesheetOnce(viewerCss);
 
       loadScriptOnce(viewerJs).then(() => {
         if (window.Viewer) {
