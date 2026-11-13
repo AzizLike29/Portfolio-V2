@@ -104,6 +104,11 @@ p.regression {
   text-overflow: ellipsis;
 }
 
+p.description {
+  white-space: pre-line;
+  text-align: justify;
+}
+
 ul.description li {
   text-align: justify;
 }

@@ -1,5 +1,51 @@
 [
   {
+    "id": "section17",
+    "i18nKey": "section17",
+    "image": "assets/img/projects/whatsapp-maintenance-automation.webp",
+    "alt": "WhatsApp Maintenance Automation",
+    "url": "https://github.com/AzizLike29/whatsapp-maintenance-automation",
+    "contentType": "desc",
+    "jobs": [],
+    "jobFallbacks": {},
+    "titleFallback": "WhatsApp Maintenance Automation",
+    "dateFallback": "Oct 2026 - Present",
+    "descFallback": "A WhatsApp bot that connects technicians to a maintenance dashboard in Google Sheets. Close, reopen, ask about data, and request reports. All by mentioning the bot in a group chat, without opening the spreadsheet.\n\nTechnicians mention the bot in an allowed group, and the bot verifies the sender’s number against the technician sheet. Messages that include No RT, No OT, or No WR close or reopen the matching rows. Messages without a tag number are answered from dashboard data, or turned into a PDF when a report file is requested.",
+    "tech": [
+      {
+        "kind": "tech",
+        "label": "Node.js"
+      },
+      {
+        "kind": "tech",
+        "label": "Baileys"
+      },
+      {
+        "kind": "tech",
+        "label": "Google Sheets API"
+      },
+      {
+        "kind": "tech",
+        "label": "Gemini"
+      },
+      {
+        "kind": "tech",
+        "label": "ExcelJS"
+      },
+      {
+        "kind": "tech",
+        "label": "LibreOffice"
+      },
+      {
+        "kind": "tech",
+        "label": "MSAL (SharePoint)"
+      }
+    ],
+    "categories": [
+      "data"
+    ]
+  },
+  {
     "id": "section16",
     "i18nKey": "section16",
     "image": "assets/img/projects/dashboard-slope-gfm.webp",

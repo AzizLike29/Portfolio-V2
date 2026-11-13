@@ -289,6 +289,11 @@
         "date": "Sep 2026 - Sekarang",
         "desc": "Mengembangkan Dashboard Risiko Lereng operasional untuk mengelola inventaris lereng, penilaian risiko, inspeksi, perbaikan longsor, dan rencana mitigasi. Dilengkapi fitur pendukung seperti role-based access, peta interaktif, manajemen admin, CMS, dan laporan PDF untuk mempermudah pemantauan serta pengelolaan risiko lereng sehari-hari."
         },
+        "section17": {
+        "title": "WhatsApp Maintenance Automation",
+        "date": "Okt 2026 - Sekarang",
+        "desc": "Bot WhatsApp yang menghubungkan teknisi ke dashboard maintenance di Google Sheets. Tutup, buka kembali, tanya data, dan minta laporan. Cukup mention bot di grup chat, tanpa membuka spreadsheet.\n\nTeknisi mention bot di grup yang diizinkan, lalu bot memverifikasi nomor pengirim lewat sheet teknisi. Pesan yang berisi No RT, No OT, atau No WR akan menutup atau membuka kembali baris yang cocok. Pesan tanpa nomor tag dijawab dari data dashboard, atau diubah menjadi PDF jika diminta laporan."
+        },
 
         "sectionAll": "Klik di sini!"
     },

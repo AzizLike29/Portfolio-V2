@@ -289,6 +289,11 @@
         "date": "Sep 2026 - Present",
         "desc": "Developed an Operational Slope Risk Dashboard to manage slope inventory, risk assessments, inspections, landslide repairs, and mitigation plans. Built supporting features including role-based access, interactive maps, admin management, CMS, and PDF reporting to streamline daily slope risk monitoring and management."
         },
+        "section17": {
+        "title": "WhatsApp Maintenance Automation",
+        "date": "Oct 2026 - Present",
+        "desc": "A WhatsApp bot that connects technicians to a maintenance dashboard in Google Sheets. Close, reopen, ask about data, and request reports. All by mentioning the bot in a group chat, without opening the spreadsheet.\n\nTechnicians mention the bot in an allowed group, and the bot verifies the sender’s number against the technician sheet. Messages that include No RT, No OT, or No WR close or reopen the matching rows. Messages without a tag number are answered from dashboard data, or turned into a PDF when a report file is requested."
+        },
         "sectionAll": "Click Here!"
     },
 
