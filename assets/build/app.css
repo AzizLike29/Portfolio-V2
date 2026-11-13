@@ -1127,13 +1127,17 @@ p.database {
   text-overflow: ellipsis;
 }
 
-#project p.description {
-  white-space: pre-line;
-  text-align: left;
+#project p.description,
+#project ul.description li {
+  text-align: justify;
+  text-align-last: left;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  overflow-wrap: break-word;
 }
 
-#project ul.description li {
-  text-align: left;
+#project p.description {
+  white-space: pre-line;
 }
 
 [data-bs-theme="dark"] p.figma:hover,
