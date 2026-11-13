@@ -1091,23 +1091,49 @@ p.database:hover {
   color: #ffffff;
 }
 
+p.figma,
+p.corel,
+p.mobbin,
+p.dribble,
+p.chamjo,
+p.lottie,
+p.android,
+p.java,
+p.firebase,
+p.php,
+p.mysql,
+p.ci4,
+p.bt5,
 p.vsc,
-p.database,
-p.clustering,
+p.nb,
+p.canva,
 p.data,
-p.regression {
+p.clustering,
+p.excel,
+p.python,
+p.anaconda,
+p.numpy,
+p.tensorflow,
+p.scikit-learn,
+p.matplotlib,
+p.pil,
+p.google-colab,
+p.regression,
+p.tech,
+p.framework,
+p.database {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-p.description {
+#project p.description {
   white-space: pre-line;
-  text-align: justify;
+  text-align: left;
 }
 
-ul.description li {
-  text-align: justify;
+#project ul.description li {
+  text-align: left;
 }
 
 [data-bs-theme="dark"] p.figma:hover,
